@@ -1,0 +1,3 @@
+C:/Users/Piotr/CLionProjects/tsp_problem/cmake-build-debug/CMakeFiles/tsp_problem.dir
+C:/Users/Piotr/CLionProjects/tsp_problem/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Piotr/CLionProjects/tsp_problem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

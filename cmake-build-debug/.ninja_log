@@ -1,0 +1,16 @@
+# ninja log v5
+15	355	7498597897335663	CMakeFiles/tsp_problem.dir/Node.cpp.obj	470a0a55634d0fb5
+6	740	7498650294869349	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+741	892	7498650296336409	tsp_problem.exe	1d799216b91791c9
+13	93	7497808001067458	CMakeFiles/tsp_problem.dir/Edge.cpp.obj	6045d8905d0047df
+13	666	7498707156391208	CMakeFiles/tsp_problem.dir/File.cpp.obj	edd41317a7144c2c
+5	1093	7498707160645862	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+1093	1491	7498707164602874	tsp_problem.exe	39c3814809b85938
+6	975	7498714383546098	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+978	1184	7498714385644624	tsp_problem.exe	39c3814809b85938
+6	1044	7498715782118848	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+1045	1218	7498715783823951	tsp_problem.exe	39c3814809b85938
+6	1022	7498716708212175	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+1023	1199	7498716709950345	tsp_problem.exe	39c3814809b85938
+5	944	7498717051465723	CMakeFiles/tsp_problem.dir/main.cpp.obj	41ee7141f1c1f6df
+945	1122	7498717053210329	tsp_problem.exe	39c3814809b85938
