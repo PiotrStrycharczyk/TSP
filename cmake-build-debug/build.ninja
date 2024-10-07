@@ -49,29 +49,35 @@ cmake_ninja_workdir = C$:/Users/Piotr/CLionProjects/tsp_problem/cmake-build-debu
 
 build cmake_object_order_depends_target_tsp_problem: phony || CMakeFiles/tsp_problem.dir
 
-build CMakeFiles/tsp_problem.dir/main.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/main.cpp || cmake_object_order_depends_target_tsp_problem
-  DEP_FILE = CMakeFiles\tsp_problem.dir\main.cpp.obj.d
+build CMakeFiles/tsp_problem.dir/Main/main.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Main/main.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Main\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
-  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Main
 
-build CMakeFiles/tsp_problem.dir/Node.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Node.cpp || cmake_object_order_depends_target_tsp_problem
-  DEP_FILE = CMakeFiles\tsp_problem.dir\Node.cpp.obj.d
+build CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Graph/Node.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Graph\Node.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
-  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Graph
 
-build CMakeFiles/tsp_problem.dir/Edge.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Edge.cpp || cmake_object_order_depends_target_tsp_problem
-  DEP_FILE = CMakeFiles\tsp_problem.dir\Edge.cpp.obj.d
+build CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Graph/Edge.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Graph\Edge.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
-  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Graph
 
-build CMakeFiles/tsp_problem.dir/File.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/File.cpp || cmake_object_order_depends_target_tsp_problem
-  DEP_FILE = CMakeFiles\tsp_problem.dir\File.cpp.obj.d
+build CMakeFiles/tsp_problem.dir/Main/File.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Main/File.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Main\File.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
-  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Main
+
+build CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Algorithms/TSP.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Algorithms\TSP.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Algorithms
 
 
 # =============================================================================
@@ -81,7 +87,7 @@ build CMakeFiles/tsp_problem.dir/File.cpp.obj: CXX_COMPILER__tsp_problem_unscann
 #############################################
 # Link the executable tsp_problem.exe
 
-build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/main.cpp.obj CMakeFiles/tsp_problem.dir/Node.cpp.obj CMakeFiles/tsp_problem.dir/Edge.cpp.obj CMakeFiles/tsp_problem.dir/File.cpp.obj
+build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tsp_problem.dir

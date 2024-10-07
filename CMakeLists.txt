@@ -3,9 +3,11 @@ project(tsp_problem)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(tsp_problem main.cpp
-        Node.cpp
-        Node.h
-        Edge.cpp
-        Edge.h
-        File.cpp)
+add_executable(tsp_problem Main/main.cpp
+        Graph/Node.cpp
+        Graph/Node.h
+        Graph/Edge.cpp
+        Graph/Edge.h
+        Main/File.cpp
+        Algorithms/TSP.cpp
+        Algorithms/TSP.h)
