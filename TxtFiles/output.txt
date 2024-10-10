@@ -1,0 +1,40 @@
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+LP;czas;blad bezwzgledny;blad wzgledny
+1;398.642ms;0.0756554;30.1594ms
+2;377.107ms;0.022871;8.62482ms
+3;382.923ms;0.0377108;14.4403ms
+4;339.091ms;0.0866757;29.391ms
+5;344.649ms;0.0691532;23.8336ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+368.482ms;0.0584132;5.84132%;21.2898ms;%
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+LP;czas;blad bezwzgledny;blad wzgledny
+1;343.664ms;0.0081767;2.81004ms
+2;335.802ms;0.0150466;5.05266ms
+3;344.529ms;0.0106657;3.67464ms
+4;339.191ms;0.00490361;1.66326ms
+5;341.086ms;0.000677953;0.23124ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+340.854ms;0.0078941;0.78941%;2.68637ms;%
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+LP;czas;blad bezwzgledny;blad wzgledny
+1;353.003ms;0.0154078;5.439ms
+2;346.977ms;0.00168974;0.5863ms
+3;343.819ms;0.0108924;3.745ms
+4;349.266ms;0.00487308;1.702ms
+5;344.754ms;0.00814987;2.8097ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+347.564ms;0.00820258;0.820258%;2.8564ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+LP;czas;blad bezwzgledny;blad wzgledny
+1;349.774ms;0.0170017;5.94674ms
+2;340.886ms;0.00862741;2.94096ms
+3;340.472ms;0.00985386;3.35496ms
+4;344.964ms;0.00329583;1.13694ms
+5;343.039ms;0.00229642;0.78776ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+343.827ms;0.00821504;0.821504%;2.83347ms

@@ -38,44 +38,8 @@ int Navigator::mainProgram() {
     std::cout << "Max czas algorytmow: " << max_time << "ms" << std::endl;
 
 
-
-    // Otwieramy plik
-    std::ifstream plik(nazwa_pliku_we);
-
-    // Sprawdzamy, czy udało się otworzyć plik
-    if (!plik.is_open()) {
-        std::cerr << "Nie udalo sie otworzyc pliku: " << nazwa_pliku_we << std::endl;
-        return 1; // Zwracamy kod błędu
-    }
-
-
-    if (plik >> V) {
-
-    } else {
-        std::cerr << "Błąd podczas odczytu pierwszej liczby." << std::endl;
-        return 1;
-    }
-
-    // Tworzymy V wierzchołków
-    for (int i = 0; i < V; i++) {
-        graph.push_back(Node(i)); // Numerujemy wierzchołki od 0 do V-1
-    }
-
-    int weight;//;//liczba ktora jest defact waga krawedzi miedzy Nodeami
-    for(int i = 0; i < V ; i++) {
-        for(int j = 0 ; j < V; j++) {
-            if(plik >> weight) {
-                //if (weight >= 0) {
-                    graph[i].addEdge(j, weight);
-                    //graph[i].neighbourCount++;
-                //}
-            } else
-                std::cout<<"Blad odczytu danej"<<std::endl;
-
-        }
-    }
-
-    plik.close();
+    //ladowanie zawartosci pliku we
+    File::loadInputFile(nazwa_pliku_we, graph, V);//przekazujemy oryginal i na nim dzialamy w metodach
 
     //printowanie grafu
     // Counter obj1;
@@ -86,6 +50,7 @@ int Navigator::mainProgram() {
     double sum_time = 0;
     double avg_time;
     std::vector<double> all_times;
+    std::cout<< "Nazwa pliku z danymi: " << nazwa_pliku_we << std::endl;
     std::cout << "==============================================" << std::endl;
     std::cout << "Brute - Force"<<std::endl;
     TSP tspbruteforce;
@@ -97,19 +62,27 @@ int Navigator::mainProgram() {
         all_times.push_back(t0);//dodanie czasu do wektora
         if(sum_time > max_time) {
             avg_time = sum_time/j+1;
+            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
+            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
             std::cout<<"Skoczenie algorytmu z powodu skonczenia czasu" << std::endl;
+            std::cout << "czas;bl wzgledny;bl wzgledny[%];bl bezwzgledny" << std::endl;//nie wyrazamy bezwzglednego w %
+            std::cout << avg_time <<";" << BLwzgledny <<";"<<BLwzgledny*100<<"%:"<<BLbezwzgledny<<std::endl;
             break;
-        } else if(iterations - 1 == j) {
+        } if(iterations - 1 == j) {
             avg_time = sum_time/iterations;
+            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
+            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
             std::cout<<"Skoczenie algorytmu z powodu skonczenia liczby iteracji" << std::endl;
+            std::cout << "czas;bl wzgledny;bl wzgledny[%];bl bezwzgledny" << std::endl;//nie wyrazamy bezwzglednego w %
+            std::cout << avg_time <<"[ms];" << BLwzgledny <<";"<<BLwzgledny*100<<"%:"<<BLbezwzgledny<<"[ms]"<<std::endl;
             break;
         }
     }
 
     //jako dokladna wartosc przyjmujemy wartosc srednia w bledach
-
-    Counter counter;
-    counter.printTimes(all_times, avg_time);
+    //wpisywanie do pliku /output.txt
+    File f1;
+    f1.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy);
 
     std::cout<< "Dlugosc drogi: "<< tspbruteforce.getShortestPath() << std::endl;
     std::cout<<"Sciezka: ";
@@ -121,16 +94,16 @@ int Navigator::mainProgram() {
 
     std::cout << "==============================================" << std::endl;
     std::cout << "Nearest - Neighbour"<<std::endl;
-    TSP tspNN;
+    TSP tspRepetetiveNN;
 
     start_counter();
-    tspNN.nearestNeighbour(graph, V);
+    tspRepetetiveNN.repetetiveNearestNeighbour(graph, V);
     double t1 = get_counter();
     std:: cout<<"Czas wykonania algorytmu: " << t1 <<"ms"<<std::endl;
 
-    std::cout<< "Dlugosc drogi: "<< tspNN.getShortestPath() << std::endl;
+    std::cout<< "Dlugosc drogi: "<< tspRepetetiveNN.getShortestPath() << std::endl;
     std::cout<<"Sciezka: ";
-    for (int i : tspNN.getSolvedPath()) {
+    for (int i : tspRepetetiveNN.getSolvedPath()) {
         std::cout << i << " - ";
     }
     std::cout << std::endl;

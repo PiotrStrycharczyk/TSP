@@ -60,11 +60,13 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     return shortestpath;
 }
 
-int TSP::nearestNeighbour(std::vector<Node> graph, int V) {//byc moze trzeba zrobic zeby metoda startowala z kazdego wierzcholka i na koniec brala tylko najlepszy wynik
+int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {//byc moze trzeba zrobic zeby metoda startowala z kazdego wierzcholka i na koniec brala tylko najlepszy wynik
+    shortestpath = 0;
+    solvedpath.clear();//reset zmiennych przed algorytmem
+
     std::vector<bool> odwiedzone(V, false);//wartosc poczatkowa jako false
 
-    srand(time(0)); // Inicjalizacja generatora losowego
-    int startvertex = rand() % V;
+    int startvertex = start;
     int nowvertex = startvertex;//losujemy wierzcholek poczatkowy
 
     solvedpath.push_back(startvertex);//startujemy od wylosowanego
@@ -86,7 +88,7 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V) {//byc moze trzeba zro
         // Przechodzimy do najbliższego wierzchołka
         if (nextVertex != -1) {
             solvedpath.push_back(nextVertex);
-            shortestpath += graph[nowvertex].edges[nextVertex].weight;
+            shortestpath += minWeight;
             odwiedzone[nextVertex] = true;
             nowvertex = nextVertex;
         }
@@ -96,6 +98,23 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V) {//byc moze trzeba zro
     shortestpath += graph[nowvertex].edges[startvertex].weight;
     return shortestpath;
 }
+
+int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {
+
+    int best_weight = -1;//dajemy wartosc ujemna zeby przy pierwszej iteracji zostala ta zmienna nadpisana
+    std::vector<int> best_way;
+    for(int i = 0 ; i < V ; i++) {
+        nearestNeighbour(graph, V, i);//i to wierzcholek startowy dla metody nearestneighbour
+        if(best_weight == -1 || best_weight > shortestpath) {
+            best_weight = shortestpath;
+            best_way = solvedpath;
+        }
+    }
+    shortestpath = best_weight;
+    solvedpath = best_way;
+    return shortestpath;
+}
+
 
 int TSP::randomMetod(std::vector<Node> graph, int V) {
     shortestpath = INT_MAX;

@@ -11,7 +11,8 @@
 
 class Counter {
 public:
-    void printTimes(std::vector<double> times, double avg_time);
+    static double relativeErrorSum(std::vector<double> times, double avg_time);
+    static double absoluteErrorSum(std::vector<double> times, double avg_time);
     void printGraph(std::vector<Node> graph, int V);//metoda do printowania grafu
 };
 
