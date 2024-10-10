@@ -19,51 +19,48 @@ std::vector<int> TSP::getSolvedPath() {
 
 int TSP::bruteForce(std::vector<Node> graph, int V) {
 
-    for (int startvertex = 0 ; startvertex < V ; startvertex++) {//j to tak naprawde startVertex
+    int startvertex = 0;//punkt startowy algorytmu
+    std::vector<int> vertex;//wektor wszystkich poza pierwszym wierzcholkow
+    solvedpath.push_back(startvertex);//dodanie do rozwiazania wierz pocz
 
-        std::vector<int> vertex;//wektor wszystkich poza pierwszym wierzcholkow
-        solvedpath.push_back(startvertex);//dodanie do rozwiazania wierz pocz
+    for (int i = 0; i < V; i++)
+        if (i != startvertex)
+            vertex.push_back(i);
 
-        for (int i = 0; i < V; i++)
-            if (i != startvertex)
-                vertex.push_back(i);
+    shortestpath = INT_MAX;
+    do {
 
-        shortestpath = INT_MAX;
+        int current_pathweight = 0;
+        int k = startvertex;
 
-        do {
+        // Tworzymy tymczasowy wektor, aby przechowywać bieżącą ścieżkę
+        std::vector<int> temp_path;
+        temp_path.push_back(k); // Dodajemy wierzchołek startowy
 
-            int current_pathweight = 0;
-            int k = startvertex;
+        // Obliczamy koszt bieżącej ścieżki
+        for (int i = 0; i < vertex.size(); i++) {
+            current_pathweight += graph[k].edges[vertex[i]].weight;
+            k = vertex[i];
+            temp_path.push_back(k); // Dodajemy kolejne miasto do ścieżki
+        }
 
-            // Tworzymy tymczasowy wektor, aby przechowywać bieżącą ścieżkę
-            std::vector<int> temp_path;
-            temp_path.push_back(k); // Dodajemy wierzchołek startowy
+        // Dodajemy koszt powrotu do miasta startowego
+        current_pathweight += graph[k].edges[startvertex].weight;
+        temp_path.push_back(startvertex); // Powrót do wierzchołka startowego
 
-            // Obliczamy koszt bieżącej ścieżki
-            for (int i = 0; i < vertex.size(); i++) {
-                current_pathweight += graph[k].edges[vertex[i]].weight;
-                k = vertex[i];
-                temp_path.push_back(k); // Dodajemy kolejne miasto do ścieżki
-            }
-
-            // Dodajemy koszt powrotu do miasta startowego
-            current_pathweight += graph[k].edges[startvertex].weight;
-            temp_path.push_back(startvertex); // Powrót do wierzchołka startowego
-
-            // Jeżeli bieżący koszt jest mniejszy niż dotychczasowy minimalny, aktualizujemy ścieżkę
-            if (current_pathweight < shortestpath) {
-                shortestpath = current_pathweight;  // Aktualizujemy minimalny koszt
-                solvedpath = temp_path;           // Aktualizujemy ścieżkę, która ma najniższy koszt
-            }
+        // Jeżeli bieżący koszt jest mniejszy niż dotychczasowy minimalny, aktualizujemy ścieżkę
+        if (current_pathweight < shortestpath) {
+            shortestpath = current_pathweight;  // Aktualizujemy minimalny koszt
+            solvedpath = temp_path;           // Aktualizujemy ścieżkę, która ma najniższy koszt
+        }
 
 
-        } while (next_permutation(vertex.begin(), vertex.end()));
-    }
+    } while (next_permutation(vertex.begin(), vertex.end()));
 
     return shortestpath;
 }
 
-int TSP::nearestNeighbour(std::vector<Node> graph, int V) {
+int TSP::nearestNeighbour(std::vector<Node> graph, int V) {//byc moze trzeba zrobic zeby metoda startowala z kazdego wierzcholka i na koniec brala tylko najlepszy wynik
     std::vector<bool> odwiedzone(V, false);//wartosc poczatkowa jako false
 
     srand(time(0)); // Inicjalizacja generatora losowego
@@ -72,7 +69,8 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V) {
 
     solvedpath.push_back(startvertex);//startujemy od wylosowanego
     odwiedzone[startvertex] = true;
-
+    //novertex obecny wierzch na ktorym jestesmy
+    //nextvertex to kolejny ktory mamy odwiedzic
     for (int i = 1; i < V; ++i) {
         int nextVertex = -1;
         int minWeight = INT_MAX; // Ustawiamy maksymalną wartość
@@ -94,12 +92,12 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V) {
         }
     }
 
-    solvedpath.push_back(startvertex);
+    solvedpath.push_back(startvertex);//powrot do wierzcholka poczatkowego
     shortestpath += graph[nowvertex].edges[startvertex].weight;
     return shortestpath;
 }
 
-int TSP::randomMetod(std::vector<Node> graph, int V, int iterations) {
+int TSP::randomMetod(std::vector<Node> graph, int V) {
     shortestpath = INT_MAX;
     std::vector<int> randomindex(V);
     std::vector<int> path;
@@ -112,26 +110,23 @@ int TSP::randomMetod(std::vector<Node> graph, int V, int iterations) {
     std::random_shuffle(randomindex.begin(), randomindex.end());
 
 
+    path.clear();
+    int lastindex = 0;
+    int score = 0;
 
-    for(int i = 0 ; i < iterations ; i++) {
-        path.clear();
-        int lastindex = 0;
-        int score = 0;
-
-        for(int j = 0 ; j <  V; j++) {
-            if(j + 1 < V) {
-                score += graph[randomindex[j]].edges[randomindex[j+1]].weight;
-                lastindex = j + 1;
-                path.push_back(randomindex[j]);
-            }
+    for(int j = 0 ; j <  V; j++) {
+        if(j + 1 < V) {
+            score += graph[randomindex[j]].edges[randomindex[j+1]].weight;
+            lastindex = j + 1;
+            path.push_back(randomindex[j]);
         }
-        score += graph[randomindex[lastindex]].edges[randomindex[0]].weight;//laczymy ostatniego z pierwszym
-        path.push_back(randomindex[V-1]);//polaczenie 9 - 10 wierz
-        path.push_back(randomindex[0]);//zapewnienie pełnosci grafu
-        if (score < shortestpath) {
-            shortestpath = score;
-            solvedpath = path;
-        }
+    }
+    score += graph[randomindex[lastindex]].edges[randomindex[0]].weight;//laczymy ostatniego z pierwszym
+    path.push_back(randomindex[V-1]);//polaczenie (n-1) - n wierz
+    path.push_back(randomindex[0]);//zapewnienie pełnosci grafu
+    if (score < shortestpath) {
+        shortestpath = score;
+        solvedpath = path;
     }
 
     return shortestpath;

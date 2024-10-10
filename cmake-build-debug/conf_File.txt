@@ -1,5 +1,0 @@
-nazwa pliku wejsciowego:dane.txt
-nazwa pliku wyjsciowego:output.txt
-rodzaj rowiazania problemu:brute-force
-liczba powtorzen:
-maksymalny akceptowalny czas:

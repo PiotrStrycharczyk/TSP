@@ -14,8 +14,9 @@ class TSP {
 public:
     TSP();
     int bruteForce(std::vector<Node> graph, int V);
+    int repetetiveNearestNeighbour();
     int nearestNeighbour(std::vector<Node> graph, int V);
-    int randomMetod(std::vector<Node> graph, int V, int iterations);
+    int randomMetod(std::vector<Node> graph, int V);
     std::vector<int> getSolvedPath();
     int getShortestPath();
 

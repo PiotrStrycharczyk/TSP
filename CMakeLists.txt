@@ -10,4 +10,8 @@ add_executable(tsp_problem Main/main.cpp
         Graph/Edge.h
         Main/File.cpp
         Algorithms/TSP.cpp
-        Algorithms/TSP.h)
+        Algorithms/TSP.h
+        Main/Navigator.cpp
+        Main/Navigator.h
+        Counting/Counter.cpp
+        Counting/Counter.h)

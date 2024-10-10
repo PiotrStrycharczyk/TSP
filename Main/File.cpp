@@ -3,6 +3,7 @@
 //
 
 #include <unordered_map>
+#include <vector>
 #include <fstream>
 #include <string>
 
@@ -37,6 +38,14 @@ public:
 
         return config; // Zwracamy mapę config zawierającą wszystkie pary klucz-wartość
     }
+
+    void writeResults(std::string nameOfinstance, int optimalresult, std::vector<int> optimalpath, double time,
+        double avgtime) {//wpisywanie wynikow do pliku output
+
+
+    }
+
+
 
 };
 

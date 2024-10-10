@@ -1,0 +1,5 @@
+nazwa pliku wejsciowego:../TxtFiles/file_10.txt
+nazwa pliku wyjsciowego:../TxtFiles/output.txt
+liczba powtorzen algorytmow:5
+max czas wykonywania algorytmu:20000
+wyswietlanie w konsoli wskaznika postepu:true
