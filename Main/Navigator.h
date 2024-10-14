@@ -4,6 +4,7 @@
 
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
+#include <string>
 #include <bits/chrono.h>
 
 

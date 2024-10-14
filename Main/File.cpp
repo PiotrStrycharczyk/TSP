@@ -82,7 +82,7 @@ public:
         return 0;
     }
 
-    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy) {
+    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method) {
         int n = times.size();
         double sum_relative = 0;
         double sum_absolute = 0;
@@ -98,6 +98,7 @@ public:
 
         plik << "===========================================================" << std::endl;
         plik << "Nazwa pliku wejsciowego: " << nazwa_pliku_we << std::endl;
+        plik << "Metoda: " << method << std::endl;
 
         plik << "LP;czas;blad bezwzgledny;blad wzgledny" << std::endl;
         for (int i = 0; i < n; i++) {
