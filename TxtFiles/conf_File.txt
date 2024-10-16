@@ -3,3 +3,4 @@ nazwa pliku wyjsciowego:../TxtFiles/output.txt
 liczba powtorzen algorytmow:100
 max czas wykonywania algorytmu[ms]:200000
 wyswietlanie w konsoli wskaznika postepu:true
+iteracje w random:1000

@@ -57,16 +57,19 @@ int Navigator::mainProgram() {
     std::string iterations_string = config["liczba powtorzen algorytmow"];
     std::string max_time_string = config["max czas wykonywania algorytmu[ms]"];//liczba iteracji dla algorytmu losowego
     std::string showProgressBar_string = config["wyswietlanie w konsoli wskaznika postepu"];//liczba iteracji dla algorytmu losowego
+    std::string iterations_randm_string = config["iteracje w random"];
 
     int iterations = stoi(iterations_string);
     int max_time = stoi(max_time_string);
+    int iterations_randm = stoi(iterations_randm_string);
+
     bool showProgressBar = stringToBool(showProgressBar_string);
 
     std::cout << "Nazwa pliku we: " << nazwa_pliku_we << std::endl;
     std::cout << "Nazwa pliku wy: " << nazwa_pliku_wy << std::endl;
     std::cout << "Itercje algorytmow: " << iterations << std::endl;
     std::cout << "Max czas algorytmow: " << max_time << "ms" << std::endl;
-    std::cout << "Czy pokazywac progress bar " << showProgressBar << std::endl;
+    //std::cout << "Czy pokazywac progress bar " << showProgressBar << std::endl;
 
 
     //ladowanie zawartosci pliku we
@@ -81,7 +84,7 @@ int Navigator::mainProgram() {
     double sum_time = 0;
     double avg_time;
     std::vector<double> all_times;
-    std::cout<< "Nazwa pliku z danymi: " << nazwa_pliku_we << std::endl;
+    // std::cout<< "Nazwa pliku z danymi: " << nazwa_pliku_we << std::endl;
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "Brute - Force"<<std::endl;
     TSP tspbruteforce;
@@ -203,7 +206,7 @@ int Navigator::mainProgram() {
 
    for(int j = 0 ; j < iterations ; j ++) {
         start_counter();
-        tspRandom.randomMetodIterations(graph, V);
+        tspRandom.randomMetodIterations(graph, V, iterations_randm);
         double t2 = get_counter();
         sum_time += t2;
         all_times.push_back(t2);//dodanie czasu do wektora

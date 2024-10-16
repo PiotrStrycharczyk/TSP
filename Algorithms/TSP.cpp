@@ -146,19 +146,17 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {
 
 
 int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie ze miedzy dwoma V nie ma krawedzi, to zmienne klasowe sa nie zmieniane
-    std::random_device rd;
-    std::mt19937 g(rd());
+    std::random_device rd;// rd jest wykorzystywane do generowania losowej wartosci
+    std::mt19937 g(rd());//tworze generator liczb pseudolosowych, jest on inicjalizowany wartoscia uzyskana z urzadzenia losowego
 
 
     shortestpath = INT_MAX;
     std::vector<int> tab_nieodwiedzonych(V);
-    std::vector<int> path;
 
     for(int i = 0 ; i < V ; i++) {//indexow tyle, ile wierzcholkow
         tab_nieodwiedzonych[i] = i;
     }
 
-    path.clear();
     int score = 0;
 
     // Wektor do przechowywania losowo wybranych wierzchołków
@@ -182,7 +180,7 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
             }
             score += weight;
         }
-        tab_nieodwiedzonych.erase(tab_nieodwiedzonych.begin() + randIndex);  // Usuwamy wierzchołek z listy
+        tab_nieodwiedzonych.erase(tab_nieodwiedzonych.begin() + randIndex);  // Usuwamy wierzchołek z listy (po usunieciu jest o jeden mniej elementow) w vectorze
 
     }
 
@@ -211,15 +209,14 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     return shortestpath;
 }
 
-void TSP::randomMetodIterations(std::vector<Node> graph, int V) {
+void TSP::randomMetodIterations(std::vector<Node> graph, int V, int iter_rand) {
     TSP tsp;//tworzenie instacji klasy tsp
 
-    int iterations = 10000;
     int best_weight = INT_MAX;
     int current_weight;
     std::vector<int> best_path;
     std::vector<int> current_path;
-    for(int i = 0 ; i < iterations ; i++) {
+    for(int i = 0 ; i < iter_rand ; i++) {
         int result = tsp.randomMetod(graph, V);
         if(result != -1) {
             current_weight = tsp.getShortestPath();
