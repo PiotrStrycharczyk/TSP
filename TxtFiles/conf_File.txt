@@ -1,6 +1,5 @@
-nazwa pliku wejsciowego:../TxtFiles/file_9.txt
+nazwa pliku wejsciowego:../TxtFiles/file_4.txt
 nazwa pliku wyjsciowego:../TxtFiles/output.txt
-liczba powtorzen algorytmow:100
-max czas wykonywania algorytmu[ms]:200000
+liczba powtorzen algorytmow:10
+max czas wykonywania algorytmu[ms]:500
 wyswietlanie w konsoli wskaznika postepu:true
-iteracje w random:1000

@@ -17,7 +17,6 @@ public:
     int repetetiveNearestNeighbour(std::vector<Node> graph, int V);
     int nearestNeighbour(std::vector<Node> graph, int V, int start);
     int randomMetod(std::vector<Node> graph, int V);
-    void randomMetodIterations(std::vector<Node> graph, int V, int iter_rand);
     std::vector<int> getSolvedPath();
     int getShortestPath();
 

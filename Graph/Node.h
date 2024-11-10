@@ -17,6 +17,7 @@ public:
     int num;
     std::vector<Edge> edges;
     void addEdge(int dir, int weight);//dodawanie krawedzi o danych wagach
+    int returnEdgeWeight(int destination);
 
 };
 

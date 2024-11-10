@@ -91,6 +91,12 @@ build CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj: CXX_COMPILER__tsp_pro
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
   OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Counting
 
+build CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Algorithms/BranchNBound.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Algorithms\BranchNBound.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Algorithms
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tsp_problem
@@ -99,8 +105,9 @@ build CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj: CXX_COMPILER__tsp_pro
 #############################################
 # Link the executable tsp_problem.exe
 
-build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj
+build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -static -W
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
   POST_BUILD = cd .

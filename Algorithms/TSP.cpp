@@ -45,7 +45,7 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
         // Obliczamy koszt bieżącej ścieżki
         for (int i = 0; i < vertex.size(); i++) {
             int next_vertex = vertex[i];
-            int edge_weight = graph[k].edges[next_vertex].weight;
+            int edge_weight = graph[k].returnEdgeWeight(next_vertex);
 
             // Sprawdzamy, czy istnieje krawędź
             if (edge_weight == -1) {
@@ -59,7 +59,8 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
         }
 
         // Dodajemy koszt powrotu do miasta startowego, jeśli istnieje krawędź powrotna
-        int return_edge_weight = graph[k].edges[startvertex].weight;
+        //int return_edge_weight = graph[k].edges[startvertex].weight;
+        int return_edge_weight = graph[k].returnEdgeWeight(startvertex);
 
         if (validPath && return_edge_weight != -1) {
             current_pathweight += return_edge_weight;
@@ -99,13 +100,20 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {
         int nextVertex = -1;
         int minWeight = INT_MAX; // Ustawiamy maksymalną wartość
 
+        int sameWeightEdge = 0;
         // Szukamy najbliższego nieodwiedzonego wierzchołka
         for (const auto& edge : graph[nowvertex].edges) {
-            if (!odwiedzone[edge.destination] && edge.weight < minWeight && edge.weight != -1) {
+            if (!odwiedzone[edge.destination] && edge.weight <= minWeight && edge.weight != -1) {
+                if (edge.weight == minWeight) {
+                    sameWeightEdge++;
+                }
                 minWeight = edge.weight;
                 nextVertex = edge.destination;
+
             }
         }
+        if (sameWeightEdge != 0)
+            std::cout<<"Ta sama waga dla " << sameWeightEdge << " krawedzi!"<<std::endl;
 
         // Przechodzimy do najbliższego wierzchołka
         if (nextVertex == -1) {
@@ -116,7 +124,8 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {
         odwiedzone[nextVertex] = true;
         nowvertex = nextVertex;
     }
-    int returnWeight = graph[nowvertex].edges[startvertex].weight;
+
+    int returnWeight = graph[nowvertex].returnEdgeWeight(startvertex);
     if (returnWeight != -1) {
         solvedpath.push_back(startvertex); // Powrót do wierzchołka początkowego
         shortestpath += returnWeight;
@@ -146,7 +155,7 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {
 
 
 int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie ze miedzy dwoma V nie ma krawedzi, to zmienne klasowe sa nie zmieniane
-    std::random_device rd;// rd jest wykorzystywane do generowania losowej wartosci
+    std::random_device rd;// rd jest wykorzystywane do generowania losowej wartosci (ziarno)
     std::mt19937 g(rd());//tworze generator liczb pseudolosowych, jest on inicjalizowany wartoscia uzyskana z urzadzenia losowego
 
 
@@ -163,7 +172,7 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     std::vector<int> selectedPath;
 
     for(int j = 0 ; j < V ; j++) {
-        std::uniform_int_distribution<> dist(0, tab_nieodwiedzonych.size() - 1);//losowanie indexu z przedzialu [ ; ]
+        std::uniform_int_distribution<> dist(0, tab_nieodwiedzonych.size() - 1);//losowanie indexu z przedzialu [ ; ] (kazdy element ma takie samo prawdopodobieństwo na trafienie
         int randIndex = dist(g);//generowanie liczby z distribution liczb z zadanego wyzej przedzialu
 
         int currentNode = tab_nieodwiedzonych[randIndex];
@@ -172,11 +181,11 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
         if (j > 0) {
             // Obliczamy wagę krawędzi między bieżącym a poprzednim wierzchołkiem
             int prevNode = selectedPath[j - 1];
-            int weight = graph[prevNode].edges[currentNode].weight;
+            int weight = graph[prevNode].returnEdgeWeight(currentNode);
 
             // Sprawdzamy, czy istnieje połączenie
             if (weight == -1) {
-                return -1;  // Brak połączenia - odrzucamy tę permutację
+                return -1;  // Brak połączenia - odrzucamy
             }
             score += weight;
         }
@@ -187,7 +196,7 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     // Łączymy ostatni wierzchołek z pierwszym, aby zamknąć cykl
     int lastNode = selectedPath.back();
     int firstNode = selectedPath.front();
-    int lastEdgeWeight = graph[lastNode].edges[firstNode].weight;
+    int lastEdgeWeight = graph[lastNode].returnEdgeWeight(firstNode);
 
     // Sprawdzamy, czy istnieje połączenie
     if (lastEdgeWeight == -1) {
@@ -207,28 +216,6 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     }
 
     return shortestpath;
-}
-
-void TSP::randomMetodIterations(std::vector<Node> graph, int V, int iter_rand) {
-    TSP tsp;//tworzenie instacji klasy tsp
-
-    int best_weight = INT_MAX;
-    int current_weight;
-    std::vector<int> best_path;
-    std::vector<int> current_path;
-    for(int i = 0 ; i < iter_rand ; i++) {
-        int result = tsp.randomMetod(graph, V);
-        if(result != -1) {
-            current_weight = tsp.getShortestPath();
-            current_path = tsp.getSolvedPath();
-            if(current_weight < best_weight) {
-                best_weight = current_weight;
-                best_path = current_path;
-            }
-        }
-    }
-    shortestpath = best_weight;
-    solvedpath = best_path;
 }
 
 
