@@ -14,8 +14,12 @@ class TSP {
 public:
     TSP();
     int bruteForce(std::vector<Node> graph, int V);
-    int repetetiveNearestNeighbour(std::vector<Node> graph, int V);
-    int nearestNeighbour(std::vector<Node> graph, int V, int start);
+    int repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<bool>& odwiedzone,
+        int current_cost, std::vector<int>& current_path, std::vector<int>& best_path, int& best_cost);
+    int nearestNeighbour(std::vector<Node> graph, int V, int start, std::vector<bool>& odwiedzone,
+                          int current_cost, std::vector<int>& current_path,
+                          std::vector<int>& best_path, int& best_cost);
+    bool ifAllVisited(std::vector<bool> odwiedzone);
     int randomMetod(std::vector<Node> graph, int V);
     std::vector<int> getSolvedPath();
     int getShortestPath();

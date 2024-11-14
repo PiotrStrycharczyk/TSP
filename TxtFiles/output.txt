@@ -12450,3 +12450,2682 @@ LP;czas;blad bezwzgledny;blad wzgledny
 5;0.033ms;6.40121;0.21124ms
 Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
 0.24424ms;4.94435;494.435%;0.334264ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.044ms;0.395909;0.01742ms
+2;0.0229ms;0.160699;0.00368ms
+3;0.0146ms;0.820548;0.01198ms
+4;0.02ms;0.329;0.00658ms
+5;0.022ms;0.208182;0.00458ms
+6;0.0218ms;0.219266;0.00478ms
+7;0.0417ms;0.36259;0.01512ms
+8;0.0249ms;0.0674699;0.00168ms
+9;0.0319ms;0.166771;0.00532ms
+10;0.022ms;0.208182;0.00458ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02658ms;0.293862;29.3862%;0.007572ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9069ms;0.64329;0.5834ms
+2;0.0311ms;9.40193;0.2924ms
+3;0.0325ms;8.95385;0.291ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.3235ms;6.33302;633.302%;0.388933ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0653ms;0.611792;0.03995ms
+2;0.0337ms;0.247774;0.00835ms
+3;0.0217ms;0.168203;0.00365ms
+4;0.0334ms;0.241018;0.00805ms
+5;0.0374ms;0.322193;0.01205ms
+6;0.0108ms;1.34722;0.01455ms
+7;0.0094ms;1.69681;0.01595ms
+8;0.0132ms;0.920455;0.01215ms
+9;0.0097ms;1.6134;0.01565ms
+10;0.0189ms;0.34127;0.00645ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02535ms;0.751014;75.1014%;0.01368ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0587ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.0587ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0399ms;0.317794;0.01268ms
+2;0.0296ms;0.0804054;0.00238ms
+3;0.024ms;0.134167;0.00322ms
+4;0.0205ms;0.327805;0.00672ms
+5;0.0346ms;0.213295;0.00738ms
+6;0.023ms;0.183478;0.00422ms
+7;0.0226ms;0.204425;0.00462ms
+8;0.0226ms;0.204425;0.00462ms
+9;0.0335ms;0.187463;0.00628ms
+10;0.0219ms;0.242922;0.00532ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02722ms;0.209618;20.9618%;0.005744ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0537ms;0.814353;0.858083ms
+2;0.0376ms;4.20257;0.158017ms
+3;0.0286ms;5.83974;0.167017ms
+4;0.0192ms;9.18837;0.176417ms
+5;0.0174ms;10.2423;0.178217ms
+6;0.0172ms;10.3731;0.178417ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.195617ms;6.77674;677.674%;0.286028ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0336ms;0.297321;0.00999ms
+2;0.0146ms;0.617123;0.00901ms
+3;0.0181ms;0.30442;0.00551ms
+4;0.0205ms;0.151707;0.00311ms
+5;0.0221ms;0.0683258;0.00151ms
+6;0.0228ms;0.0355263;0.00081ms
+7;0.0209ms;0.129665;0.00271ms
+8;0.028ms;0.156786;0.00439ms
+9;0.0204ms;0.157353;0.00321ms
+10;0.0351ms;0.32735;0.01149ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02361ms;0.224558;22.4558%;0.005174ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.909ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.909ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;351.443ms;0.00530969;1.86605ms
+2;347.711ms;0.00536668;1.86605ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+349.577ms;0.00533818;0.533818%;1.86605ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8091ms;0.872859;0.70623ms
+2;0.039ms;1.63769;0.06387ms
+3;0.0283ms;2.63498;0.07457ms
+4;0.0218ms;3.71881;0.08107ms
+5;0.0216ms;3.7625;0.08127ms
+6;0.0281ms;2.66085;0.07477ms
+7;0.0195ms;4.27538;0.08337ms
+8;0.0197ms;4.22183;0.08317ms
+9;0.0194ms;4.30258;0.08347ms
+10;0.0222ms;3.63378;0.08067ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10287ms;3.17213;317.213%;0.141246ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;352.408ms;0.0102159;3.60015ms
+2;345.208ms;0.0104289;3.60015ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+348.808ms;0.0103224;1.03224%;3.60015ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4136ms;0.877872;1.24096ms
+2;0.042ms;3.11048;0.13064ms
+3;0.0594ms;1.9064;0.11324ms
+4;0.0362ms;3.76906;0.13644ms
+5;0.0203ms;7.50443;0.15234ms
+6;0.0197ms;7.76345;0.15294ms
+7;0.0193ms;7.94508;0.15334ms
+8;0.0347ms;3.97522;0.13794ms
+9;0.0231ms;6.47359;0.14954ms
+10;0.0581ms;1.97143;0.11454ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.17264ms;4.5297;452.97%;0.248192ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;357.788ms;0.0165152;5.90895ms
+2;345.97ms;0.0170794;5.90895ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+351.879ms;0.0167973;1.67973%;5.90895ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8923ms;0.87521;0.78095ms
+2;0.0331ms;2.36405;0.07825ms
+3;0.0257ms;3.33268;0.08565ms
+4;0.0326ms;2.41564;0.07875ms
+5;0.0299ms;2.72408;0.08145ms
+6;0.0195ms;4.71026;0.09185ms
+7;0.0196ms;4.68112;0.09175ms
+8;0.0196ms;4.68112;0.09175ms
+9;0.0215ms;4.17907;0.08985ms
+10;0.0197ms;4.65228;0.09165ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11135ms;3.46155;346.155%;0.15619ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;347.761ms;0.00806906;2.8061ms
+2;342.148ms;0.00820141;2.8061ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+344.954ms;0.00813523;0.813523%;2.8061ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.859ms;0.863446;0.7417ms
+2;0.0693ms;0.692641;0.048ms
+3;0.0354ms;2.31356;0.0819ms
+4;0.0313ms;2.7476;0.086ms
+5;0.0534ms;1.19663;0.0639ms
+6;0.0204ms;4.75;0.0969ms
+7;0.02ms;4.865;0.0973ms
+8;0.0202ms;4.80693;0.0971ms
+9;0.0317ms;2.70032;0.0856ms
+10;0.0323ms;2.63158;0.085ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.1173ms;2.75677;275.677%;0.14834ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;338.678ms;0.000635116;0.2151ms
+2;339.108ms;0.000634311;0.2151ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+338.893ms;0.000634713;0.0634713%;0.2151ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8382ms;0.872978;0.73173ms
+2;0.0401ms;1.65511;0.06637ms
+3;0.0272ms;2.91434;0.07927ms
+4;0.0212ms;4.02217;0.08527ms
+5;0.022ms;3.83955;0.08447ms
+6;0.0203ms;4.24483;0.08617ms
+7;0.0335ms;2.17821;0.07297ms
+8;0.0203ms;4.24483;0.08617ms
+9;0.0219ms;3.86164;0.08457ms
+10;0.02ms;4.3235;0.08647ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10647ms;3.21572;321.572%;0.146346ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;37.5663ms;0.00522969;0.19646ms
+2;39.7263ms;0.0494267;1.96354ms
+3;41.0074ms;0.0791233;3.24464ms
+4;37.6785ms;0.00223629;0.08426ms
+5;37.8863ms;0.00326081;0.12354ms
+6;37.4001ms;0.00969677;0.36266ms
+7;36.245ms;0.041875;1.51776ms
+8;36.506ms;0.0344261;1.25676ms
+9;37.0269ms;0.0198737;0.73586ms
+10;36.5848ms;0.0321981;1.17796ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+37.7628ms;0.0277346;2.77346%;1.06634ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.825ms;0.867503;0.71569ms
+2;0.028ms;2.90393;0.08131ms
+3;0.0213ms;4.13192;0.08801ms
+4;0.0192ms;4.69323;0.09011ms
+5;0.0214ms;4.10794;0.08791ms
+6;0.045ms;1.42911;0.06431ms
+7;0.0569ms;0.92109;0.05241ms
+8;0.0269ms;3.06357;0.08241ms
+9;0.0249ms;3.38996;0.08441ms
+10;0.0245ms;3.46163;0.08481ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10931ms;2.89699;289.699%;0.143138ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;378.346ms;0.0440371;16.6613ms
+2;345.024ms;0.0482903;16.6613ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+361.685ms;0.0461637;4.61637%;16.6613ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0016ms;0.866314;0.8677ms
+2;0.0365ms;2.66849;0.0974ms
+3;0.0408ms;2.28186;0.0931ms
+4;0.0356ms;2.76124;0.0983ms
+5;0.0403ms;2.32258;0.0936ms
+6;0.0353ms;2.7932;0.0986ms
+7;0.0434ms;2.08525;0.0905ms
+8;0.0366ms;2.65847;0.0973ms
+9;0.0335ms;2.99701;0.1004ms
+10;0.0354ms;2.78249;0.0985ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.1339ms;2.42169;242.169%;0.17354ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;374.726ms;0.0194662;7.2945ms
+2;360.137ms;0.0202548;7.2945ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+367.431ms;0.0198605;1.98605%;7.2945ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1004ms;0.877027;0.96508ms
+2;0.0432ms;2.13241;0.09212ms
+3;0.0398ms;2.4;0.09552ms
+4;0.04ms;2.383;0.09532ms
+5;0.02ms;5.766;0.11532ms
+6;0.0198ms;5.83434;0.11552ms
+7;0.02ms;5.766;0.11532ms
+8;0.0219ms;5.179;0.11342ms
+9;0.0279ms;3.85018;0.10742ms
+10;0.0202ms;5.69901;0.11512ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.13532ms;3.9887;398.87%;0.193016ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;368.017ms;0.00791174;2.91165ms
+2;362.193ms;0.00803894;2.91165ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+365.105ms;0.00797534;0.797534%;2.91165ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9196ms;0.861559;0.79229ms
+2;0.0514ms;1.47685;0.07591ms
+3;0.0429ms;1.9676;0.08441ms
+4;0.0439ms;1.9;0.08341ms
+5;0.0369ms;2.45014;0.09041ms
+6;0.0363ms;2.50716;0.09101ms
+7;0.035ms;2.63743;0.09231ms
+8;0.0348ms;2.65833;0.09251ms
+9;0.0356ms;2.57612;0.09171ms
+10;0.0367ms;2.46894;0.09061ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12731ms;2.15041;215.041%;0.158458ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;350.242ms;0.00412715;1.4455ms
+2;347.351ms;0.0041615;1.4455ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+348.796ms;0.00414432;0.414432%;1.4455ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.003ms;0.876361;0.87899ms
+2;0.0432ms;1.8706;0.08081ms
+3;0.0278ms;3.46079;0.09621ms
+4;0.0352ms;2.52301;0.08881ms
+5;0.0216ms;4.7412;0.10241ms
+6;0.0197ms;5.29492;0.10431ms
+7;0.0274ms;3.52591;0.09661ms
+8;0.0225ms;4.51156;0.10151ms
+9;0.0197ms;5.29492;0.10431ms
+10;0.02ms;5.2005;0.10401ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12401ms;3.72998;372.998%;0.175798ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;360.907ms;0.0216395;7.80985ms
+2;345.287ms;0.0226184;7.80985ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+353.097ms;0.022129;2.2129%;7.80985ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0298ms;0.864983;0.89076ms
+2;0.0433ms;2.21109;0.09574ms
+3;0.0419ms;2.31838;0.09714ms
+4;0.0363ms;2.8303;0.10274ms
+5;0.0359ms;2.87298;0.10314ms
+6;0.0333ms;3.17538;0.10574ms
+7;0.0353ms;2.93881;0.10374ms
+8;0.0341ms;3.07742;0.10494ms
+9;0.0396ms;2.51111;0.09944ms
+10;0.0609ms;1.28309;0.07814ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.13904ms;2.40835;240.835%;0.178152ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;352.118ms;0.00290826;1.02405ms
+2;350.07ms;0.00292527;1.02405ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+351.094ms;0.00291677;0.291677%;1.02405ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;366.519ms;0.0165784;6.0763ms
+2;354.366ms;0.017147;6.0763ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+360.442ms;0.0168627;1.68627%;6.0763ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3055ms;0.878774;1.14724ms
+2;0.0422ms;2.75024;0.11606ms
+3;0.0686ms;1.307;0.08966ms
+4;0.0403ms;2.92705;0.11796ms
+5;0.0216ms;6.32685;0.13666ms
+6;0.0199ms;6.95276;0.13836ms
+7;0.0227ms;5.97181;0.13556ms
+8;0.0199ms;6.95276;0.13836ms
+9;0.0198ms;6.99293;0.13846ms
+10;0.0221ms;6.16109;0.13616ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.15826ms;4.72213;472.213%;0.229448ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;365.548ms;0.0168145;6.1465ms
+2;353.255ms;0.0173996;6.1465ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+359.401ms;0.0171071;1.71071%;6.1465ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.7996ms;0.872361;0.69754ms
+2;0.0271ms;2.76605;0.07496ms
+3;0.0196ms;4.20714;0.08246ms
+4;0.0202ms;4.05248;0.08186ms
+5;0.0209ms;3.88325;0.08116ms
+6;0.0519ms;0.966474;0.05016ms
+7;0.0199ms;4.12864;0.08216ms
+8;0.0196ms;4.20714;0.08246ms
+9;0.0199ms;4.12864;0.08216ms
+10;0.0219ms;3.66027;0.08016ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10206ms;3.28725;328.725%;0.139508ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;363.458ms;0.00153112;0.5565ms
+2;362.345ms;0.00153583;0.5565ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+362.902ms;0.00153348;0.153348%;0.5565ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2375ms;0.881907;1.09136ms
+2;0.0294ms;3.97075;0.11674ms
+3;0.0399ms;2.66266;0.10624ms
+4;0.0293ms;3.98771;0.11684ms
+5;0.0206ms;6.09417;0.12554ms
+6;0.0196ms;6.45612;0.12654ms
+7;0.0218ms;5.70367;0.12434ms
+8;0.02ms;6.307;0.12614ms
+9;0.0228ms;5.40965;0.12334ms
+10;0.0205ms;6.12878;0.12564ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.14614ms;4.76024;476.024%;0.218272ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;383.093ms;0.0381955;14.6324ms
+2;353.828ms;0.0413546;14.6324ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+368.46ms;0.039775;3.9775%;14.6324ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1239ms;0.868547;0.97616ms
+2;0.032ms;3.61688;0.11574ms
+3;0.0316ms;3.67532;0.11614ms
+4;0.0687ms;1.15051;0.07904ms
+5;0.04ms;2.6935;0.10774ms
+6;0.0298ms;3.95772;0.11794ms
+7;0.0347ms;3.25764;0.11304ms
+8;0.0319ms;3.63135;0.11584ms
+9;0.0309ms;3.78123;0.11684ms
+10;0.0539ms;1.741;0.09384ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.14774ms;2.83737;283.737%;0.195232ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;351.991ms;0.0126297;4.44555ms
+2;343.1ms;0.012957;4.44555ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+347.546ms;0.0127934;1.27934%;4.44555ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9386ms;0.86271;0.80974ms
+2;0.0414ms;2.11256;0.08746ms
+3;0.0342ms;2.76784;0.09466ms
+4;0.0351ms;2.67123;0.09376ms
+5;0.0356ms;2.61966;0.09326ms
+6;0.0345ms;2.73507;0.09436ms
+7;0.0347ms;2.71354;0.09416ms
+8;0.0344ms;2.74593;0.09446ms
+9;0.0598ms;1.15485;0.06906ms
+10;0.0403ms;2.19752;0.08856ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12886ms;2.25809;225.809%;0.161948ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;344.082ms;0.000141391;0.04865ms
+2;344.179ms;0.000141351;0.04865ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+344.13ms;0.000141371;0.0141371%;0.04865ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.7698ms;0.868135;0.66829ms
+2;0.0324ms;2.13302;0.06911ms
+3;0.035ms;1.90029;0.06651ms
+4;0.021ms;3.83381;0.08051ms
+5;0.022ms;3.61409;0.07951ms
+6;0.047ms;1.15979;0.05451ms
+7;0.0202ms;4.02525;0.08131ms
+8;0.0197ms;4.15279;0.08181ms
+9;0.0275ms;2.69127;0.07401ms
+10;0.0205ms;3.95171;0.08101ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10151ms;2.83302;283.302%;0.133658ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0396ms;0.411616;0.0163ms
+2;0.0217ms;0.0737327;0.0016ms
+3;0.0219ms;0.0639269;0.0014ms
+4;0.025ms;0.068;0.0017ms
+5;0.0177ms;0.316384;0.0056ms
+6;0.0158ms;0.474684;0.0075ms
+7;0.0275ms;0.152727;0.0042ms
+8;0.0224ms;0.0401786;0.0009ms
+9;0.0198ms;0.176768;0.0035ms
+10;0.0216ms;0.0787037;0.0017ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0233ms;0.185672;18.5672%;0.00444ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1509ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.1509ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0391ms;0.351662;0.01375ms
+2;0.022ms;0.152273;0.00335ms
+3;0.0208ms;0.21875;0.00455ms
+4;0.0206ms;0.230583;0.00475ms
+5;0.0208ms;0.21875;0.00455ms
+6;0.0214ms;0.184579;0.00395ms
+7;0.0231ms;0.0974026;0.00225ms
+8;0.0251ms;0.00996016;0.00025ms
+9;0.0294ms;0.137755;0.00405ms
+10;0.0312ms;0.1875;0.00585ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02535ms;0.178921;17.8921%;0.00473ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0701ms;0.70963;0.759375ms
+2;0.0354ms;7.77754;0.275325ms
+3;0.0988ms;2.14499;0.211925ms
+4;0.0386ms;7.04987;0.272125ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.310725ms;4.42051;442.051%;0.379687ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0411ms;0.473723;0.01947ms
+2;0.0204ms;0.0602941;0.00123ms
+3;0.0227ms;0.0471366;0.00107ms
+4;0.0161ms;0.343478;0.00553ms
+5;0.0167ms;0.29521;0.00493ms
+6;0.0271ms;0.201845;0.00547ms
+7;0.0153ms;0.413725;0.00633ms
+8;0.0195ms;0.109231;0.00213ms
+9;0.0141ms;0.534043;0.00753ms
+10;0.0233ms;0.0716738;0.00167ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02163ms;0.255036;25.5036%;0.005536ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1652ms;0.640748;0.7466ms
+2;0.0413ms;9.13559;0.3773ms
+3;0.0493ms;7.49087;0.3693ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.4186ms;5.75574;575.574%;0.497733ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0396ms;0.481818;0.01908ms
+2;0.0357ms;0.42521;0.01518ms
+3;0.0164ms;0.25122;0.00412ms
+4;0.0202ms;0.0158416;0.00032ms
+5;0.012ms;0.71;0.00852ms
+6;0.0201ms;0.0208955;0.00042ms
+7;0.0106ms;0.935849;0.00992ms
+8;0.017ms;0.207059;0.00352ms
+9;0.0128ms;0.603125;0.00772ms
+10;0.0208ms;0.0134615;0.00028ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02052ms;0.366448;36.6448%;0.006908ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.947ms;0.853972;0.808711ms
+2;0.0387ms;2.57336;0.0995889ms
+3;0.0406ms;2.40613;0.0976889ms
+4;0.053ms;1.60922;0.0852889ms
+5;0.0341ms;3.05539;0.104189ms
+6;0.0328ms;3.21612;0.105489ms
+7;0.0332ms;3.16533;0.105089ms
+8;0.0336ms;3.11574;0.104689ms
+9;0.0316ms;3.37623;0.106689ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.138289ms;2.59683;259.683%;0.179714ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0407ms;0.328501;0.01337ms
+2;0.0224ms;0.220089;0.00493ms
+3;0.0213ms;0.283099;0.00603ms
+4;0.0276ms;0.00978261;0.00027ms
+5;0.0192ms;0.423438;0.00813ms
+6;0.0218ms;0.25367;0.00553ms
+7;0.0222ms;0.231081;0.00513ms
+8;0.0406ms;0.326847;0.01327ms
+9;0.0351ms;0.221368;0.00777ms
+10;0.0224ms;0.220089;0.00493ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02733ms;0.251796;25.1796%;0.006936ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9839ms;0.721898;0.710275ms
+2;0.0388ms;6.05219;0.234825ms
+3;0.0336ms;7.1436;0.240025ms
+4;0.0382ms;6.16296;0.235425ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.273625ms;5.02016;502.016%;0.355137ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0365ms;0.325205;0.01187ms
+2;0.0202ms;0.219307;0.00443ms
+3;0.0234ms;0.0525641;0.00123ms
+4;0.0215ms;0.145581;0.00313ms
+5;0.0361ms;0.317729;0.01147ms
+6;0.0228ms;0.0802632;0.00183ms
+7;0.021ms;0.172857;0.00363ms
+8;0.0203ms;0.2133;0.00433ms
+9;0.0221ms;0.11448;0.00253ms
+10;0.0224ms;0.0995536;0.00223ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02463ms;0.174084;17.4084%;0.004668ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9768ms;0.638787;0.623967ms
+2;0.0499ms;6.07081;0.302933ms
+3;0.0318ms;10.0954;0.321033ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.352833ms;5.60166;560.166%;0.415978ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0329ms;0.292705;0.00963ms
+2;0.0225ms;0.0342222;0.00077ms
+3;0.0353ms;0.340793;0.01203ms
+4;0.0217ms;0.0723502;0.00157ms
+5;0.0213ms;0.0924883;0.00197ms
+6;0.0229ms;0.0161572;0.00037ms
+7;0.0229ms;0.0161572;0.00037ms
+8;0.0203ms;0.146305;0.00297ms
+9;0.0173ms;0.345087;0.00597ms
+10;0.0156ms;0.491667;0.00767ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02327ms;0.184793;18.4793%;0.004332ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8739ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.8739ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;342.706ms;0.018454;6.3243ms
+2;330.057ms;0.0191612;6.3243ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+336.382ms;0.0188076;1.88076%;6.3243ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9453ms;0.875225;0.82735ms
+2;0.0404ms;1.91955;0.07755ms
+3;0.0288ms;3.09549;0.08915ms
+4;0.0324ms;2.64043;0.08555ms
+5;0.0301ms;2.9186;0.08785ms
+6;0.0219ms;4.38584;0.09605ms
+7;0.0195ms;5.04872;0.09845ms
+8;0.0195ms;5.04872;0.09845ms
+9;0.0214ms;4.51168;0.09655ms
+10;0.0202ms;4.83911;0.09775ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11795ms;3.52834;352.834%;0.16547ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3469.57ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3469.57ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0535ms;0.878633;0.92564ms
+2;0.0353ms;2.6221;0.09256ms
+3;0.0205ms;5.23707;0.10736ms
+4;0.0401ms;2.18853;0.08776ms
+5;0.0222ms;4.75946;0.10566ms
+6;0.0202ms;5.3297;0.10766ms
+7;0.0197ms;5.49036;0.10816ms
+8;0.0204ms;5.26765;0.10746ms
+9;0.026ms;3.91769;0.10186ms
+10;0.0207ms;5.17681;0.10716ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12786ms;4.0868;408.68%;0.185128ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0394ms;0.354569;0.01397ms
+2;0.0245ms;0.0379592;0.00093ms
+3;0.026ms;0.0219231;0.00057ms
+4;0.0129ms;0.971318;0.01253ms
+5;0.0299ms;0.149498;0.00447ms
+6;0.0233ms;0.0914163;0.00213ms
+7;0.0295ms;0.137966;0.00407ms
+8;0.0226ms;0.125221;0.00283ms
+9;0.0238ms;0.0684874;0.00163ms
+10;0.0224ms;0.135268;0.00303ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02543ms;0.209363;20.9363%;0.004616ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9437ms;0.479972;0.45295ms
+2;0.0378ms;11.9828;0.45295ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.49075ms;6.23139;623.139%;0.45295ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0396ms;0.381818;0.01512ms
+2;0.0223ms;0.0977578;0.00218ms
+3;0.0298ms;0.178523;0.00532ms
+4;0.0196ms;0.24898;0.00488ms
+5;0.0205ms;0.194146;0.00398ms
+6;0.0215ms;0.138605;0.00298ms
+7;0.0214ms;0.143925;0.00308ms
+8;0.024ms;0.02;0.00048ms
+9;0.0238ms;0.0285714;0.00068ms
+10;0.0223ms;0.0977578;0.00218ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02448ms;0.153008;15.3008%;0.004088ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0458ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.0458ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0452ms;0.371903;0.01681ms
+2;0.024ms;0.182917;0.00439ms
+3;0.0247ms;0.149393;0.00369ms
+4;0.0314ms;0.0958599;0.00301ms
+5;0.0295ms;0.0376271;0.00111ms
+6;0.0243ms;0.168313;0.00409ms
+7;0.0254ms;0.117717;0.00299ms
+8;0.0314ms;0.0958599;0.00301ms
+9;0.0234ms;0.213248;0.00499ms
+10;0.0246ms;0.154065;0.00379ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02839ms;0.15869;15.869%;0.004788ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1793ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.1793ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0573ms;0.531065;0.03043ms
+2;0.0232ms;0.15819;0.00367ms
+3;0.0217ms;0.238249;0.00517ms
+4;0.0233ms;0.153219;0.00357ms
+5;0.0233ms;0.153219;0.00357ms
+6;0.0208ms;0.291827;0.00607ms
+7;0.0296ms;0.0922297;0.00273ms
+8;0.021ms;0.279524;0.00587ms
+9;0.0274ms;0.0193431;0.00053ms
+10;0.0211ms;0.27346;0.00577ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02687ms;0.219032;21.9032%;0.006738ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1646ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.1646ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0373ms;0.291421;0.01087ms
+2;0.0347ms;0.238329;0.00827ms
+3;0.0217ms;0.217972;0.00473ms
+4;0.0215ms;0.229302;0.00493ms
+5;0.0204ms;0.295588;0.00603ms
+6;0.021ms;0.258571;0.00543ms
+7;0.0209ms;0.264593;0.00553ms
+8;0.0233ms;0.134335;0.00313ms
+9;0.0225ms;0.174667;0.00393ms
+10;0.041ms;0.355366;0.01457ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02643ms;0.246014;24.6014%;0.006742ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1305ms;0.476471;0.53865ms
+2;0.0532ms;10.125;0.53865ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.59185ms;5.30074;530.074%;0.53865ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0374ms;0.425134;0.0159ms
+2;0.0124ms;0.733871;0.0091ms
+3;0.0124ms;0.733871;0.0091ms
+4;0.0158ms;0.360759;0.0057ms
+5;0.0339ms;0.365782;0.0124ms
+6;0.0202ms;0.0643564;0.0013ms
+7;0.0201ms;0.0696517;0.0014ms
+8;0.0247ms;0.129555;0.0032ms
+9;0.0177ms;0.214689;0.0038ms
+10;0.0204ms;0.0539216;0.0011ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0215ms;0.315159;31.5159%;0.0063ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8605ms;0.866055;0.74524ms
+2;0.0395ms;1.91797;0.07576ms
+3;0.0335ms;2.4406;0.08176ms
+4;0.0366ms;2.14918;0.07866ms
+5;0.0393ms;1.93282;0.07596ms
+6;0.0379ms;2.04116;0.07736ms
+7;0.0521ms;1.21228;0.06316ms
+8;0.0198ms;4.82121;0.09546ms
+9;0.0167ms;5.9018;0.09856ms
+10;0.0167ms;5.9018;0.09856ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11526ms;2.91849;291.849%;0.149048ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.032ms;0.193125;0.00618ms
+2;0.0297ms;0.13064;0.00388ms
+3;0.0213ms;0.212207;0.00452ms
+4;0.0217ms;0.189862;0.00412ms
+5;0.0211ms;0.223697;0.00472ms
+6;0.0213ms;0.212207;0.00452ms
+7;0.0209ms;0.235407;0.00492ms
+8;0.037ms;0.302162;0.01118ms
+9;0.0202ms;0.278218;0.00562ms
+10;0.033ms;0.217576;0.00718ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02582ms;0.21951;21.951%;0.005684ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1857ms;0.727165;0.8622ms
+2;0.0363ms;7.91185;0.2872ms
+3;0.0398ms;7.12814;0.2837ms
+4;0.0322ms;9.04658;0.2913ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.3235ms;6.20343;620.343%;0.4311ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.049ms;0.411429;0.02016ms
+2;0.035ms;0.176;0.00616ms
+3;0.0411ms;0.298297;0.01226ms
+4;0.0206ms;0.4;0.00824ms
+5;0.0212ms;0.360377;0.00764ms
+6;0.0222ms;0.299099;0.00664ms
+7;0.0212ms;0.360377;0.00764ms
+8;0.0337ms;0.144214;0.00486ms
+9;0.0273ms;0.0564103;0.00154ms
+10;0.0171ms;0.68655;0.01174ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02884ms;0.319275;31.9275%;0.008688ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0638ms;0.429154;0.02738ms
+2;0.088ms;0.0361364;0.00318ms
+3;0.0857ms;0.063944;0.00548ms
+4;0.0837ms;0.0893668;0.00748ms
+5;0.1474ms;0.381411;0.05622ms
+6;0.0859ms;0.0614668;0.00528ms
+7;0.1027ms;0.112171;0.01152ms
+8;0.0838ms;0.0880668;0.00738ms
+9;0.0875ms;0.0420571;0.00368ms
+10;0.0833ms;0.0945978;0.00788ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09118ms;0.139837;13.9837%;0.013548ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4351ms;0.485402;0.6966ms
+2;0.0419ms;16.6253;0.6966ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.7385ms;8.55535;855.535%;0.6966ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0453ms;0.313024;0.01418ms
+2;0.0355ms;0.12338;0.00438ms
+3;0.0209ms;0.488995;0.01022ms
+4;0.0316ms;0.0151899;0.00048ms
+5;0.0234ms;0.329915;0.00772ms
+6;0.0379ms;0.178892;0.00678ms
+7;0.0345ms;0.097971;0.00338ms
+8;0.036ms;0.135556;0.00488ms
+9;0.0262ms;0.187786;0.00492ms
+10;0.0199ms;0.563819;0.01122ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.03112ms;0.243453;24.3453%;0.006816ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0948ms;0.00390295;0.00037ms
+2;0.0986ms;0.034787;0.00343ms
+3;0.0844ms;0.127607;0.01077ms
+4;0.0855ms;0.113099;0.00967ms
+5;0.0863ms;0.102781;0.00887ms
+6;0.0921ms;0.0333333;0.00307ms
+7;0.1504ms;0.367221;0.05523ms
+8;0.0849ms;0.120966;0.01027ms
+9;0.0835ms;0.13976;0.01167ms
+10;0.0912ms;0.0435307;0.00397ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09517ms;0.108699;10.8699%;0.011732ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.0087ms;0.637355;0.6429ms
+2;0.0511ms;6.15851;0.3147ms
+3;0.0376ms;8.72872;0.3282ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.3658ms;5.17486;517.486%;0.4286ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.4355ms;0.845763;0.36833ms
+2;0.0207ms;2.24493;0.04647ms
+3;0.0332ms;1.02319;0.03397ms
+4;0.0332ms;1.02319;0.03397ms
+5;0.0327ms;1.05413;0.03447ms
+6;0.0115ms;4.84087;0.05567ms
+7;0.0327ms;1.05413;0.03447ms
+8;0.0365ms;0.840274;0.03067ms
+9;0.0212ms;2.1684;0.04597ms
+10;0.0145ms;3.63241;0.05267ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.06717ms;1.87273;187.273%;0.073666ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.09ms;0.0726667;0.00654ms
+2;0.0902ms;0.0702882;0.00634ms
+3;0.1459ms;0.338314;0.04936ms
+4;0.0845ms;0.142485;0.01204ms
+5;0.0694ms;0.391066;0.02714ms
+6;0.1574ms;0.386658;0.06086ms
+7;0.0851ms;0.13443;0.01144ms
+8;0.0782ms;0.234527;0.01834ms
+9;0.0847ms;0.139787;0.01184ms
+10;0.08ms;0.20675;0.01654ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09654ms;0.211697;21.1697%;0.022044ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9224ms;0.638624;0.589067ms
+2;0.0382ms;7.726;0.295133ms
+3;0.0394ms;7.46024;0.293933ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.333333ms;5.27495;527.495%;0.392711ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0591ms;0.534179;0.03157ms
+2;0.0243ms;0.132922;0.00323ms
+3;0.0266ms;0.0349624;0.00093ms
+4;0.011ms;1.50273;0.01653ms
+5;0.0203ms;0.356158;0.00723ms
+6;0.0311ms;0.114791;0.00357ms
+7;0.0341ms;0.192669;0.00657ms
+8;0.0356ms;0.226685;0.00807ms
+9;0.0127ms;1.16772;0.01483ms
+10;0.0205ms;0.342927;0.00703ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02753ms;0.460574;46.0574%;0.009956ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1273ms;0.2337;0.02975ms
+2;0.0838ms;0.164081;0.01375ms
+3;0.0865ms;0.127746;0.01105ms
+4;0.1144ms;0.14729;0.01685ms
+5;0.0852ms;0.144953;0.01235ms
+6;0.0778ms;0.253856;0.01975ms
+7;0.0808ms;0.207302;0.01675ms
+8;0.1421ms;0.313512;0.04455ms
+9;0.0921ms;0.0591748;0.00545ms
+10;0.0855ms;0.140936;0.01205ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09755ms;0.179255;17.9255%;0.01823ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4731ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.4731ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0409ms;0.471394;0.01928ms
+2;0.0202ms;0.070297;0.00142ms
+3;0.036ms;0.399444;0.01438ms
+4;0.0187ms;0.15615;0.00292ms
+5;0.0162ms;0.334568;0.00542ms
+6;0.0193ms;0.120207;0.00232ms
+7;0.0285ms;0.241404;0.00688ms
+8;0.0177ms;0.221469;0.00392ms
+9;0.0093ms;1.32473;0.01232ms
+10;0.0094ms;1.3;0.01222ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02162ms;0.463966;46.3966%;0.008108ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.098ms;0.128367;0.01258ms
+2;0.0853ms;0.0014068;0.00012ms
+3;0.0881ms;0.03042;0.00268ms
+4;0.0852ms;0.00258216;0.00022ms
+5;0.0824ms;0.0366505;0.00302ms
+6;0.0841ms;0.0156956;0.00132ms
+7;0.0831ms;0.0279182;0.00232ms
+8;0.0839ms;0.0181168;0.00152ms
+9;0.0846ms;0.00969267;0.00082ms
+10;0.0795ms;0.0744654;0.00592ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08542ms;0.0345315;3.45315%;0.003052ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8777ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.8777ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.037ms;0.365676;0.01353ms
+2;0.0214ms;0.096729;0.00207ms
+3;0.0213ms;0.101878;0.00217ms
+4;0.0228ms;0.029386;0.00067ms
+5;0.0248ms;0.053629;0.00133ms
+6;0.0153ms;0.533987;0.00817ms
+7;0.0151ms;0.554305;0.00837ms
+8;0.0229ms;0.0248908;0.00057ms
+9;0.0248ms;0.053629;0.00133ms
+10;0.0293ms;0.198976;0.00583ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02347ms;0.201309;20.1309%;0.004404ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.067ms;0.330448;0.02214ms
+2;0.0727ms;0.226135;0.01644ms
+3;0.0832ms;0.0713942;0.00594ms
+4;0.1527ms;0.416241;0.06356ms
+5;0.0906ms;0.0161148;0.00146ms
+6;0.0814ms;0.095086;0.00774ms
+7;0.0848ms;0.0511792;0.00434ms
+8;0.0847ms;0.0524203;0.00444ms
+9;0.0847ms;0.0524203;0.00444ms
+10;0.0896ms;0.00513393;0.00046ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08914ms;0.131657;13.1657%;0.013096ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1237ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.1237ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0424ms;0.44434;0.01884ms
+2;0.0118ms;0.99661;0.01176ms
+3;0.0217ms;0.0857143;0.00186ms
+4;0.0348ms;0.322989;0.01124ms
+5;0.0194ms;0.214433;0.00416ms
+6;0.0205ms;0.149268;0.00306ms
+7;0.021ms;0.121905;0.00256ms
+8;0.024ms;0.0183333;0.00044ms
+9;0.0214ms;0.100935;0.00216ms
+10;0.0186ms;0.266667;0.00496ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02356ms;0.272119;27.2119%;0.006104ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0799ms;0.137797;0.01101ms
+2;0.0863ms;0.0534183;0.00461ms
+3;0.0867ms;0.0485582;0.00421ms
+4;0.0863ms;0.0534183;0.00461ms
+5;0.152ms;0.401908;0.06109ms
+6;0.0824ms;0.103277;0.00851ms
+7;0.0926ms;0.0182505;0.00169ms
+8;0.0797ms;0.140652;0.01121ms
+9;0.0861ms;0.0558653;0.00481ms
+10;0.0771ms;0.179118;0.01381ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09091ms;0.119226;11.9226%;0.012556ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1621ms;0.7657;0.88982ms
+2;0.0595ms;3.57613;0.21278ms
+3;0.0531ms;4.12768;0.21918ms
+4;0.0525ms;4.18629;0.21978ms
+5;0.0342ms;6.9614;0.23808ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.27228ms;3.92344;392.344%;0.355928ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0403ms;0.378164;0.01524ms
+2;0.0214ms;0.171028;0.00366ms
+3;0.03ms;0.164667;0.00494ms
+4;0.0222ms;0.128829;0.00286ms
+5;0.0235ms;0.066383;0.00156ms
+6;0.0246ms;0.0186992;0.00046ms
+7;0.0224ms;0.11875;0.00266ms
+8;0.0237ms;0.057384;0.00136ms
+9;0.0212ms;0.182075;0.00386ms
+10;0.0213ms;0.176526;0.00376ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02506ms;0.14625;14.625%;0.004036ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0757ms;0.212417;0.01608ms
+2;0.087ms;0.0549425;0.00478ms
+3;0.084ms;0.092619;0.00778ms
+4;0.0941ms;0.0246546;0.00232ms
+5;0.0912ms;0.00635965;0.00058ms
+6;0.0829ms;0.107117;0.00888ms
+7;0.087ms;0.0549425;0.00478ms
+8;0.1427ms;0.356833;0.05092ms
+9;0.0999ms;0.0812813;0.00812ms
+10;0.0733ms;0.252115;0.01848ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09178ms;0.124328;12.4328%;0.012272ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.8061ms;0.732061;1.32218ms
+2;0.047ms;9.29628;0.436925ms
+3;0.0408ms;10.8609;0.443125ms
+4;0.0418ms;10.5772;0.442125ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.483925ms;7.8666;786.66%;0.661088ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0353ms;0.236827;0.00836ms
+2;0.0226ms;0.192035;0.00434ms
+3;0.0349ms;0.22808;0.00796ms
+4;0.035ms;0.230286;0.00806ms
+5;0.0223ms;0.208072;0.00464ms
+6;0.0319ms;0.155486;0.00496ms
+7;0.0297ms;0.0929293;0.00276ms
+8;0.0232ms;0.161207;0.00374ms
+9;0.0183ms;0.472131;0.00864ms
+10;0.0162ms;0.662963;0.01074ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02694ms;0.264002;26.4002%;0.00642ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0666ms;0.407958;0.02717ms
+2;0.119ms;0.212017;0.02523ms
+3;0.0835ms;0.122994;0.01027ms
+4;0.0863ms;0.0865585;0.00747ms
+5;0.0951ms;0.0139853;0.00133ms
+6;0.0839ms;0.11764;0.00987ms
+7;0.0877ms;0.0692132;0.00607ms
+8;0.082ms;0.143537;0.01177ms
+9;0.0857ms;0.0941657;0.00807ms
+10;0.1479ms;0.365991;0.05413ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09377ms;0.163406;16.3406%;0.016138ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2292ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.2292ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0371ms;0.302965;0.01124ms
+2;0.0383ms;0.324804;0.01244ms
+3;0.0244ms;0.0598361;0.00146ms
+4;0.021ms;0.231429;0.00486ms
+5;0.0161ms;0.606211;0.00976ms
+6;0.0213ms;0.214085;0.00456ms
+7;0.0237ms;0.0911392;0.00216ms
+8;0.0247ms;0.0469636;0.00116ms
+9;0.0297ms;0.129293;0.00384ms
+10;0.0223ms;0.159641;0.00356ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02586ms;0.216637;21.6637%;0.005504ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0944ms;0.0617585;0.00583ms
+2;0.091ms;0.101429;0.00923ms
+3;0.0867ms;0.156055;0.01353ms
+4;0.1384ms;0.275795;0.03817ms
+5;0.0913ms;0.0978094;0.00893ms
+6;0.1521ms;0.341026;0.05187ms
+7;0.0866ms;0.15739;0.01363ms
+8;0.0903ms;0.109967;0.00993ms
+9;0.0852ms;0.176408;0.01503ms
+10;0.0863ms;0.161414;0.01393ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10023ms;0.163905;16.3905%;0.018008ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9972ms;0.476685;0.47535ms
+2;0.0465ms;10.2226;0.47535ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.52185ms;5.34963;534.963%;0.47535ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0536ms;0.393843;0.02111ms
+2;0.021ms;0.547143;0.01149ms
+3;0.0346ms;0.0609827;0.00211ms
+4;0.0389ms;0.164781;0.00641ms
+5;0.022ms;0.476818;0.01049ms
+6;0.0222ms;0.463514;0.01029ms
+7;0.0346ms;0.0609827;0.00211ms
+8;0.0552ms;0.411413;0.02271ms
+9;0.0219ms;0.483562;0.01059ms
+10;0.0209ms;0.554545;0.01159ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.03249ms;0.361758;36.1758%;0.01089ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0916ms;0.0614629;0.00563ms
+2;0.0866ms;0.00727483;0.00063ms
+3;0.0851ms;0.0102233;0.00087ms
+4;0.0841ms;0.0222354;0.00187ms
+5;0.0862ms;0.00266821;0.00023ms
+6;0.0856ms;0.00432243;0.00037ms
+7;0.0861ms;0.00150987;0.00013ms
+8;0.0856ms;0.00432243;0.00037ms
+9;0.0853ms;0.00785463;0.00067ms
+10;0.0835ms;0.0295808;0.00247ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08597ms;0.0151455;1.51455%;0.001324ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1735ms;0.476055;0.55865ms
+2;0.0562ms;9.94039;0.55865ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.61485ms;5.20822;520.822%;0.55865ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;335.765ms;0.00587776;1.97355ms
+2;339.713ms;0.00580947;1.97355ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+337.739ms;0.00584362;0.584362%;1.97355ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.5637ms;0.0636331;0.03587ms
+2;0.5066ms;0.0419068;0.02123ms
+3;0.5101ms;0.0347579;0.01773ms
+4;0.5099ms;0.0351638;0.01793ms
+5;0.51ms;0.0349608;0.01783ms
+6;0.7003ms;0.24628;0.17247ms
+7;0.5034ms;0.04853;0.02443ms
+8;0.493ms;0.0706491;0.03483ms
+9;0.4932ms;0.0702149;0.03463ms
+10;0.4881ms;0.0813973;0.03973ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.52783ms;0.0727494;7.27494%;0.041668ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4018ms;0.872207;1.22266ms
+2;0.0648ms;1.76451;0.11434ms
+3;0.0489ms;2.66339;0.13024ms
+4;0.0407ms;3.40147;0.13844ms
+5;0.0373ms;3.80268;0.14184ms
+6;0.0405ms;3.42321;0.13864ms
+7;0.0415ms;3.31663;0.13764ms
+8;0.0373ms;3.80268;0.14184ms
+9;0.0434ms;3.12765;0.13574ms
+10;0.0352ms;4.0892;0.14394ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.17914ms;3.02636;302.636%;0.244532ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;40.229ms;0.0598362;2.40715ms
+2;36.9603ms;0.0233101;0.86155ms
+3;36.9781ms;0.0228176;0.84375ms
+4;37.5446ms;0.00738455;0.27725ms
+5;36.8373ms;0.026727;0.98455ms
+6;37.6038ms;0.00579862;0.21805ms
+7;37.7615ms;0.00159819;0.06035ms
+8;37.4403ms;0.0101909;0.38155ms
+9;38.889ms;0.0274409;1.06715ms
+10;37.9746ms;0.00402243;0.15275ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+37.8218ms;0.0189126;1.89126%;0.72541ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8173ms;0.118769;0.09707ms
+2;1.4473ms;0.368224;0.53293ms
+3;0.779ms;0.173774;0.13537ms
+4;0.7765ms;0.177553;0.13787ms
+5;0.7846ms;0.165396;0.12977ms
+6;0.769ms;0.189038;0.14537ms
+7;0.8919ms;0.0251934;0.02247ms
+8;0.7725ms;0.18365;0.14187ms
+9;0.7677ms;0.191051;0.14667ms
+10;1.3379ms;0.316563;0.42353ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.91437ms;0.190921;19.0921%;0.191292ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8701ms;0.872486;0.75915ms
+2;0.0387ms;1.86693;0.07225ms
+3;0.0222ms;3.99775;0.08875ms
+4;0.0215ms;4.16047;0.08945ms
+5;0.0199ms;4.57538;0.09105ms
+6;0.0477ms;1.326;0.06325ms
+7;0.0226ms;3.90929;0.08835ms
+8;0.0226ms;3.90929;0.08835ms
+9;0.0233ms;3.7618;0.08765ms
+10;0.0209ms;4.30861;0.09005ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11095ms;3.2688;326.88%;0.15183ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;38.5752ms;0.00983637;0.37944ms
+2;37.718ms;0.0126666;0.47776ms
+3;40.2161ms;0.0502371;2.02034ms
+4;36.9992ms;0.0323402;1.19656ms
+5;37.4998ms;0.018559;0.69596ms
+6;36.7691ms;0.0388005;1.42666ms
+7;38.3302ms;0.00350742;0.13444ms
+8;38.1991ms;8.74366e-05;0.00334ms
+9;38.9907ms;0.0203879;0.79494ms
+10;38.6602ms;0.0120134;0.46444ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.1958ms;0.0198436;1.98436%;0.759388ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8146ms;0.171692;0.13986ms
+2;0.7862ms;0.214017;0.16826ms
+3;0.7877ms;0.211705;0.16676ms
+4;0.7731ms;0.234588;0.18136ms
+5;0.7836ms;0.218045;0.17086ms
+6;1.1814ms;0.192094;0.22694ms
+7;0.7871ms;0.212629;0.16736ms
+8;1.2045ms;0.207588;0.25004ms
+9;1.6486ms;0.421048;0.69414ms
+10;0.7778ms;0.227128;0.17666ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.95446ms;0.231053;23.1053%;0.234224ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9961ms;0.865104;0.86173ms
+2;0.0426ms;2.15423;0.09177ms
+3;0.0491ms;1.73666;0.08527ms
+4;0.0327ms;3.10917;0.10167ms
+5;0.0307ms;3.37687;0.10367ms
+6;0.038ms;2.53605;0.09637ms
+7;0.0273ms;3.92198;0.10707ms
+8;0.0535ms;1.51159;0.08087ms
+9;0.045ms;1.986;0.08937ms
+10;0.0287ms;3.68188;0.10567ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.13437ms;2.48795;248.795%;0.172346ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;37.815ms;0.00965225;0.365ms
+2;37.2659ms;0.0245291;0.9141ms
+3;37.7624ms;0.0110586;0.4176ms
+4;38.2527ms;0.00190052;0.0727ms
+5;37.8626ms;0.00838294;0.3174ms
+6;39.5578ms;0.03483;1.3778ms
+7;37.887ms;0.00773352;0.293ms
+8;38.0591ms;0.00317664;0.1209ms
+9;38.1584ms;0.000566061;0.0216ms
+10;39.1791ms;0.0255008;0.9991ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.18ms;0.0127331;1.27331%;0.48992ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8259ms;0.0629495;0.05199ms
+2;0.7699ms;0.140265;0.10799ms
+3;0.7728ms;0.135986;0.10509ms
+4;1.0986ms;0.200901;0.22071ms
+5;0.7814ms;0.123483;0.09649ms
+6;0.7459ms;0.176954;0.13199ms
+7;0.7825ms;0.121904;0.09539ms
+8;0.7692ms;0.141303;0.10869ms
+9;1.3919ms;0.369287;0.51401ms
+10;0.8408ms;0.0441127;0.03709ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.87789ms;0.151715;15.1715%;0.146944ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2052ms;0.86048;1.03705ms
+2;0.0384ms;3.37891;0.12975ms
+3;0.0412ms;3.08131;0.12695ms
+4;0.0698ms;1.40903;0.09835ms
+5;0.0442ms;2.8043;0.12395ms
+6;0.064ms;1.62734;0.10415ms
+7;0.0823ms;1.04313;0.08585ms
+8;0.0359ms;3.68384;0.13225ms
+9;0.0337ms;3.98961;0.13445ms
+10;0.0668ms;1.51722;0.10135ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.16815ms;2.33952;233.952%;0.20741ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;184.684ms;0.00372655;0.688233ms
+2;185.696ms;0.00915816;1.70063ms
+3;181.607ms;0.0131541;2.38887ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+183.995ms;0.0086796;0.86796%;1.59258ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;2.7802ms;0.00452485;0.01258ms
+2;2.7793ms;0.00485014;0.01348ms
+3;2.7852ms;0.00272153;0.00758ms
+4;2.7715ms;0.00767815;0.02128ms
+5;2.7771ms;0.00564618;0.01568ms
+6;2.794ms;0.00043665;0.00122ms
+7;2.7817ms;0.00398318;0.01108ms
+8;2.7891ms;0.00131942;0.00368ms
+9;2.9397ms;0.0499779;0.14692ms
+10;2.73ms;0.0229963;0.06278ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.79278ms;0.0104134;1.04134%;0.029628ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;23.9515ms;0.89868;21.5247ms
+2;0.0566ms;41.8758;2.37017ms
+3;0.0326ms;73.4408;2.39417ms
+4;0.0394ms;60.5931;2.38737ms
+5;0.0282ms;85.0557;2.39857ms
+6;0.0478ms;49.7692;2.37897ms
+7;0.0327ms;73.2131;2.39407ms
+8;0.0284ms;84.4496;2.39837ms
+9;0.0225ms;106.856;2.40427ms
+10;0.028ms;85.6704;2.39877ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.42677ms;66.1823;6618.23%;4.30495ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;36.3729ms;0.01341;0.48776ms
+2;38.4278ms;0.0407814;1.56714ms
+3;36.0924ms;0.0212859;0.76826ms
+4;36.6483ms;0.00579454;0.21236ms
+5;36.6092ms;0.00686877;0.25146ms
+6;36.851ms;0.000262137;0.00966ms
+7;37.5047ms;0.0171722;0.64404ms
+8;36.8387ms;0.000596112;0.02196ms
+9;36.6571ms;0.00555309;0.20356ms
+10;36.6045ms;0.00699805;0.25616ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+36.8607ms;0.0118722;1.18722%;0.442236ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1946ms;0.247129;0.29522ms
+2;0.7956ms;0.130442;0.10378ms
+3;0.9239ms;0.0265397;0.02452ms
+4;0.7871ms;0.14265;0.11228ms
+5;0.7841ms;0.147022;0.11528ms
+6;0.7633ms;0.178279;0.13608ms
+7;0.7818ms;0.150397;0.11758ms
+8;1.4274ms;0.369917;0.52802ms
+9;0.7688ms;0.169849;0.13058ms
+10;0.7672ms;0.172289;0.13218ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.89938ms;0.173451;17.3451%;0.169552ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9984ms;0.855859;0.85449ms
+2;0.071ms;1.0269;0.07291ms
+3;0.0896ms;0.606138;0.05431ms
+4;0.0502ms;1.86673;0.09371ms
+5;0.0326ms;3.41442;0.11131ms
+6;0.0438ms;2.28562;0.10011ms
+7;0.0445ms;2.23393;0.09941ms
+8;0.0293ms;3.9116;0.11461ms
+9;0.0422ms;2.41019;0.10171ms
+10;0.0375ms;2.8376;0.10641ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.14391ms;2.1449;214.49%;0.170898ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;193.435ms;0.00844899;1.63433ms
+2;207.626ms;0.0604745;12.5561ms
+3;184.148ms;0.0593095;10.9217ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+195.07ms;0.0427443;4.27443%;8.37071ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;2.7653ms;0.0985065;0.2724ms
+2;2.9147ms;0.0421999;0.123ms
+3;2.9654ms;0.0243812;0.0723ms
+4;3.0127ms;0.0082982;0.025ms
+5;3.1042ms;0.0214226;0.0665ms
+6;2.9422ms;0.0324587;0.0955ms
+7;3.2775ms;0.0731655;0.2398ms
+8;3.2975ms;0.078787;0.2598ms
+9;3.1756ms;0.0434249;0.1379ms
+10;2.9219ms;0.0396317;0.1158ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3.0377ms;0.0462276;4.62276%;0.1408ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;16.2707ms;0.897937;14.6101ms
+2;0.0284ms;57.4729;1.63223ms
+3;0.0509ms;31.6253;1.60973ms
+4;0.0238ms;68.7744;1.63683ms
+5;0.0222ms;73.8032;1.63843ms
+6;0.0588ms;27.242;1.60183ms
+7;0.049ms;32.8904;1.61163ms
+8;0.0282ms;57.8876;1.63243ms
+9;0.0464ms;34.7894;1.61423ms
+10;0.0279ms;58.5208;1.63273ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.66063ms;44.3904;4439.04%;2.92201ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;183.792ms;0.00930526;1.71023ms
+2;183.455ms;0.00748431;1.37303ms
+3;178.999ms;0.0172251;3.08327ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+182.082ms;0.0113382;1.13382%;2.05551ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;2.832ms;0.0146434;0.04147ms
+2;2.7902ms;0.000118271;0.00033ms
+3;2.7927ms;0.000777026;0.00217ms
+4;2.7934ms;0.00102742;0.00287ms
+5;2.7814ms;0.00328252;0.00913ms
+6;2.8029ms;0.00441329;0.01237ms
+7;2.7952ms;0.00167072;0.00467ms
+8;2.7835ms;0.0025256;0.00703ms
+9;2.7849ms;0.00202162;0.00563ms
+10;2.7491ms;0.0150704;0.04143ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.79053ms;0.00455502;0.455502%;0.01271ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;13.6955ms;0.896952;12.2842ms
+2;0.0268ms;51.6601;1.38449ms
+3;0.0235ms;59.0549;1.38779ms
+4;0.084ms;15.8011;1.32729ms
+5;0.0506ms;26.8911;1.36069ms
+6;0.0751ms;17.7921;1.33619ms
+7;0.0516ms;26.3506;1.35969ms
+8;0.0492ms;27.6848;1.36209ms
+9;0.0333ms;41.3811;1.37799ms
+10;0.0233ms;59.5704;1.38799ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.41129ms;32.7083;3270.83%;2.45684ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;184.191ms;0.00726998;1.33907ms
+2;184.543ms;0.00916352;1.69107ms
+3;179.822ms;0.0168507;3.03013ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+182.852ms;0.0110947;1.10947%;2.02009ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3.2858ms;0.0868738;0.28545ms
+2;2.8245ms;0.0622588;0.17585ms
+3;2.8383ms;0.057094;0.16205ms
+4;3.8437ms;0.219411;0.84335ms
+5;3.3269ms;0.0981544;0.32655ms
+6;2.8033ms;0.0702922;0.19705ms
+7;2.8034ms;0.070254;0.19695ms
+8;2.7542ms;0.0893726;0.24615ms
+9;2.7888ms;0.075857;0.21155ms
+10;2.7346ms;0.0971806;0.26575ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3.00035ms;0.0926748;9.26748%;0.29107ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;13.1583ms;0.897207;11.8057ms
+2;0.0281ms;47.1345;1.32448ms
+3;0.0841ms;15.083;1.26848ms
+4;0.0505ms;25.7838;1.30208ms
+5;0.0525ms;24.7634;1.30008ms
+6;0.0423ms;30.9759;1.31028ms
+7;0.024ms;55.3575;1.32858ms
+8;0.0234ms;56.8026;1.32918ms
+9;0.0229ms;58.0646;1.32968ms
+10;0.0397ms;33.07;1.31288ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.35258ms;34.7933;3479.33%;2.36114ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;180.593ms;0.00672102;1.21377ms
+2;180.949ms;0.00867849;1.57037ms
+3;176.595ms;0.0157657;2.78413ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+179.379ms;0.0103884;1.03884%;1.85609ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;4.1712ms;0.210268;0.87707ms
+2;4.1862ms;0.213098;0.89207ms
+3;3.9882ms;0.174031;0.69407ms
+4;3.9262ms;0.160988;0.63207ms
+5;2.7473ms;0.199043;0.54683ms
+6;2.8285ms;0.164621;0.46563ms
+7;2.8569ms;0.153044;0.43723ms
+8;2.7572ms;0.194737;0.53693ms
+9;2.7665ms;0.190721;0.52763ms
+10;2.7131ms;0.214157;0.58103ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3.29413ms;0.187471;18.7471%;0.619056ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;14.4295ms;0.898215;12.9608ms
+2;0.0293ms;49.1263;1.4394ms
+3;0.0458ms;31.0677;1.4229ms
+4;0.0329ms;43.6413;1.4358ms
+5;0.0225ms;64.2756;1.4462ms
+6;0.0255ms;56.5961;1.4432ms
+7;0.023ms;62.8565;1.4457ms
+8;0.022ms;65.7591;1.4467ms
+9;0.0339ms;42.3245;1.4348ms
+10;0.0226ms;63.9867;1.4461ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.4687ms;48.0532;4805.32%;2.59216ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;181.232ms;0.00553085;1.00237ms
+2;181.967ms;0.00954879;1.73757ms
+3;177.49ms;0.0154371;2.73993ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+180.23ms;0.0101723;1.01723%;1.82662ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;2.7679ms;0.00586726;0.01624ms
+2;2.785ms;0.000308797;0.00086ms
+3;2.7925ms;0.00299373;0.00836ms
+4;2.7905ms;0.00227916;0.00636ms
+5;2.7771ms;0.00253502;0.00704ms
+6;2.7839ms;8.621e-05;0.00024ms
+7;2.7854ms;0.000452359;0.00126ms
+8;2.7879ms;0.00134869;0.00376ms
+9;2.7917ms;0.00270803;0.00756ms
+10;2.7795ms;0.00166936;0.00464ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.78414ms;0.00202486;0.202486%;0.005632ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;13.1831ms;0.898196;11.841ms
+2;0.0276ms;47.6264;1.31449ms
+3;0.03ms;43.7363;1.31209ms
+4;0.0224ms;58.9147;1.31969ms
+5;0.0335ms;39.0624;1.30859ms
+6;0.023ms;57.3517;1.31909ms
+7;0.028ms;46.9318;1.31409ms
+8;0.0236ms;55.8682;1.31849ms
+9;0.0217ms;60.8475;1.32039ms
+10;0.028ms;46.9318;1.31409ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.34209ms;45.8169;4581.69%;2.3682ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;37.2179ms;0.00550085;0.20473ms
+2;36.7631ms;0.01794;0.65953ms
+3;36.2819ms;0.0314407;1.14073ms
+4;37.1619ms;0.00701606;0.26073ms
+5;38.1204ms;0.0183044;0.69777ms
+6;37.4371ms;0.000386515;0.01447ms
+7;36.8626ms;0.0151924;0.56003ms
+8;37.3371ms;0.00229075;0.08553ms
+9;38.3793ms;0.0249267;0.95667ms
+10;38.665ms;0.0321316;1.24237ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+37.4226ms;0.015513;1.5513%;0.582256ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8287ms;0.0560154;0.04642ms
+2;0.7744ms;0.130062;0.10072ms
+3;0.9274ms;0.0563727;0.05228ms
+4;0.7726ms;0.132695;0.10252ms
+5;0.7827ms;0.118078;0.09242ms
+6;0.9036ms;0.0315184;0.02848ms
+7;1.423ms;0.385018;0.54788ms
+8;0.7755ms;0.128459;0.09962ms
+9;0.7652ms;0.143649;0.10992ms
+10;0.7981ms;0.0965042;0.07702ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.87512ms;0.127837;12.7837%;0.125728ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8456ms;0.855582;0.72348ms
+2;0.0434ms;1.81382;0.07872ms
+3;0.0388ms;2.14742;0.08332ms
+4;0.0461ms;1.64902;0.07602ms
+5;0.0273ms;3.47326;0.09482ms
+6;0.027ms;3.52296;0.09512ms
+7;0.0442ms;1.7629;0.07792ms
+8;0.0505ms;1.41822;0.07162ms
+9;0.0565ms;1.16142;0.06562ms
+10;0.0418ms;1.92153;0.08032ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12212ms;1.97261;197.261%;0.144696ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;37.1679ms;0.0305624;1.13594ms
+2;36.2324ms;0.0571709;2.07144ms
+3;36.5503ms;0.0479761;1.75354ms
+4;37.3205ms;0.0263485;0.98334ms
+5;49.3122ms;0.223238;11.0084ms
+6;36.7508ms;0.0422587;1.55304ms
+7;36.3166ms;0.0547199;1.98724ms
+8;37.537ms;0.0204289;0.76684ms
+9;37.6704ms;0.0168153;0.63344ms
+10;38.1803ms;0.0032357;0.12354ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.3038ms;0.0522754;5.22754%;2.20167ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3278ms;0.182746;0.24265ms
+2;0.7698ms;0.409652;0.31535ms
+3;0.7806ms;0.390149;0.30455ms
+4;0.764ms;0.420353;0.32115ms
+5;0.7882ms;0.376744;0.29695ms
+6;0.7897ms;0.374129;0.29545ms
+7;3.2908ms;0.670247;2.20565ms
+8;0.7904ms;0.372912;0.29475ms
+9;0.7727ms;0.404361;0.31245ms
+10;0.7775ms;0.395691;0.30765ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.08515ms;0.399699;39.9699%;0.48966ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8041ms;0.852232;0.68528ms
+2;0.04ms;1.9705;0.07882ms
+3;0.0528ms;1.25038;0.06602ms
+4;0.0203ms;4.8532;0.09852ms
+5;0.0596ms;0.993624;0.05922ms
+6;0.0439ms;1.70661;0.07492ms
+7;0.0335ms;2.54687;0.08532ms
+8;0.0333ms;2.56817;0.08552ms
+9;0.0491ms;1.41996;0.06972ms
+10;0.0516ms;1.30271;0.06722ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11882ms;1.94642;194.642%;0.137056ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;181.838ms;0.0208816;3.79707ms
+2;187.964ms;0.0123946;2.32973ms
+3;187.102ms;0.00784243;1.46733ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+185.635ms;0.0137062;1.37062%;2.53138ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;2.7327ms;0.00697845;0.01907ms
+2;2.7616ms;0.00355953;0.00983ms
+3;2.7491ms;0.000971227;0.00267ms
+4;2.7485ms;0.00118974;0.00327ms
+5;2.7497ms;0.000752809;0.00207ms
+6;2.7651ms;0.0048208;0.01333ms
+7;2.7545ms;0.000991105;0.00273ms
+8;2.7817ms;0.0107596;0.02993ms
+9;2.7543ms;0.000918564;0.00253ms
+10;2.7205ms;0.0114942;0.03127ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.75177ms;0.0042436;0.42436%;0.01167ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;13.6508ms;0.898159;12.2606ms
+2;0.0293ms;46.4474;1.36091ms
+3;0.0462ms;29.0911;1.34401ms
+4;0.0222ms;61.6221;1.36801ms
+5;0.0315ms;43.1337;1.35871ms
+6;0.0218ms;62.7711;1.36841ms
+7;0.0281ms;48.4737;1.36211ms
+8;0.0223ms;61.3413;1.36791ms
+9;0.0278ms;49.0076;1.36241ms
+10;0.0221ms;61.9054;1.36811ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.39021ms;46.4691;4646.91%;2.45212ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;36.852ms;0.0603349;2.22346ms
+2;38.2828ms;0.0207054;0.79266ms
+3;39.192ms;0.00297357;0.11654ms
+4;37.9099ms;0.0307455;1.16556ms
+5;37.7322ms;0.0355998;1.34326ms
+6;37.724ms;0.0358249;1.35146ms
+7;39.1351ms;0.00152395;0.05964ms
+8;46.3302ms;0.156588;7.25474ms
+9;38.94ms;0.00347869;0.13546ms
+10;38.6564ms;0.0108406;0.41906ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+39.0755ms;0.0358615;3.58615%;1.48618ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.803ms;0.0273599;0.02197ms
+2;0.7866ms;0.00708111;0.00557ms
+3;0.788ms;0.00884518;0.00697ms
+4;0.7829ms;0.00238856;0.00187ms
+5;0.7787ms;0.00299217;0.00233ms
+6;0.7708ms;0.0132719;0.01023ms
+7;0.7619ms;0.0251083;0.01913ms
+8;0.7697ms;0.01472;0.01133ms
+9;0.774ms;0.00908269;0.00703ms
+10;0.7947ms;0.0172015;0.01367ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.78103ms;0.0128051;1.28051%;0.01001ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8304ms;0.858514;0.71291ms
+2;0.033ms;2.5603;0.08449ms
+3;0.0524ms;1.24218;0.06509ms
+4;0.0428ms;1.74509;0.07469ms
+5;0.0341ms;2.44545;0.08339ms
+6;0.0602ms;0.951661;0.05729ms
+7;0.0409ms;1.87262;0.07659ms
+8;0.0325ms;2.61508;0.08499ms
+9;0.0235ms;3.99957;0.09399ms
+10;0.0251ms;3.68088;0.09239ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11749ms;2.19713;219.713%;0.142582ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0335ms;0.280896;0.00941ms
+2;0.0216ms;0.115278;0.00249ms
+3;0.0204ms;0.180882;0.00369ms
+4;0.0214ms;0.125701;0.00269ms
+5;0.0346ms;0.303757;0.01051ms
+6;0.0207ms;0.163768;0.00339ms
+7;0.0183ms;0.316393;0.00579ms
+8;0.0277ms;0.130325;0.00361ms
+9;0.0202ms;0.192574;0.00389ms
+10;0.0225ms;0.0706667;0.00159ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02409ms;0.188024;18.8024%;0.004706ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0645ms;0.443256;0.02859ms
+2;0.0872ms;0.0675459;0.00589ms
+3;0.0912ms;0.0207237;0.00189ms
+4;0.0848ms;0.0977594;0.00829ms
+5;0.0879ms;0.0590444;0.00519ms
+6;0.1491ms;0.375654;0.05601ms
+7;0.1119ms;0.168097;0.01881ms
+8;0.0828ms;0.124275;0.01029ms
+9;0.0844ms;0.102962;0.00869ms
+10;0.0871ms;0.0687715;0.00599ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09309ms;0.152809;15.2809%;0.014964ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4249ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.4249ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0397ms;0.451889;0.01794ms
+2;0.0209ms;0.0411483;0.00086ms
+3;0.0225ms;0.0328889;0.00074ms
+4;0.0302ms;0.27947;0.00844ms
+5;0.0152ms;0.431579;0.00656ms
+6;0.0117ms;0.859829;0.01006ms
+7;0.0113ms;0.925664;0.01046ms
+8;0.0134ms;0.623881;0.00836ms
+9;0.0205ms;0.0614634;0.00126ms
+10;0.0322ms;0.324224;0.01044ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02176ms;0.403204;40.3204%;0.007512ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0689ms;0.214078;0.01475ms
+2;0.0864ms;0.0318287;0.00275ms
+3;0.0906ms;0.0767108;0.00695ms
+4;0.087ms;0.0385057;0.00335ms
+5;0.0861ms;0.0284553;0.00245ms
+6;0.0814ms;0.0276413;0.00225ms
+7;0.0759ms;0.102108;0.00775ms
+8;0.0882ms;0.0515873;0.00455ms
+9;0.084ms;0.00416667;0.00035ms
+10;0.088ms;0.0494318;0.00435ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08365ms;0.0624514;6.24514%;0.00495ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.234ms;0.862831;1.06473ms
+2;0.05ms;2.38533;0.119267ms
+3;0.0396ms;3.27441;0.129667ms
+4;0.0527ms;2.21189;0.116567ms
+5;0.0253ms;5.69038;0.143967ms
+6;0.0424ms;2.99214;0.126867ms
+7;0.019ms;7.90877;0.150267ms
+8;0.036ms;3.70185;0.133267ms
+9;0.0244ms;5.93716;0.144867ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.169267ms;3.88497;388.497%;0.236607ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0253ms;0.0660079;0.00167ms
+2;0.0252ms;0.0702381;0.00177ms
+3;0.0384ms;0.297656;0.01143ms
+4;0.0241ms;0.119087;0.00287ms
+5;0.0299ms;0.0979933;0.00293ms
+6;0.0242ms;0.114463;0.00277ms
+7;0.0258ms;0.0453488;0.00117ms
+8;0.0236ms;0.142797;0.00337ms
+9;0.0293ms;0.0795222;0.00233ms
+10;0.0239ms;0.128452;0.00307ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02697ms;0.116157;11.6157%;0.003338ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1297ms;0.119661;0.01552ms
+2;0.1198ms;0.0469115;0.00562ms
+3;0.1045ms;0.0926316;0.00968ms
+4;0.1154ms;0.0105719;0.00122ms
+5;0.1099ms;0.0389445;0.00428ms
+6;0.1157ms;0.0131374;0.00152ms
+7;0.1297ms;0.119661;0.01552ms
+8;0.1063ms;0.0741298;0.00788ms
+9;0.1054ms;0.0833017;0.00878ms
+10;0.1054ms;0.0833017;0.00878ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11418ms;0.0682252;6.82252%;0.00788ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;8.6959ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+8.6959ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0264ms;0.0409091;0.00108ms
+2;0.0248ms;0.0209677;0.00052ms
+3;0.0277ms;0.0859206;0.00238ms
+4;0.024ms;0.055;0.00132ms
+5;0.0238ms;0.0638655;0.00152ms
+6;0.0234ms;0.0820513;0.00192ms
+7;0.0282ms;0.102128;0.00288ms
+8;0.0232ms;0.0913793;0.00212ms
+9;0.0281ms;0.0989324;0.00278ms
+10;0.0236ms;0.0728814;0.00172ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02532ms;0.0714035;7.14035%;0.001824ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.12ms;0.112667;0.01352ms
+2;0.1042ms;0.021881;0.00228ms
+3;0.1044ms;0.0199234;0.00208ms
+4;0.1042ms;0.021881;0.00228ms
+5;0.1039ms;0.0248316;0.00258ms
+6;0.1041ms;0.0228626;0.00238ms
+7;0.1039ms;0.0248316;0.00258ms
+8;0.1039ms;0.0248316;0.00258ms
+9;0.1114ms;0.0441652;0.00492ms
+10;0.1048ms;0.0160305;0.00168ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10648ms;0.0333905;3.33905%;0.003688ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;7.6738ms;0.663465;5.0913ms
+2;0.0226ms;113.27;2.5599ms
+3;0.0511ms;49.5382;2.5314ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+2.5825ms;54.4905;5449.05%;3.3942ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0281ms;0.0701068;0.00197ms
+2;0.0247ms;0.0578947;0.00143ms
+3;0.0311ms;0.159807;0.00497ms
+4;0.0233ms;0.121459;0.00283ms
+5;0.0281ms;0.0701068;0.00197ms
+6;0.0235ms;0.111915;0.00263ms
+7;0.028ms;0.0667857;0.00187ms
+8;0.0231ms;0.131169;0.00303ms
+9;0.0282ms;0.0734043;0.00207ms
+10;0.0232ms;0.126293;0.00293ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02613ms;0.0988941;9.88941%;0.00257ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.13ms;0.354;0.04602ms
+2;0.1216ms;0.447533;0.05442ms
+3;0.107ms;0.645047;0.06902ms
+4;0.1052ms;0.673194;0.07082ms
+5;0.1052ms;0.673194;0.07082ms
+6;0.2289ms;0.231018;0.05288ms
+7;0.2367ms;0.256358;0.06068ms
+8;0.2533ms;0.305093;0.07728ms
+9;0.2363ms;0.255099;0.06028ms
+10;0.236ms;0.254153;0.05998ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.17602ms;0.409469;40.9469%;0.06222ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;13.1343ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+13.1343ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0537ms;0.472812;0.02539ms
+2;0.0267ms;0.0602996;0.00161ms
+3;0.0227ms;0.247137;0.00561ms
+4;0.0228ms;0.241667;0.00551ms
+5;0.0223ms;0.269507;0.00601ms
+6;0.02ms;0.4155;0.00831ms
+7;0.0476ms;0.405252;0.01929ms
+8;0.023ms;0.23087;0.00531ms
+9;0.0213ms;0.329108;0.00701ms
+10;0.023ms;0.23087;0.00531ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02831ms;0.290302;29.0302%;0.008936ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0687ms;0.416739;0.02863ms
+2;0.1049ms;0.072164;0.00757ms
+3;0.0895ms;0.087486;0.00783ms
+4;0.0868ms;0.121313;0.01053ms
+5;0.0869ms;0.120023;0.01043ms
+6;0.094ms;0.0354255;0.00333ms
+7;0.0906ms;0.0742826;0.00673ms
+8;0.0923ms;0.0544962;0.00503ms
+9;0.0952ms;0.0223739;0.00213ms
+10;0.1644ms;0.407968;0.06707ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09733ms;0.141227;14.1227%;0.014928ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3314ms;0.72313;0.962775ms
+2;0.0599ms;5.15401;0.308725ms
+3;0.0489ms;6.53834;0.319725ms
+4;0.0343ms;9.74708;0.334325ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.368625ms;5.54064;554.064%;0.481387ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0507ms;0.411834;0.02088ms
+2;0.0317ms;0.059306;0.00188ms
+3;0.0207ms;0.44058;0.00912ms
+4;0.0362ms;0.176243;0.00638ms
+5;0.0239ms;0.247699;0.00592ms
+6;0.0322ms;0.073913;0.00238ms
+7;0.0144ms;1.07083;0.01542ms
+8;0.0296ms;0.00743243;0.00022ms
+9;0.0358ms;0.167039;0.00598ms
+10;0.023ms;0.296522;0.00682ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02982ms;0.29514;29.514%;0.0075ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0886ms;0.0967269;0.00857ms
+2;0.0869ms;0.0790564;0.00687ms
+3;0.085ms;0.0584706;0.00497ms
+4;0.0896ms;0.106808;0.00957ms
+5;0.0823ms;0.027582;0.00227ms
+6;0.079ms;0.013038;0.00103ms
+7;0.0771ms;0.0380026;0.00293ms
+8;0.079ms;0.013038;0.00103ms
+9;0.0671ms;0.192697;0.01293ms
+10;0.0657ms;0.218113;0.01433ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08003ms;0.0843533;8.43533%;0.00645ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3202ms;0.485305;0.6407ms
+2;0.0388ms;16.5129;0.6407ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.6795ms;8.4991;849.91%;0.6407ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0341ms;0.261584;0.00892ms
+2;0.0212ms;0.187736;0.00398ms
+3;0.02ms;0.259;0.00518ms
+4;0.0261ms;0.035249;0.00092ms
+5;0.0311ms;0.190354;0.00592ms
+6;0.0353ms;0.286686;0.01012ms
+7;0.0176ms;0.430682;0.00758ms
+8;0.0206ms;0.22233;0.00458ms
+9;0.0239ms;0.0535565;0.00128ms
+10;0.0219ms;0.149772;0.00328ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02518ms;0.207695;20.7695%;0.005176ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0706ms;0.26728;0.01887ms
+2;0.0904ms;0.0102876;0.00093ms
+3;0.102ms;0.122843;0.01253ms
+4;0.0854ms;0.0476581;0.00407ms
+5;0.1118ms;0.199732;0.02233ms
+6;0.086ms;0.0403488;0.00347ms
+7;0.0858ms;0.0427739;0.00367ms
+8;0.0886ms;0.00981941;0.00087ms
+9;0.0896ms;0.00145089;0.00013ms
+10;0.0845ms;0.0588166;0.00497ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08947ms;0.0801011;8.01011%;0.007184ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.157ms;0.481029;0.55655ms
+2;0.0439ms;12.6777;0.55655ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.60045ms;6.57935;657.935%;0.55655ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0399ms;0.346366;0.01382ms
+2;0.0346ms;0.246243;0.00852ms
+3;0.0208ms;0.253846;0.00528ms
+4;0.0199ms;0.310553;0.00618ms
+5;0.0206ms;0.266019;0.00548ms
+6;0.0202ms;0.291089;0.00588ms
+7;0.0222ms;0.174775;0.00388ms
+8;0.0367ms;0.289373;0.01062ms
+9;0.0234ms;0.11453;0.00268ms
+10;0.0225ms;0.159111;0.00358ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02608ms;0.245191;24.5191%;0.006592ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0667ms;0.493853;0.03294ms
+2;0.1132ms;0.119788;0.01356ms
+3;0.1086ms;0.0825046;0.00896ms
+4;0.1148ms;0.132056;0.01516ms
+5;0.1056ms;0.0564394;0.00596ms
+6;0.1237ms;0.194503;0.02406ms
+7;0.1194ms;0.165494;0.01976ms
+8;0.0731ms;0.363064;0.02654ms
+9;0.0884ms;0.127149;0.01124ms
+10;0.0829ms;0.20193;0.01674ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.09964ms;0.193678;19.3678%;0.017492ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_4.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1278ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.1278ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;388.536ms;0.0577506;22.4382ms
+2;343.659ms;0.0652918;22.4382ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+366.097ms;0.0615212;6.15212%;22.4382ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9666ms;0.322108;0.31135ms
+2;0.603ms;0.0866501;0.05225ms
+3;0.5ms;0.3105;0.15525ms
+4;0.514ms;0.274805;0.14125ms
+5;0.5367ms;0.220887;0.11855ms
+6;1.0283ms;0.362783;0.37305ms
+7;0.5357ms;0.223166;0.11955ms
+8;0.496ms;0.321069;0.15925ms
+9;0.5131ms;0.277042;0.14215ms
+10;0.8591ms;0.237283;0.20385ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.65525ms;0.263629;26.3629%;0.17765ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1931ms;0.864471;1.0314ms
+2;0.0438ms;2.69178;0.1179ms
+3;0.0573ms;1.82199;0.1044ms
+4;0.0442ms;2.65837;0.1175ms
+5;0.0617ms;1.62075;0.1ms
+6;0.0379ms;3.26649;0.1238ms
+7;0.0339ms;3.76991;0.1278ms
+8;0.0464ms;2.48491;0.1153ms
+9;0.0426ms;2.79577;0.1191ms
+10;0.0561ms;1.88235;0.1056ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.1617ms;2.38568;238.568%;0.20628ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3526.41ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3526.41ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1589ms;0.103141;0.11953ms
+2;1.0163ms;0.0227;0.02307ms
+3;1.0141ms;0.0249186;0.02527ms
+4;1.0125ms;0.0265383;0.02687ms
+5;1.0259ms;0.0131299;0.01347ms
+6;1.0438ms;0.00424411;0.00443ms
+7;1.0288ms;0.0102741;0.01057ms
+8;1.0343ms;0.00490187;0.00507ms
+9;1.0123ms;0.0267411;0.02707ms
+10;1.0468ms;0.00709782;0.00743ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.03937ms;0.0243687;2.43687%;0.026278ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.5327ms;0.886664;1.35899ms
+2;0.0417ms;3.16571;0.13201ms
+3;0.0204ms;7.5152;0.15331ms
+4;0.0206ms;7.43252;0.15311ms
+5;0.0202ms;7.5995;0.15351ms
+6;0.0199ms;7.72915;0.15381ms
+7;0.0203ms;7.55714;0.15341ms
+8;0.0211ms;7.2327;0.15261ms
+9;0.0201ms;7.64229;0.15361ms
+10;0.0201ms;7.64229;0.15361ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.17371ms;6.44032;644.032%;0.271798ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3526.92ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3526.92ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2292ms;0.145997;0.17946ms
+2;1.0234ms;0.0257377;0.02634ms
+3;1.0406ms;0.00878339;0.00914ms
+4;1.0071ms;0.0423394;0.04264ms
+5;1.0167ms;0.0324973;0.03304ms
+6;1.0433ms;0.00617272;0.00644ms
+7;1.0329ms;0.0163036;0.01684ms
+8;1.0446ms;0.00492054;0.00514ms
+9;1.012ms;0.0372925;0.03774ms
+10;1.0476ms;0.00204276;0.00214ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.04974ms;0.0322087;3.22087%;0.035892ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9658ms;0.875223;0.84529ms
+2;0.0404ms;1.98292;0.08011ms
+3;0.026ms;3.635;0.09451ms
+4;0.021ms;4.73857;0.09951ms
+5;0.02ms;5.0255;0.10051ms
+6;0.02ms;5.0255;0.10051ms
+7;0.0357ms;2.37563;0.08481ms
+8;0.0282ms;3.2734;0.09231ms
+9;0.0238ms;4.06345;0.09671ms
+10;0.0242ms;3.97975;0.09631ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12051ms;3.49749;349.749%;0.169058ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;38.8868ms;0.0201662;0.7842ms
+2;37.1093ms;0.0267669;0.9933ms
+3;37.7412ms;0.00957574;0.3614ms
+4;38.3125ms;0.00547863;0.2099ms
+5;38.1749ms;0.00189391;0.0723ms
+6;37.7867ms;0.00836008;0.3159ms
+7;38.5736ms;0.0122104;0.471ms
+8;38.9355ms;0.0213918;0.8329ms
+9;38.0147ms;0.00231226;0.0879ms
+10;37.4908ms;0.0163187;0.6118ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.1026ms;0.0124475;1.24475%;0.47406ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2735ms;0.358759;0.45688ms
+2;0.7623ms;0.071258;0.05432ms
+3;0.7613ms;0.0726652;0.05532ms
+4;0.7565ms;0.0794712;0.06012ms
+5;0.7847ms;0.040678;0.03192ms
+6;0.7682ms;0.0630305;0.04842ms
+7;0.7551ms;0.0814727;0.06152ms
+8;0.7627ms;0.0706962;0.05392ms
+9;0.7798ms;0.0472172;0.03682ms
+10;0.7621ms;0.0715392;0.05452ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.81662ms;0.0956787;9.56787%;0.091376ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.7819ms;0.85745;0.67044ms
+2;0.0351ms;2.1755;0.07636ms
+3;0.043ms;1.59209;0.06846ms
+4;0.0515ms;1.16427;0.05996ms
+5;0.0199ms;4.60101;0.09156ms
+6;0.0197ms;4.65787;0.09176ms
+7;0.0216ms;4.16019;0.08986ms
+8;0.0195ms;4.7159;0.09196ms
+9;0.0678ms;0.643953;0.04366ms
+10;0.0546ms;1.04139;0.05686ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11146ms;2.56096;256.096%;0.134088ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3447.33ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3447.33ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1212ms;0.0417767;0.04684ms
+2;1.0612ms;0.100678;0.10684ms
+3;1.5679ms;0.255029;0.39986ms
+4;1.0553ms;0.106832;0.11274ms
+5;1.0695ms;0.0921365;0.09854ms
+6;1.0992ms;0.0626274;0.06884ms
+7;1.116ms;0.0466308;0.05204ms
+8;1.0837ms;0.077826;0.08434ms
+9;1.4288ms;0.182503;0.26076ms
+10;1.0776ms;0.0839272;0.09044ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.16804ms;0.104997;10.4997%;0.132124ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8813ms;0.867196;0.76426ms
+2;0.0348ms;2.36322;0.08224ms
+3;0.0339ms;2.45251;0.08314ms
+4;0.0316ms;2.7038;0.08544ms
+5;0.03ms;2.90133;0.08704ms
+6;0.0314ms;2.72739;0.08564ms
+7;0.0275ms;3.256;0.08954ms
+8;0.0394ms;1.97056;0.07764ms
+9;0.0256ms;3.57187;0.09144ms
+10;0.0349ms;2.35358;0.08214ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11704ms;2.51675;251.675%;0.152852ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3444.51ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3444.51ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.2125ms;0.0586227;0.07108ms
+2;1.0541ms;0.0828384;0.08732ms
+3;1.0742ms;0.0625768;0.06722ms
+4;1.2528ms;0.0889049;0.11138ms
+5;1.4946ms;0.236304;0.35318ms
+6;1.0774ms;0.0594208;0.06402ms
+7;1.0646ms;0.0721586;0.07682ms
+8;1.0688ms;0.0679454;0.07262ms
+9;1.0342ms;0.103674;0.10722ms
+10;1.081ms;0.0558927;0.06042ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.14142ms;0.0888339;8.88339%;0.107128ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3191ms;0.880714;1.16175ms
+2;0.0417ms;2.77338;0.11565ms
+3;0.0368ms;3.27582;0.12055ms
+4;0.0326ms;3.82669;0.12475ms
+5;0.0341ms;3.61437;0.12325ms
+6;0.0208ms;6.5649;0.13655ms
+7;0.0202ms;6.7896;0.13715ms
+8;0.0228ms;5.90132;0.13455ms
+9;0.0247ms;5.37045;0.13265ms
+10;0.0207ms;6.60145;0.13665ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.15735ms;4.55987;455.987%;0.23235ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3533.85ms;0;0ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3533.85ms;0;0%;0ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nearest - neighbour
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.1448ms;0.0754018;0.08632ms
+2;1.0406ms;0.0171824;0.01788ms
+3;1.0222ms;0.0354921;0.03628ms
+4;1.0121ms;0.0458255;0.04638ms
+5;1.0394ms;0.0183567;0.01908ms
+6;1.0453ms;0.0126088;0.01318ms
+7;1.0291ms;0.0285492;0.02938ms
+8;1.0334ms;0.0242694;0.02508ms
+9;1.0391ms;0.0186508;0.01938ms
+10;1.1788ms;0.10207;0.12032ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.05848ms;0.0378407;3.78407%;0.041328ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random - method
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8672ms;0.871114;0.75543ms
+2;0.0421ms;1.65487;0.06967ms
+3;0.0561ms;0.992335;0.05567ms
+4;0.0264ms;3.23371;0.08537ms
+5;0.0207ms;4.39952;0.09107ms
+6;0.0204ms;4.47892;0.09137ms
+7;0.0201ms;4.5607;0.09167ms
+8;0.022ms;4.08045;0.08977ms
+9;0.0226ms;3.94558;0.08917ms
+10;0.0201ms;4.5607;0.09167ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11177ms;3.27779;327.779%;0.151086ms

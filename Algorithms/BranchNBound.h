@@ -13,16 +13,14 @@ public:
     BranchNBound();
     void TSPDFS(std::vector<Node>, int V);//DFS
     void TSPBFS(std::vector<Node>graph, int V);//BFS
-    int final_res;
     std::vector<int> returnRoute();
+    int getFinalRes();
 
 private:
     std::vector<int> final_path;
+    int final_res;
     void copyToFinal(int curr_path[], int V);
-    int firstMin(std::vector<Node>, int i, int V, std::vector<bool>& visited);
-    int secondMin(std::vector<Node>, int i, int V);
-    void TSPRecurrent(std::vector<Node> graph, int curr_bound, int curr_weight, int level, std::vector<int>& curr_path, int V, std::vector<bool>& visited);
-
+    void TSPRecurrent(std::vector<Node> graph, int& curr_bound, int curr_weight, int level, std::vector<int>& curr_path, int V, std::vector<bool>& visited);
     int lowestChecker(std::vector<Node> graph, int i, int V);
 };
 

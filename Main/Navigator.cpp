@@ -156,16 +156,21 @@ int Navigator::mainProgram() {
     }
     std::cout << std::endl;
 
-    //////////////////////////////////////---NN - method ---///////////////////////////////////////
+    // //////////////////////////////////////---NN - method ---///////////////////////////////////////
     sum_time = 0.0;
     all_times.clear();
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "Nearest - Neighbour"<<std::endl;
     TSP tspRepetetiveNN;
+    std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
+    int current_cost = 0;                         // Początkowy koszt trasy to 0
+    std::vector<int> current_path;                // Początkowa trasa jest pusta
+    std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
+    int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
 
     for(int j = 0 ; j < iterations ; j ++) {
         start_counter();
-        tspRepetetiveNN.repetetiveNearestNeighbour(graph, V);
+        tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
         double t1 = get_counter();
         sum_time += t1;
         all_times.push_back(t1);//dodanie czasu do wektora
@@ -203,6 +208,18 @@ int Navigator::mainProgram() {
     }
     std::cout << std::endl;
 
+    // TSP tspRepetetiveNN;
+    // std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
+    // int current_cost = 0;                         // Początkowy koszt trasy to 0
+    // std::vector<int> current_path;                // Początkowa trasa jest pusta
+    // std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
+    // int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
+    // int wynik = tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
+    // std::cout<<"Najlepszy cost: "<<wynik<<std::endl;
+    // std::cout<<"Najlepsza sciezka: "<<std::endl;
+    // for (int i : tspRepetetiveNN.getSolvedPath()) {
+    //     std::cout << i << " ";
+    // }
     //////////////////////////////////////---random - method ---///////////////////////////////////////
     sum_time = 0;
     all_times.clear();
@@ -252,18 +269,18 @@ int Navigator::mainProgram() {
     }
     std::cout << std::endl;
 
-    // std::cout<<"SIEMA: "<<graph[1].returnEdgeWeight(3)<<std::endl;
-    // std::cout<<"SIEMA: "<<graph[3].returnEdgeWeight(1)<<std::endl;
+    //////////////////////////////////////---BnB DFS ---///////////////////////////////////////
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout<<"Branch and Bound - DFS"<<std::endl;
     BranchNBound BnB;
     start_counter();
     BnB.TSPDFS(graph, V);//DFS
     double czasBnB = get_counter();
-    std::cout<<std::endl;
     std::cout<<"Oto sciezka: ";
     for (int i : BnB.returnRoute()) {
         std::cout << i << " ";
     }
-    std::cout<<std::endl<<"Oto waga najlepszej sciezki: "<<BnB.final_res<<std::endl;
+    std::cout<<std::endl<<"Oto waga najlepszej sciezki: "<<BnB.getFinalRes()<<std::endl;
     std::cout<<"Oto czas: "<<czasBnB<<"ms"<<std::endl;
 
     // BranchNBound branchnbound;

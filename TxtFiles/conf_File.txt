@@ -1,4 +1,4 @@
-nazwa pliku wejsciowego:../TxtFiles/file_4.txt
+nazwa pliku wejsciowego:../TxtFiles/file_11.txt
 nazwa pliku wyjsciowego:../TxtFiles/output.txt
 liczba powtorzen algorytmow:10
 max czas wykonywania algorytmu[ms]:500

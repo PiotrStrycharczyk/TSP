@@ -83,72 +83,156 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     return shortestpath;
 }
 
-int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {
-    shortestpath = 0;
-    solvedpath.clear();//reset zmiennych przed algorytmem
+// int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {
+//     shortestpath = 0;
+//     solvedpath.clear();//reset zmiennych przed algorytmem
+//
+//     std::vector<bool> odwiedzone(V, false);//wartosc poczatkowa jako false
+//
+//     int startvertex = start;
+//     int nowvertex = startvertex;//losujemy wierzcholek poczatkowy
+//
+//     solvedpath.push_back(startvertex);//startujemy od wylosowanego
+//     odwiedzone[startvertex] = true;
+//     //novertex obecny wierzch na ktorym jestesmy
+//     //nextvertex to kolejny ktory mamy odwiedzic
+//     for (int i = 1; i < V; ++i) {
+//         int nextVertex = -1;
+//         int minWeight = INT_MAX; // Ustawiamy maksymalną wartość
+//
+//         int sameWeightEdge = 0;
+//         // Szukamy najbliższego nieodwiedzonego wierzchołka
+//         for (const auto& edge : graph[nowvertex].edges) {
+//             if (!odwiedzone[edge.destination] && edge.weight <= minWeight && edge.weight != -1) {
+//                 if (edge.weight == minWeight) {
+//                     sameWeightEdge++;
+//                 }
+//                 minWeight = edge.weight;
+//                 nextVertex = edge.destination;
+//
+//             }
+//         }
+//         if (sameWeightEdge != 0)
+//             std::cout<<"Ta sama waga dla " << sameWeightEdge << " krawedzi!"<<std::endl;
+//
+//         // Przechodzimy do najbliższego wierzchołka
+//         if (nextVertex == -1) {
+//             return -1;//koniec algorytmu brak jakiejkolwiek wychodzjacej z wierzcholka krawedzi
+//         }
+//         solvedpath.push_back(nextVertex);
+//         shortestpath += minWeight;
+//         odwiedzone[nextVertex] = true;
+//         nowvertex = nextVertex;
+//     }
+//
+//     int returnWeight = graph[nowvertex].returnEdgeWeight(startvertex);
+//     if (returnWeight != -1) {
+//         solvedpath.push_back(startvertex); // Powrót do wierzchołka początkowego
+//         shortestpath += returnWeight;
+//     } else {
+//         shortestpath = -1; // Brak trasy powrotnej
+//         solvedpath.clear();
+//         return -1;
+//     }
+//
+//     return shortestpath;
+// }
 
-    std::vector<bool> odwiedzone(V, false);//wartosc poczatkowa jako false
 
-    int startvertex = start;
-    int nowvertex = startvertex;//losujemy wierzcholek poczatkowy
-
-    solvedpath.push_back(startvertex);//startujemy od wylosowanego
-    odwiedzone[startvertex] = true;
-    //novertex obecny wierzch na ktorym jestesmy
-    //nextvertex to kolejny ktory mamy odwiedzic
-    for (int i = 1; i < V; ++i) {
-        int nextVertex = -1;
-        int minWeight = INT_MAX; // Ustawiamy maksymalną wartość
-
-        int sameWeightEdge = 0;
-        // Szukamy najbliższego nieodwiedzonego wierzchołka
-        for (const auto& edge : graph[nowvertex].edges) {
-            if (!odwiedzone[edge.destination] && edge.weight <= minWeight && edge.weight != -1) {
-                if (edge.weight == minWeight) {
-                    sameWeightEdge++;
-                }
-                minWeight = edge.weight;
-                nextVertex = edge.destination;
-
-            }
+bool TSP::ifAllVisited(std::vector<bool> odwiedzone) {//metoda pomocniczna do NN
+    for(int i = 0 ; i < odwiedzone.size() ; i++) {
+        if (odwiedzone[i] == false) {
+            return false;
         }
-        if (sameWeightEdge != 0)
-            std::cout<<"Ta sama waga dla " << sameWeightEdge << " krawedzi!"<<std::endl;
-
-        // Przechodzimy do najbliższego wierzchołka
-        if (nextVertex == -1) {
-            return -1;//koniec algorytmu brak jakiejkolwiek wychodzjacej z wierzcholka krawedzi
-        }
-        solvedpath.push_back(nextVertex);
-        shortestpath += minWeight;
-        odwiedzone[nextVertex] = true;
-        nowvertex = nextVertex;
     }
+    return true;
 
-    int returnWeight = graph[nowvertex].returnEdgeWeight(startvertex);
-    if (returnWeight != -1) {
-        solvedpath.push_back(startvertex); // Powrót do wierzchołka początkowego
-        shortestpath += returnWeight;
-    } else {
-        shortestpath = -1; // Brak trasy powrotnej
-        solvedpath.clear();
-        return -1;
-    }
-
-    return shortestpath;
 }
 
-int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {
+int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start, std::vector<bool>& odwiedzone,
+                          int current_cost, std::vector<int>& current_path,
+                          std::vector<int>& best_path, int& best_cost) {
+    if (odwiedzone[start] == false) {//ustawienie nextVertex przeslanego w rekrencyjnym wywolaniu na odwiedzony
+        odwiedzone[start] = true;
+        current_path.push_back(start);  // Add the current node to the path
+    }
+
+    bool czyOdwiedzoneWszystkie = ifAllVisited(odwiedzone);
+
+    if (czyOdwiedzoneWszystkie) {//jesli cala droga juz jest znaleziona wystarczy juz tylko polaczyc z wierzcholkiem startowym
+        // Check the weight of returning to the start node
+        int last_weight = graph[start].returnEdgeWeight(current_path[0]);
+        if (last_weight == -1) {
+            return -1;  // zla sciezka, bo nie moze wrocic do poczatkowego wierzxholka
+        }
+
+        int total_cost = current_cost + last_weight;
+        current_path.push_back(current_path[0]);
+
+        // Update the best path if a better solution is found
+        if (total_cost < best_cost) {
+            best_cost = total_cost;
+            best_path = current_path;  // Save the current path as the best
+        }
+
+        return best_cost;
+    }
+
+    // List of potential candidates with the minimum weight
+    std::vector<int> candidates;
+    int minWeight = INT_MAX;
+
+    // Select the candidates with the minimum weight
+    for (const auto& edge : graph[start].edges) {//szukanie potencjalnych kandydatow (krawedzi o tym samym koszcie)
+        if (!odwiedzone[edge.destination] && edge.weight != -1) {
+            if (edge.weight < minWeight) {//jesli mniejsza niz poprzednie
+                minWeight = edge.weight;
+                candidates.clear();
+                candidates.push_back(edge.destination);
+            } else if (edge.weight == minWeight) {//jesli takie same krawedzie
+                candidates.push_back(edge.destination);
+            }
+        }
+    }
+
+    // eksploracja wszystkich rozglezien
+    for (int nextVertex : candidates) {
+        odwiedzone[nextVertex] = true;
+        current_path.push_back(nextVertex);  // Add the vertex to the current path
+
+        // current_cost + minWeight to nowy current cost w kolejnym wowlaniu
+        nearestNeighbour(graph, V, nextVertex, odwiedzone, current_cost + minWeight, current_path, best_path, best_cost);
+
+        // Backtracking i przygotowanie przed zwiedzeniem koljengo rozgalezienia
+        odwiedzone[nextVertex] = false;
+        current_path.pop_back();  // Remove the last vertex from the current path
+    }
+
+    return best_cost;
+}
+
+
+int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<bool>& odwiedzone,//ta metoda nie ma start bo sama ja wylicza
+                          int current_cost, std::vector<int>& current_path,
+                          std::vector<int>& best_path, int& best_cost) {//jedynie ta metoda zmienia pole klasy
+
     int best_weight = -1;//dajemy wartosc ujemna zeby przy pierwszej iteracji zostala ta zmienna nadpisana
     std::vector<int> best_way;
     for(int i = 0 ; i < V ; i++) {
-        int result = nearestNeighbour(graph, V, i);//i to wierzcholek startowy dla metody nearestneighbour
+        int result = nearestNeighbour(graph, V, i, odwiedzone, current_cost, current_path, best_path, best_cost);
+        //przygotowanie przed kolejna rundą
+        odwiedzone.clear();
+        odwiedzone.assign(V, false);
+        current_cost = 0;
+        current_path.clear();
+        ////////////////////////////////
+        //i to wierzcholek startowy dla metody nearestneighbour
         if(result != -1 && (best_weight == -1 || best_weight > result)) {
-            best_weight = shortestpath;
-            best_way = solvedpath;
+            best_weight = best_cost;
+            best_way = best_path;
         }
     }
-    shortestpath = best_weight;
+    shortestpath = best_weight;//dopiero po calym repetetive nearestneighbour nadpisujemy wartosc pol klasy
     solvedpath = best_way;
     return shortestpath;
 }
