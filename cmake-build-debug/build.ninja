@@ -97,6 +97,18 @@ build CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
   OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Algorithms
 
+build CMakeFiles/tsp_problem.dir/Main/Tests.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Main/Tests.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Main\Tests.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Main
+
+build CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Counting/Timer.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Counting\Timer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Counting
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tsp_problem
@@ -105,7 +117,7 @@ build CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable tsp_problem.exe
 
-build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj
+build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj CMakeFiles/tsp_problem.dir/Main/Tests.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static -W
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

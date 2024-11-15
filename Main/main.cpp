@@ -1,4 +1,7 @@
 
+#include <iostream>
+#include <thread>
+
 #include "Navigator.h"
 
 int main()

@@ -48,7 +48,7 @@ void BranchNBound::TSPRecurrent(std::vector<Node> graph, int& upper_bound, int c
             // Cofanie się (backtracking)
             curr_weight -= graph[curr_path[level - 1]].returnEdgeWeight(i);
 
-            std::fill(visited.begin(), visited.end(), false);
+            std::fill(visited.begin(), visited.end(), false);//przypisuje wartosc w zakresie[begin;end)
             for (int j = 0; j <= level - 1; j++)
                 visited[curr_path[j]] = true;
         }

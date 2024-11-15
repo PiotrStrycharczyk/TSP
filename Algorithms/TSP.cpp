@@ -8,8 +8,9 @@
 #include <random>
 #include <bits/random.h>
 
-TSP::TSP() {
-    shortestpath = 0;//podczas tworzenia obiektu wartosc jest nadawana na 0
+TSP::TSP(Timer& timer, int shortest_path_from_file) : timer_(timer), shortest_path_from_file(shortest_path_from_file) {
+    // Inicjalizujemy timer, który jest przekazywany do klasy
+    shortestpath = 0;
 }
 int TSP::getShortestPath() {
     return shortestpath;
@@ -33,6 +34,13 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     shortestpath = INT_MAX; // ustawiamy początkową wartość najkrótszej ścieżki na maksymalną wartość
 
     do {
+        double elapsed_time = timer_.getCounter();
+        if (elapsed_time > timer_.time_limit) {
+            //przekroczono dopuszczalny czas
+            if_ended_by_iterations = false;
+            return shortestpath;//jesli zwracamy -2 to znaczy że przekroczono juz czas
+        }
+
         int current_pathweight = 0; // waga bieżącej ścieżki
         int k = startvertex; // zaczynamy od wierzchołka startowego
 
@@ -82,61 +90,6 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
 
     return shortestpath;
 }
-
-// int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start) {
-//     shortestpath = 0;
-//     solvedpath.clear();//reset zmiennych przed algorytmem
-//
-//     std::vector<bool> odwiedzone(V, false);//wartosc poczatkowa jako false
-//
-//     int startvertex = start;
-//     int nowvertex = startvertex;//losujemy wierzcholek poczatkowy
-//
-//     solvedpath.push_back(startvertex);//startujemy od wylosowanego
-//     odwiedzone[startvertex] = true;
-//     //novertex obecny wierzch na ktorym jestesmy
-//     //nextvertex to kolejny ktory mamy odwiedzic
-//     for (int i = 1; i < V; ++i) {
-//         int nextVertex = -1;
-//         int minWeight = INT_MAX; // Ustawiamy maksymalną wartość
-//
-//         int sameWeightEdge = 0;
-//         // Szukamy najbliższego nieodwiedzonego wierzchołka
-//         for (const auto& edge : graph[nowvertex].edges) {
-//             if (!odwiedzone[edge.destination] && edge.weight <= minWeight && edge.weight != -1) {
-//                 if (edge.weight == minWeight) {
-//                     sameWeightEdge++;
-//                 }
-//                 minWeight = edge.weight;
-//                 nextVertex = edge.destination;
-//
-//             }
-//         }
-//         if (sameWeightEdge != 0)
-//             std::cout<<"Ta sama waga dla " << sameWeightEdge << " krawedzi!"<<std::endl;
-//
-//         // Przechodzimy do najbliższego wierzchołka
-//         if (nextVertex == -1) {
-//             return -1;//koniec algorytmu brak jakiejkolwiek wychodzjacej z wierzcholka krawedzi
-//         }
-//         solvedpath.push_back(nextVertex);
-//         shortestpath += minWeight;
-//         odwiedzone[nextVertex] = true;
-//         nowvertex = nextVertex;
-//     }
-//
-//     int returnWeight = graph[nowvertex].returnEdgeWeight(startvertex);
-//     if (returnWeight != -1) {
-//         solvedpath.push_back(startvertex); // Powrót do wierzchołka początkowego
-//         shortestpath += returnWeight;
-//     } else {
-//         shortestpath = -1; // Brak trasy powrotnej
-//         solvedpath.clear();
-//         return -1;
-//     }
-//
-//     return shortestpath;
-// }
 
 
 bool TSP::ifAllVisited(std::vector<bool> odwiedzone) {//metoda pomocniczna do NN
@@ -219,6 +172,13 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<
     int best_weight = -1;//dajemy wartosc ujemna zeby przy pierwszej iteracji zostala ta zmienna nadpisana
     std::vector<int> best_way;
     for(int i = 0 ; i < V ; i++) {
+        double elapsed_time = timer_.getCounter();
+        if (elapsed_time > timer_.time_limit) {
+            //przekroczono dopuszczalny czas
+            if_ended_by_iterations = false;
+            break;
+        }
+
         int result = nearestNeighbour(graph, V, i, odwiedzone, current_cost, current_path, best_path, best_cost);
         //przygotowanie przed kolejna rundą
         odwiedzone.clear();
@@ -256,6 +216,12 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     std::vector<int> selectedPath;
 
     for(int j = 0 ; j < V ; j++) {
+        double elapsed_time = timer_.getCounter();//sprawdzamy czy nie nalezy przerwac z powodu przekroczenia czasu
+        if (elapsed_time > timer_.time_limit) {
+            //przekroczono dopuszczalny czas
+            if_ended_by_iterations = false;
+            break;
+        }
         std::uniform_int_distribution<> dist(0, tab_nieodwiedzonych.size() - 1);//losowanie indexu z przedzialu [ ; ] (kazdy element ma takie samo prawdopodobieństwo na trafienie
         int randIndex = dist(g);//generowanie liczby z distribution liczb z zadanego wyzej przedzialu
 
@@ -300,6 +266,10 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     }
 
     return shortestpath;
+}
+
+bool TSP::getInfoHowEnded() {
+    return if_ended_by_iterations;
 }
 
 

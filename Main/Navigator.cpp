@@ -13,6 +13,7 @@
 
 #include "../Graph/Node.h"
 #include "File.cpp"
+#include "Tests.h"
 #include "../Algorithms/BranchNBound.h"
 #include "../Algorithms/TSP.h"
 #include "../Counting/Counter.h"
@@ -84,11 +85,26 @@ int Navigator::mainProgram() {
     std::string iterations_string = config["liczba powtorzen algorytmow"];
     std::string max_time_string = config["max czas wykonywania algorytmu[ms]"];//liczba iteracji dla algorytmu losowego
     std::string showProgressBar_string = config["wyswietlanie w konsoli wskaznika postepu"];//liczba iteracji dla algorytmu losowego
+    std::string show_all_algorithms_string = config["pokazac wszystkie algorytmy"];//liczba iteracji dla algorytmu losowego
+    std::string showBF_string = config["pokazac brute force"];//liczba iteracji dla algorytmu losowego
+    std::string showNN_string = config["pokazac nn"];//liczba iteracji dla algorytmu losowego
+    std::string show_random_string = config["pokazac random"];//liczba iteracji dla algorytmu losowego
+    std::string showDFS_string = config["pokazac DFS"];//liczba iteracji dla algorytmu losowego
+    std::string showBFS_string = config["pokazac BFS"];//liczba iteracji dla algorytmu losowego
+    std::string show_lowest_cost_string = config["pokazac Lowest Cost"];//liczba iteracji dla algorytmu losowego
+
 
     int iterations = stoi(iterations_string);
     int max_time = stoi(max_time_string);
 
     bool showProgressBar = stringToBool(showProgressBar_string);
+    bool show_all_algorithms = stringToBool(show_all_algorithms_string);
+    bool showBF = stringToBool(showBF_string);
+    bool showNN = stringToBool(showNN_string);
+    bool show_random = stringToBool(show_random_string);
+    bool showDFS = stringToBool(showDFS_string);
+    bool showBFS = stringToBool(showBFS_string);
+    bool show_lowest_cost = stringToBool(show_lowest_cost_string);
 
     std::cout << "Nazwa pliku we: " << nazwa_pliku_we << std::endl;
     std::cout << "Nazwa pliku wy: " << nazwa_pliku_wy << std::endl;
@@ -98,7 +114,12 @@ int Navigator::mainProgram() {
 
 
     //ladowanie zawartosci pliku we
-    File::loadInputFile(nazwa_pliku_we, graph, V);//przekazujemy oryginal i na nim dzialamy w metodach
+    //File::loadInputFile(nazwa_pliku_we, graph, V);//przekazujemy oryginal i na nim dzialamy w metodach
+
+    Tests testBF(nazwa_pliku_we, max_time, iterations, showProgressBar, show_all_algorithms,
+        showBF, showNN, show_random, showDFS, showBFS, show_lowest_cost);
+    testBF.TestBT();
+
 
     //printowanie grafu
     // Counter obj1;
@@ -106,182 +127,183 @@ int Navigator::mainProgram() {
 
     //////////////////////////////////////---brute- force - method ---///////////////////////////////////////
     //wyswietlanie danych w konsoli
-    double sum_time = 0;
-    double avg_time;
-    std::vector<double> all_times;
-    std::cout<< "Nazwa pliku z danymi: " << nazwa_pliku_we << std::endl;
-    std::cout << "---------------------------------------------" << std::endl;
-    std::cout << "Brute - Force"<<std::endl;
-    TSP tspbruteforce;
-
-
-    for(int j = 0 ; j < iterations; j++) {
-        start_counter();
-        tspbruteforce.bruteForce(graph, V);
-        double t0 = get_counter();
-        sum_time += t0;
-        all_times.push_back(t0);//dodanie czasu do wektora
-
-        if (showProgressBar) {
-            // Aktualizacja paska progresu w każdym kroku
-            printProgressBar(j , iterations, 50);
-        }
-        if(sum_time > max_time) {
-            if(showProgressBar) {//jesli szybciej skonczono
-                printProgressBar(-1, iterations, 50);
-            }
-            avg_time = sum_time/(j+1);
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
-            break;
-        } if(iterations - 1 == j) {
-            avg_time = sum_time/iterations;
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
-            break;
-        }
-    }
-
-    //jako dokladna wartosc przyjmujemy wartosc srednia w bledach
-    //wpisywanie do pliku /output.txt
-    File f1;
-    f1.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force");
-
-    std::cout<< "Dlugosc drogi: "<< tspbruteforce.getShortestPath() << std::endl;
-    std::cout<<"Sciezka: ";
-    for (int i : tspbruteforce.getSolvedPath()) {
-        std::cout << i << " ";
-    }
-    std::cout << std::endl;
-
-    // //////////////////////////////////////---NN - method ---///////////////////////////////////////
-    sum_time = 0.0;
-    all_times.clear();
-    std::cout << "---------------------------------------------" << std::endl;
-    std::cout << "Nearest - Neighbour"<<std::endl;
-    TSP tspRepetetiveNN;
-    std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
-    int current_cost = 0;                         // Początkowy koszt trasy to 0
-    std::vector<int> current_path;                // Początkowa trasa jest pusta
-    std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
-    int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
-
-    for(int j = 0 ; j < iterations ; j ++) {
-        start_counter();
-        tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
-        double t1 = get_counter();
-        sum_time += t1;
-        all_times.push_back(t1);//dodanie czasu do wektora
-
-        if (showProgressBar) {
-            // Aktualizacja paska progresu w każdym kroku
-            printProgressBar(j , iterations, 50);
-        }
-
-        if(sum_time > max_time) {
-            if(showProgressBar) {//jesli szybciej skonczono
-                printProgressBar(-1, iterations, 50);
-            }
-            avg_time = sum_time/(j+1);
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
-            break;
-        } if(iterations - 1 == j) {
-            avg_time = sum_time/iterations;
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
-            break;
-        }
-    }
-
-    File f2;
-    f2.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nearest - neighbour");
-
-    std::cout<< "Dlugosc drogi: "<< tspRepetetiveNN.getShortestPath() << std::endl;
-    std::cout<<"Sciezka: ";
-    for (int i : tspRepetetiveNN.getSolvedPath()) {
-        std::cout << i << " ";
-    }
-    std::cout << std::endl;
-
+    // double sum_time = 0;
+    // double avg_time;
+    // std::vector<double> all_times;
+    // std::cout<< "Nazwa pliku z danymi: " << nazwa_pliku_we << std::endl;
+    // std::cout << "---------------------------------------------" << std::endl;
+    //
+    //
+    // std::cout << "Brute - Force"<<std::endl;
+    // TSP tspbruteforce;
+    //
+    // for(int j = 0 ; j < iterations; j++) {
+    //     start_counter();
+    //     tspbruteforce.bruteForce(graph, V);
+    //     double t0 = get_counter();
+    //     sum_time += t0;
+    //     all_times.push_back(t0);//dodanie czasu do wektora
+    //
+    //     if (showProgressBar) {
+    //         // Aktualizacja paska progresu w każdym kroku
+    //         printProgressBar(j , iterations, 50);
+    //     }
+    //     if(sum_time > max_time) {
+    //         if(showProgressBar) {//jesli szybciej skonczono
+    //             printProgressBar(-1, iterations, 50);
+    //         }
+    //         avg_time = sum_time/(j+1);
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
+    //         break;
+    //     } if(iterations - 1 == j) {
+    //         avg_time = sum_time/iterations;
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
+    //         break;
+    //     }
+    // }
+    //
+    // //jako dokladna wartosc przyjmujemy wartosc srednia w bledach
+    // //wpisywanie do pliku /output.txt
+    // File f1;
+    // f1.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force");
+    //
+    // std::cout<< "Dlugosc drogi: "<< tspbruteforce.getShortestPath() << std::endl;
+    // std::cout<<"Sciezka: ";
+    // for (int i : tspbruteforce.getSolvedPath()) {
+    //     std::cout << i << " ";
+    // }
+    // std::cout << std::endl;
+    //
+    // // //////////////////////////////////////---NN - method ---///////////////////////////////////////
+    // sum_time = 0.0;
+    // all_times.clear();
+    // std::cout << "---------------------------------------------" << std::endl;
+    // std::cout << "Nearest - Neighbour"<<std::endl;
     // TSP tspRepetetiveNN;
     // std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
     // int current_cost = 0;                         // Początkowy koszt trasy to 0
     // std::vector<int> current_path;                // Początkowa trasa jest pusta
     // std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
     // int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
-    // int wynik = tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
-    // std::cout<<"Najlepszy cost: "<<wynik<<std::endl;
-    // std::cout<<"Najlepsza sciezka: "<<std::endl;
+    //
+    // for(int j = 0 ; j < iterations ; j ++) {
+    //     start_counter();
+    //     tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
+    //     double t1 = get_counter();
+    //     sum_time += t1;
+    //     all_times.push_back(t1);//dodanie czasu do wektora
+    //
+    //     if (showProgressBar) {
+    //         // Aktualizacja paska progresu w każdym kroku
+    //         printProgressBar(j , iterations, 50);
+    //     }
+    //
+    //     if(sum_time > max_time) {
+    //         if(showProgressBar) {//jesli szybciej skonczono
+    //             printProgressBar(-1, iterations, 50);
+    //         }
+    //         avg_time = sum_time/(j+1);
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
+    //         break;
+    //     } if(iterations - 1 == j) {
+    //         avg_time = sum_time/iterations;
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
+    //         break;
+    //     }
+    // }
+    //
+    // File f2;
+    // f2.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nearest - neighbour");
+    //
+    // std::cout<< "Dlugosc drogi: "<< tspRepetetiveNN.getShortestPath() << std::endl;
+    // std::cout<<"Sciezka: ";
     // for (int i : tspRepetetiveNN.getSolvedPath()) {
     //     std::cout << i << " ";
     // }
-    //////////////////////////////////////---random - method ---///////////////////////////////////////
-    sum_time = 0;
-    all_times.clear();
-
-    std::cout << "---------------------------------------------" << std::endl;
-    std::cout << "Random Method 1"<<std::endl;
-    TSP tspRandom;
-    int bestSolRandom = 0;
-    for(int j = 0 ; j < iterations ; j ++) {
-        start_counter();
-        tspRandom.randomMetod(graph, V);
-        double t2 = get_counter();
-        bestSolRandom = tspRandom.getShortestPath();
-        sum_time += t2;
-        all_times.push_back(t2);//dodanie czasu do wektora
-
-        if (showProgressBar) {
-            // Aktualizacja paska progresu w każdym kroku
-            printProgressBar(j, iterations, 50);
-        }
-
-        if(sum_time > max_time || bestSolRandom == tspbruteforce.getShortestPath()) {
-            if(showProgressBar) {//jesli szybciej skonczono
-                printProgressBar(-1, iterations, 50);
-            }
-            avg_time = sum_time/(j+1);
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
-            break;
-        } if(iterations - 1 == j) {
-            avg_time = sum_time/iterations;
-            double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
-            double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
-            printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
-            break;
-        }
-    }
-
-    File f3;
-    f3.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random - method");
-
-    std::cout<< "Dlugosc drogi: "<< tspRandom.getShortestPath() << std::endl;
-    std::cout<<"Sciezka: ";
-    for (int i : tspRandom.getSolvedPath()) {
-        std::cout << i << " ";
-    }
-    std::cout << std::endl;
-
-    //////////////////////////////////////---BnB DFS ---///////////////////////////////////////
-    std::cout << "---------------------------------------------" << std::endl;
-    std::cout<<"Branch and Bound - DFS"<<std::endl;
-    BranchNBound BnB;
-    start_counter();
-    BnB.TSPDFS(graph, V);//DFS
-    double czasBnB = get_counter();
-    std::cout<<"Oto sciezka: ";
-    for (int i : BnB.returnRoute()) {
-        std::cout << i << " ";
-    }
-    std::cout<<std::endl<<"Oto waga najlepszej sciezki: "<<BnB.getFinalRes()<<std::endl;
-    std::cout<<"Oto czas: "<<czasBnB<<"ms"<<std::endl;
+    // std::cout << std::endl;
+    //
+    // // TSP tspRepetetiveNN;
+    // // std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
+    // // int current_cost = 0;                         // Początkowy koszt trasy to 0
+    // // std::vector<int> current_path;                // Początkowa trasa jest pusta
+    // // std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
+    // // int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
+    // // int wynik = tspRepetetiveNN.repetetiveNearestNeighbour(graph, V, odwiedzone, current_cost, current_path, best_path, best_cost);
+    // // std::cout<<"Najlepszy cost: "<<wynik<<std::endl;
+    // // std::cout<<"Najlepsza sciezka: "<<std::endl;
+    // // for (int i : tspRepetetiveNN.getSolvedPath()) {
+    // //     std::cout << i << " ";
+    // // }
+    // //////////////////////////////////////---random - method ---///////////////////////////////////////
+    // sum_time = 0;
+    // all_times.clear();
+    //
+    // std::cout << "---------------------------------------------" << std::endl;
+    // std::cout << "Random Method 1"<<std::endl;
+    // TSP tspRandom;
+    // int bestSolRandom = 0;
+    // for(int j = 0 ; j < iterations ; j ++) {
+    //     start_counter();
+    //     tspRandom.randomMetod(graph, V);
+    //     double t2 = get_counter();
+    //     bestSolRandom = tspRandom.getShortestPath();
+    //     sum_time += t2;
+    //     all_times.push_back(t2);//dodanie czasu do wektora
+    //
+    //     if (showProgressBar) {
+    //         // Aktualizacja paska progresu w każdym kroku
+    //         printProgressBar(j, iterations, 50);
+    //     }
+    //
+    //     if(sum_time > max_time || bestSolRandom == tspbruteforce.getShortestPath()) {
+    //         if(showProgressBar) {//jesli szybciej skonczono
+    //             printProgressBar(-1, iterations, 50);
+    //         }
+    //         avg_time = sum_time/(j+1);
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/j+1;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/j+1;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, true);
+    //         break;
+    //     } if(iterations - 1 == j) {
+    //         avg_time = sum_time/iterations;
+    //         double BLbezwzgledny = Counter::absoluteErrorSum(all_times, avg_time)/iterations;
+    //         double BLwzgledny = Counter::relativeErrorSum(all_times, avg_time)/iterations;
+    //         printErrors(avg_time, BLwzgledny, BLbezwzgledny, false);
+    //         break;
+    //     }
+    // }
+    //
+    // File f3;
+    // f3.writeTimesToOutput(all_times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random - method");
+    //
+    // std::cout<< "Dlugosc drogi: "<< tspRandom.getShortestPath() << std::endl;
+    // std::cout<<"Sciezka: ";
+    // for (int i : tspRandom.getSolvedPath()) {
+    //     std::cout << i << " ";
+    // }
+    // std::cout << std::endl;
+    //
+    // //////////////////////////////////////---BnB DFS ---///////////////////////////////////////
+    // std::cout << "---------------------------------------------" << std::endl;
+    // std::cout<<"Branch and Bound - DFS"<<std::endl;
+    // BranchNBound BnB;
+    // start_counter();
+    // BnB.TSPDFS(graph, V);//DFS
+    // double czasBnB = get_counter();
+    // std::cout<<"Oto sciezka: ";
+    // for (int i : BnB.returnRoute()) {
+    //     std::cout << i << " ";
+    // }
+    // std::cout<<std::endl<<"Oto waga najlepszej sciezki: "<<BnB.getFinalRes()<<std::endl;
+    // std::cout<<"Oto czas: "<<czasBnB<<"ms"<<std::endl;
 
     // BranchNBound branchnbound;
     // start_counter();

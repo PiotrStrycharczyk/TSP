@@ -1,5 +1,12 @@
-nazwa pliku wejsciowego:../TxtFiles/file_11.txt
+nazwa pliku wejsciowego:../TxtFiles/file_9.txt
 nazwa pliku wyjsciowego:../TxtFiles/output.txt
 liczba powtorzen algorytmow:10
-max czas wykonywania algorytmu[ms]:500
+max czas wykonywania algorytmu[ms]:200
 wyswietlanie w konsoli wskaznika postepu:true
+pokazac wszystkie algorytmy:false
+pokazac brute force:true
+pokazac nn:false
+pokazac random:false
+pokazac DFS:false
+pokazac BFS:false
+pokazac Lowest Cost:false

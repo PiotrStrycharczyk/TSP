@@ -41,21 +41,37 @@ public:
         return config; // Zwracamy mapę config zawierającą wszystkie pary klucz-wartość
     }
 
-    int static loadInputFile(std::string nazwa_pliku_we, std::vector<Node> & graph, int & V) {//wczytuje plik z danymi wejsciowymi
+    int static loadInputFile(std::string nazwa_pliku_we, std::vector<Node>& graph, int& V, int& shortest_path) {
         // Otwieramy plik
         std::ifstream plik(nazwa_pliku_we);
 
         // Sprawdzamy, czy udało się otworzyć plik
         if (!plik.is_open()) {
-            std::cerr << "Nie udalo sie otworzyc pliku: " << nazwa_pliku_we << std::endl;
+            std::cerr << "Nie udało się otworzyć pliku: " << nazwa_pliku_we << std::endl;
             return 1; // Zwracamy kod błędu
         }
 
+        // Pierwsza linia: liczba wierzchołków
+        if (!(plik >> V)) {
+            std::cerr << "Błąd podczas odczytu liczby wierzchołków." << std::endl;
+            return 1;
+        }
 
-        if (plik >> V) {
+        // Druga linia: shortest_path
+        std::string line;
+        std::getline(plik, line); // Odczyt reszty linii po liczbie wierzchołków
+        if (line.empty()) std::getline(plik, line); // Jeśli była pusta, odczytujemy jeszcze raz
 
+        // Sprawdzanie formatu linii z "shortest_path"
+        if (line.rfind("shortest_path:", 0) == 0) {
+            try {
+                shortest_path = std::stoi(line.substr(14)); // Wyodrębnienie wartości po "shortest_path: "
+            } catch (const std::exception& e) {
+                std::cerr << "Błąd podczas odczytu wartości shortest_path: " << e.what() << std::endl;
+                return 1;
+            }
         } else {
-            std::cerr << "Błąd podczas odczytu pierwszej liczby." << std::endl;
+            std::cerr << "Niepoprawny format linii: " << line << std::endl;
             return 1;
         }
 
@@ -64,23 +80,23 @@ public:
             graph.push_back(Node(i)); // Numerujemy wierzchołki od 0 do V-1
         }
 
-        int weight;//;//liczba ktora jest defact waga krawedzi miedzy Nodeami
-        for(int i = 0; i < V ; i++) {
-            for(int j = 0 ; j < V; j++) {
-                if(plik >> weight) {
-                    //if (weight >= 0) {
+        // Wczytywanie macierzy wag
+        int weight;
+        for (int i = 0; i < V; i++) {
+            for (int j = 0; j < V; j++) {
+                if (plik >> weight) {
                     graph[i].addEdge(j, weight);
-                    //graph[i].neighbourCount++;
-                    //}
-                } else
-                    std::cout<<"Blad odczytu danej"<<std::endl;
-
+                } else {
+                    std::cerr << "Błąd odczytu wagi krawędzi (" << i << ", " << j << ")." << std::endl;
+                    return 1; // Zwracamy kod błędu
+                }
             }
         }
 
         plik.close();
         return 0;
     }
+
 
     void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method) {
         int n = times.size();
