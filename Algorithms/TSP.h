@@ -7,14 +7,13 @@
 
 #include <vector>
 #include "../Graph/Node.h"
-#include "../Counting/Timer.cpp"
+#include "../Counting/Timer.h"
 
 class TSP {
 public:
     TSP(Timer& timer, int shortest_path_from_file);
     int bruteForce(std::vector<Node> graph, int V);
-    int repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<bool>& odwiedzone,
-        int current_cost, std::vector<int>& current_path, std::vector<int>& best_path, int& best_cost);
+    int repetetiveNearestNeighbour(std::vector<Node> graph, int V);
     int nearestNeighbour(std::vector<Node> graph, int V, int start, std::vector<bool>& odwiedzone,
                           int current_cost, std::vector<int>& current_path,
                           std::vector<int>& best_path, int& best_cost);

@@ -20,4 +20,5 @@ add_executable(tsp_problem Main/main.cpp
         Algorithms/BranchNBound.h
         Main/Tests.cpp
         Main/Tests.h
-        Counting/Timer.cpp)
+        Counting/Timer.cpp
+        Counting/Timer.h)

@@ -38,7 +38,7 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
         if (elapsed_time > timer_.time_limit) {
             //przekroczono dopuszczalny czas
             if_ended_by_iterations = false;
-            return shortestpath;//jesli zwracamy -2 to znaczy że przekroczono juz czas
+            return shortestpath;
         }
 
         int current_pathweight = 0; // waga bieżącej ścieżki
@@ -165,9 +165,13 @@ int TSP::nearestNeighbour(std::vector<Node> graph, int V, int start, std::vector
 }
 
 
-int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<bool>& odwiedzone,//ta metoda nie ma start bo sama ja wylicza
-                          int current_cost, std::vector<int>& current_path,
-                          std::vector<int>& best_path, int& best_cost) {//jedynie ta metoda zmienia pole klasy
+int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {//jedynie ta metoda zmienia pole klasy
+    std::vector<bool> odwiedzone(V, false);       // Na początku wszystkie wierzchołki nieodwiedzone
+    int current_cost = 0;                         // Początkowy koszt trasy to 0
+    std::vector<int> current_path;                // Początkowa trasa jest pusta
+    std::vector<int> best_path;                   // Najlepsza trasa, którą chcemy znaleźć
+    int best_cost = INT_MAX;                      // Początkowy najlepszy koszt ustawiony na nieskończonoś
+    //powyzej dane potrzebne do odpalenia rekurecyjnej metody nearestneighbour
 
     int best_weight = -1;//dajemy wartosc ujemna zeby przy pierwszej iteracji zostala ta zmienna nadpisana
     std::vector<int> best_way;
@@ -180,16 +184,24 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<
         }
 
         int result = nearestNeighbour(graph, V, i, odwiedzone, current_cost, current_path, best_path, best_cost);
+
         //przygotowanie przed kolejna rundą
         odwiedzone.clear();
         odwiedzone.assign(V, false);
         current_cost = 0;
         current_path.clear();
-        ////////////////////////////////
+
         //i to wierzcholek startowy dla metody nearestneighbour
         if(result != -1 && (best_weight == -1 || best_weight > result)) {
             best_weight = best_cost;
             best_way = best_path;
+        }
+
+        if(result == shortest_path_from_file) {
+            if_ended_by_iterations = false;//konczymy bo znalezlismy najlepsze rozwiazanie
+            shortestpath = result;//dopiero po calym repetetive nearestneighbour nadpisujemy wartosc pol klasy
+            solvedpath = best_way;
+            return shortestpath;
         }
     }
     shortestpath = best_weight;//dopiero po calym repetetive nearestneighbour nadpisujemy wartosc pol klasy
@@ -201,7 +213,6 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V, std::vector<
 int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie ze miedzy dwoma V nie ma krawedzi, to zmienne klasowe sa nie zmieniane
     std::random_device rd;// rd jest wykorzystywane do generowania losowej wartosci (ziarno)
     std::mt19937 g(rd());//tworze generator liczb pseudolosowych, jest on inicjalizowany wartoscia uzyskana z urzadzenia losowego
-
 
     shortestpath = INT_MAX;
     std::vector<int> tab_nieodwiedzonych(V);
@@ -220,7 +231,7 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
         if (elapsed_time > timer_.time_limit) {
             //przekroczono dopuszczalny czas
             if_ended_by_iterations = false;
-            break;
+            return shortestpath;//zwrot shortestpath
         }
         std::uniform_int_distribution<> dist(0, tab_nieodwiedzonych.size() - 1);//losowanie indexu z przedzialu [ ; ] (kazdy element ma takie samo prawdopodobieństwo na trafienie
         int randIndex = dist(g);//generowanie liczby z distribution liczb z zadanego wyzej przedzialu
@@ -261,9 +272,8 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
         shortestpath = score;
         solvedpath = selectedPath;
     }
-    if(shortestpath == INT_MAX) {
-        return -1;//nie znaleziono sceizki bo nie poprawiono rozwiazania chociaz raz
-    }
+    if (shortestpath == shortest_path_from_file)
+        if_ended_by_iterations = false;
 
     return shortestpath;
 }
