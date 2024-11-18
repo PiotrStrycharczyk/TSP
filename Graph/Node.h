@@ -6,7 +6,7 @@
 #define NODE_H
 #include <utility>
 #include <vector>
-
+#include<iostream>
 #include "Edge.h"
 
 
@@ -18,6 +18,7 @@ public:
     std::vector<Edge> edges;
     void addEdge(int dir, int weight);//dodawanie krawedzi o danych wagach
     int returnEdgeWeight(int destination);
+    void printGraph() const;
 
 };
 

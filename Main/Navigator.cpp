@@ -85,6 +85,7 @@ int Navigator::mainProgram() {
     std::string iterations_string = config["liczba powtorzen algorytmow"];
     std::string max_time_string = config["max czas wykonywania algorytmu[ms]"];//liczba iteracji dla algorytmu losowego
     std::string showProgressBar_string = config["wyswietlanie w konsoli wskaznika postepu"];//liczba iteracji dla algorytmu losowego
+    std::string show_results_in_console = config["wyswietlic wyniki algorytmow w konsoli"];
     std::string show_all_algorithms_string = config["pokazac wszystkie algorytmy"];//liczba iteracji dla algorytmu losowego
     std::string showBF_string = config["pokazac brute force"];//liczba iteracji dla algorytmu losowego
     std::string showNN_string = config["pokazac nn"];//liczba iteracji dla algorytmu losowego
@@ -98,6 +99,7 @@ int Navigator::mainProgram() {
     int max_time = stoi(max_time_string);
 
     bool showProgressBar = stringToBool(showProgressBar_string);
+    bool showResults = stringToBool(show_results_in_console);
     bool show_all_algorithms = stringToBool(show_all_algorithms_string);
     bool showBF = stringToBool(showBF_string);
     bool showNN = stringToBool(showNN_string);
@@ -116,9 +118,9 @@ int Navigator::mainProgram() {
     //ladowanie zawartosci pliku we
     //File::loadInputFile(nazwa_pliku_we, graph, V);//przekazujemy oryginal i na nim dzialamy w metodach
 
-    Tests testBF(nazwa_pliku_we, max_time, iterations, showProgressBar, show_all_algorithms,
+    Tests testBF(nazwa_pliku_we, nazwa_pliku_wy, showResults, max_time, iterations, showProgressBar, show_all_algorithms,
         showBF, showNN, show_random, showDFS, showBFS, show_lowest_cost);
-    testBF.TestBT();
+    testBF.Testy();
 
 
     //printowanie grafu

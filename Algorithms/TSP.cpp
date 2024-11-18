@@ -22,33 +22,35 @@ std::vector<int> TSP::getSolvedPath() {
 
 int TSP::bruteForce(std::vector<Node> graph, int V) {
 
-    int startvertex = 0; // punkt startowy algorytmu
-    std::vector<int> vertex; // wektor wszystkich poza pierwszym wierzchołków
-    solvedpath.push_back(startvertex); // dodanie do rozwiązania wierzchołka startowego
+    int startvertex = 0; // Punkt startowy algorytmu
+    std::vector<int> vertex; // Wektor wierzchołków do permutacji (bez 0)
+    solvedpath.clear(); // Czyszczenie ścieżki rozwiązania
+    solvedpath.push_back(startvertex); // Dodanie wierzchołka startowego do rozwiązania
 
     // Dodajemy wszystkie wierzchołki poza wierzchołkiem startowym do listy do permutacji
-    for (int i = 0; i < V; i++)
-        if (i != startvertex)
-            vertex.push_back(i);
+    for (int i = 1; i < V; i++) {
+        vertex.push_back(i);
+    }
 
-    shortestpath = INT_MAX; // ustawiamy początkową wartość najkrótszej ścieżki na maksymalną wartość
+    shortestpath = INT_MAX; // Inicjalizacja najkrótszej ścieżki na maksymalną wartość
 
     do {
+
         double elapsed_time = timer_.getCounter();
         if (elapsed_time > timer_.time_limit) {
-            //przekroczono dopuszczalny czas
+            // Przekroczono dopuszczalny czas
             if_ended_by_iterations = false;
             return shortestpath;
         }
 
-        int current_pathweight = 0; // waga bieżącej ścieżki
-        int k = startvertex; // zaczynamy od wierzchołka startowego
+        int current_pathweight = 0; // Waga bieżącej ścieżki
+        int k = startvertex; // Zaczynamy od wierzchołka startowego
 
         // Tworzymy tymczasowy wektor, aby przechowywać bieżącą ścieżkę
         std::vector<int> temp_path;
         temp_path.push_back(k); // Dodajemy wierzchołek startowy
 
-        bool validPath = true; // flaga do sprawdzenia, czy ścieżka jest poprawna
+        bool validPath = true; // Flaga sprawdzająca poprawność ścieżki
 
         // Obliczamy koszt bieżącej ścieżki
         for (int i = 0; i < vertex.size(); i++) {
@@ -57,17 +59,16 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
 
             // Sprawdzamy, czy istnieje krawędź
             if (edge_weight == -1) {
-                validPath = false; // jeśli nie ma krawędzi, przerywamy tę ścieżkę
+                validPath = false; // Jeśli nie ma krawędzi, przerywamy tę ścieżkę
                 break;
             }
 
             current_pathweight += edge_weight;
             k = next_vertex;
-            temp_path.push_back(k); // Dodajemy kolejne miasto do ścieżki
+            temp_path.push_back(k); // Dodajemy kolejny wierzchołek do ścieżki
         }
 
-        // Dodajemy koszt powrotu do miasta startowego, jeśli istnieje krawędź powrotna
-        //int return_edge_weight = graph[k].edges[startvertex].weight;
+        // Dodajemy koszt powrotu do miasta startowego
         int return_edge_weight = graph[k].returnEdgeWeight(startvertex);
 
         if (validPath && return_edge_weight != -1) {
@@ -81,15 +82,16 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
             }
         }
 
-    } while (std::next_permutation(vertex.begin(), vertex.end())); // generujemy wszystkie permutacje
+    } while (std::next_permutation(vertex.begin(), vertex.end())); // Generujemy wszystkie permutacje
 
     // Jeśli shortestpath nie zostało zaktualizowane, oznacza to, że nie znaleziono poprawnej ścieżki
     if (shortestpath == INT_MAX) {
-        return -1; // brak rozwiązania
+        return -1; // Brak rozwiązania
     }
 
     return shortestpath;
 }
+
 
 
 bool TSP::ifAllVisited(std::vector<bool> odwiedzone) {//metoda pomocniczna do NN
@@ -278,7 +280,7 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     return shortestpath;
 }
 
-bool TSP::getInfoHowEnded() {
+bool TSP::IfEndedWithIterations() {
     return if_ended_by_iterations;
 }
 

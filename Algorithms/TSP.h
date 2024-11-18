@@ -21,7 +21,7 @@ public:
     int randomMetod(std::vector<Node> graph, int V);
     std::vector<int> getSolvedPath();
     int getShortestPath();
-    bool getInfoHowEnded();
+    bool IfEndedWithIterations();
 
 private:
     Timer& timer_;

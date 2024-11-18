@@ -34,7 +34,7 @@ void BranchNBound::TSPRecurrent(std::vector<Node> graph, int& upper_bound, int c
         if (graph[curr_path[level - 1]].returnEdgeWeight(curr_path[0]) != -1) { // Powrót do początkowego wierzchołka
             int curr_res = curr_weight + graph[curr_path[level - 1]].returnEdgeWeight(curr_path[0]);
 
-            if (curr_res < upper_bound) {
+            if (curr_res <= upper_bound) {
                 copyToFinal(curr_path.data(), V); // `data()` daje wskaźnik do wektora
                 final_res = curr_res; // Przypisanie najlepszego obecnie rozwiązania
                 upper_bound = curr_res;
@@ -122,7 +122,7 @@ void BranchNBound::TSPBFS(std::vector<Node> graph, int V) {
                 int totalCost = current.costSoFar + returnCost;
 
                 // Jeśli znalezione rozwiązanie jest lepsze, zapamiętujemy je
-                if (totalCost < upper_bound) {
+                if (totalCost <= upper_bound) {
                     upper_bound = totalCost;
                     best_path = current.path;
                     best_path.push_back(0); // Dodajemy powrót do miasta startowego
@@ -200,7 +200,7 @@ void BranchNBound::LowestCost(std::vector<Node> graph, int V) {
                 int totalCost = current.costSoFar + returnCost;
 
                 // Jeśli znalezione rozwiązanie jest lepsze, zapamiętujemy je
-                if (totalCost < upper_bound) {
+                if (totalCost <= upper_bound) {
                     upper_bound = totalCost;
                     best_path = current.path;
                     best_path.push_back(0); // Dodajemy powrót do miasta startowego
@@ -242,4 +242,8 @@ int BranchNBound::getShortestPath() {
 std::vector<int> BranchNBound::getSolvedPath() {
     return final_path;
 }
+bool BranchNBound::IfEndedWithIterations() {
+    return if_ended_by_iterations;
+}
+
 

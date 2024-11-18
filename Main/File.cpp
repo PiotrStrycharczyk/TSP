@@ -98,7 +98,7 @@ public:
     }
 
 
-    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method) {
+    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method, bool printResults, int V) {
         int n = times.size();
         double sum_relative = 0;
         double sum_absolute = 0;
@@ -132,6 +132,15 @@ public:
         plik << avg_time << "ms;" << avg_rel_error << ";" << avg_rel_error * 100 << "%;" << avg_abs_error << "ms" << std::endl;
 
         plik.close();
+
+        if(printResults) {
+            std::cout<<"=================dla "<<V<<" wierzcholkow "<<method<<" ================="<<std::endl;
+            std::cout << "czas sredni: " << avg_time << "ms"<<std::endl;
+            std::cout << "sredni blad wzgledny: " << avg_rel_error << std::endl;
+            std::cout << "sredni blad wzgledny: " << avg_rel_error * 100 << "%"<<std::endl;
+            std::cout << "sredni blad bezwzgledny: " << avg_abs_error << "ms" <<std::endl;
+        }
+
     }
 
 

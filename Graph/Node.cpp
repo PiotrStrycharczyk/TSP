@@ -16,4 +16,3 @@ void Node::addEdge(int dir, int weight) {
 int Node::returnEdgeWeight(int dst) {
     return edges[dst].weight;
 }
-

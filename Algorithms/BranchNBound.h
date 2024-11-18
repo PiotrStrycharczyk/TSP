@@ -49,6 +49,7 @@ private:
     };
 public:
     static int nn_result;
+    bool IfEndedWithIterations();
 
 };
 

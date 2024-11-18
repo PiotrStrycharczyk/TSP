@@ -21,4 +21,6 @@ add_executable(tsp_problem Main/main.cpp
         Main/Tests.cpp
         Main/Tests.h
         Counting/Timer.cpp
-        Counting/Timer.h)
+        Counting/Timer.h
+        Graph/GenerateGraph.cpp
+        Graph/GenerateGraph.h)

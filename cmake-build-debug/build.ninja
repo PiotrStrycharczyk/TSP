@@ -109,6 +109,12 @@ build CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj: CXX_COMPILER__tsp_probl
   OBJECT_DIR = CMakeFiles\tsp_problem.dir
   OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Counting
 
+build CMakeFiles/tsp_problem.dir/Graph/GenerateGraph.cpp.obj: CXX_COMPILER__tsp_problem_unscanned_Debug C$:/Users/Piotr/CLionProjects/tsp_problem/Graph/GenerateGraph.cpp || cmake_object_order_depends_target_tsp_problem
+  DEP_FILE = CMakeFiles\tsp_problem.dir\Graph\GenerateGraph.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tsp_problem.dir
+  OBJECT_FILE_DIR = CMakeFiles\tsp_problem.dir\Graph
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tsp_problem
@@ -117,7 +123,7 @@ build CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj: CXX_COMPILER__tsp_probl
 #############################################
 # Link the executable tsp_problem.exe
 
-build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj CMakeFiles/tsp_problem.dir/Main/Tests.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj
+build tsp_problem.exe: CXX_EXECUTABLE_LINKER__tsp_problem_Debug CMakeFiles/tsp_problem.dir/Main/main.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Node.cpp.obj CMakeFiles/tsp_problem.dir/Graph/Edge.cpp.obj CMakeFiles/tsp_problem.dir/Main/File.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/TSP.cpp.obj CMakeFiles/tsp_problem.dir/Main/Navigator.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Counter.cpp.obj CMakeFiles/tsp_problem.dir/Algorithms/BranchNBound.cpp.obj CMakeFiles/tsp_problem.dir/Main/Tests.cpp.obj CMakeFiles/tsp_problem.dir/Counting/Timer.cpp.obj CMakeFiles/tsp_problem.dir/Graph/GenerateGraph.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static -W
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
