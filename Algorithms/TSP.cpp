@@ -200,12 +200,13 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {//jedynie t
         }
 
         if(result == shortest_path_from_file) {
-            if_ended_by_iterations = false;//konczymy bo znalezlismy najlepsze rozwiazanie
+            //if_ended_by_iterations = false;//konczymy bo znalezlismy najlepsze rozwiazanie
             shortestpath = result;//dopiero po calym repetetive nearestneighbour nadpisujemy wartosc pol klasy
             solvedpath = best_way;
             return shortestpath;
         }
     }
+    allPathWeights.push_back(best_weight);//tylko dajemy najlepsza
     shortestpath = best_weight;//dopiero po calym repetetive nearestneighbour nadpisujemy wartosc pol klasy
     solvedpath = best_way;
     return shortestpath;
@@ -270,12 +271,14 @@ int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie 
     selectedPath.push_back(firstNode);  // Zamyka cykl
 
     // Zapisujemy najlepsze rozwiązanie
+    allPathWeights.push_back(score);//dodajemy do wektora jedna z wielu odpowiedzi
+
     if (score < shortestpath) {
         shortestpath = score;
         solvedpath = selectedPath;
     }
-    if (shortestpath == shortest_path_from_file)
-        if_ended_by_iterations = false;
+    // if (shortestpath == shortest_path_from_file)
+    //     if_ended_by_iterations = false;
 
     return shortestpath;
 }

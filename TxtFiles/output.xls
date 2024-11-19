@@ -316,3 +316,850 @@ LP;czas;blad bezwzgledny;blad wzgledny
 100;36.4782ms;0.0188486;0.687563ms
 Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
 37.1658ms;0.0449033;4.49033%;1.69129ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0315ms;0.257143;0.0081ms
+2;0.0227ms;0.030837;0.0007ms
+3;0.0216ms;0.0833333;0.0018ms
+4;0.0206ms;0.135922;0.0028ms
+5;0.0206ms;0.135922;0.0028ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0234ms;0.128632;12.8632%;0.00324ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;31;26;1.0383ms;0.786882;0.81702ms
+2;26;26;0.0235ms;8.41617;0.19778ms
+3;31;26;0.0151ms;13.6543;0.20618ms
+4;34;26;0.0147ms;14.0531;0.20658ms
+5;28;26;0.0148ms;13.9514;0.20648ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.22128ms;10.1724;1017.24%;0.326808ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0539ms;0.401855;0.02166ms
+2;0.0269ms;0.198513;0.00534ms
+3;0.0282ms;0.143262;0.00404ms
+4;0.0261ms;0.235249;0.00614ms
+5;0.0261ms;0.235249;0.00614ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.03224ms;0.242826;24.2826%;0.008664ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1273ms;0.025923;0.0033ms
+2;0.1374ms;0.0975255;0.0134ms
+3;0.1216ms;0.0197368;0.0024ms
+4;0.1173ms;0.0571185;0.0067ms
+5;0.1164ms;0.0652921;0.0076ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.124ms;0.0531192;5.31192%;0.00668ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1005ms;0.182289;0.01832ms
+2;0.0785ms;0.046879;0.00368ms
+3;0.0762ms;0.0784777;0.00598ms
+4;0.0781ms;0.0522407;0.00408ms
+5;0.0776ms;0.0590206;0.00458ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.08218ms;0.0837813;8.37813%;0.007328ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1323ms;0.0710506;0.0094ms
+2;0.1268ms;0.0307571;0.0039ms
+3;0.1174ms;0.0468484;0.0055ms
+4;0.1187ms;0.0353833;0.0042ms
+5;0.1193ms;0.030176;0.0036ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.1229ms;0.0428431;4.28431%;0.00532ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1217ms;0.0920296;0.0112ms
+2;0.0958ms;0.153445;0.0147ms
+3;0.0969ms;0.140351;0.0136ms
+4;0.1152ms;0.0407986;0.0047ms
+5;0.1229ms;0.100895;0.0124ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.1105ms;0.105504;10.5504%;0.01132ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;122;118;0.0411ms;0.50073;0.02058ms
+2;139;118;0.0159ms;0.290566;0.00462ms
+3;151;118;0.0152ms;0.35;0.00532ms
+4;140;118;0.0152ms;0.35;0.00532ms
+5;124;118;0.0152ms;0.35;0.00532ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02052ms;0.368259;36.8259%;0.008232ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0927ms;0.161812;0.015ms
+2;0.0729ms;0.0658436;0.0048ms
+3;0.0744ms;0.0443548;0.0033ms
+4;0.0735ms;0.0571429;0.0042ms
+5;0.075ms;0.036;0.0027ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0777ms;0.0730307;7.30307%;0.006ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9319ms;0.0578174;0.05388ms
+2;0.8408ms;0.0442674;0.03722ms
+3;0.9323ms;0.0582216;0.05428ms
+4;0.8345ms;0.052151;0.04352ms
+5;0.8506ms;0.0322361;0.02742ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.87802ms;0.0489387;4.89387%;0.043264ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.4746ms;0.0986094;0.0468ms
+2;0.4263ms;0.00351865;0.0015ms
+3;0.4159ms;0.0286126;0.0119ms
+4;0.4089ms;0.0462216;0.0189ms
+5;0.4133ms;0.0350835;0.0145ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.4278ms;0.0424091;4.24091%;0.01872ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.6778ms;0.0354087;0.024ms
+2;0.6681ms;0.021404;0.0143ms
+3;0.649ms;0.00739599;0.0048ms
+4;0.6377ms;0.025247;0.0161ms
+5;0.6364ms;0.0273413;0.0174ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.6538ms;0.0233594;2.33594%;0.01532ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.6157ms;0.0335553;0.02066ms
+2;0.5897ms;0.00905545;0.00534ms
+3;0.5858ms;0.0157733;0.00924ms
+4;0.5937ms;0.00225703;0.00134ms
+5;0.5903ms;0.00802982;0.00474ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.59504ms;0.0137342;1.37342%;0.008264ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;170;90;0.0331ms;0.412689;0.01366ms
+2;170;90;0.0166ms;0.171084;0.00284ms
+3;185;90;0.016ms;0.215;0.00344ms
+4;135;90;0.0158ms;0.23038;0.00364ms
+5;125;90;0.0157ms;0.238217;0.00374ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.01944ms;0.253474;25.3474%;0.005464ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0772ms;0.204145;0.01576ms
+2;0.0605ms;0.0155372;0.00094ms
+3;0.0564ms;0.0893617;0.00504ms
+4;0.0558ms;0.101075;0.00564ms
+5;0.0573ms;0.0722513;0.00414ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.06144ms;0.0964741;9.64741%;0.006304ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4155ms;0.063059;0.08926ms
+2;1.3133ms;0.00985304;0.01294ms
+3;1.3186ms;0.00579402;0.00764ms
+4;1.3258ms;0.000331875;0.00044ms
+5;1.258ms;0.0542448;0.06824ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.32624ms;0.0266566;2.66566%;0.035704ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.4237ms;0.196024;0.27908ms
+2;1.0599ms;0.0799321;0.08472ms
+3;1.0727ms;0.0670458;0.07192ms
+4;1.0838ms;0.0561174;0.06082ms
+5;1.083ms;0.0568975;0.06162ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.14462ms;0.0912034;9.12034%;0.111632ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.6208ms;0.144793;0.23468ms
+2;1.6465ms;0.126924;0.20898ms
+3;1.6059ms;0.155414;0.24958ms
+4;1.8811ms;0.0136197;0.02562ms
+5;2.5231ms;0.264603;0.66762ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.85548ms;0.141071;14.1071%;0.277296ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;4.7308ms;0.0183098;0.08662ms
+2;4.6122ms;0.00693378;0.03198ms
+3;4.5877ms;0.0123112;0.05648ms
+4;4.6859ms;0.00890331;0.04172ms
+5;4.6043ms;0.00866147;0.03988ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+4.64418ms;0.0110239;1.10239%;0.051336ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;160;115;0.0474ms;0.518565;0.02458ms
+2;175;115;0.0177ms;0.289266;0.00512ms
+3;170;115;0.0164ms;0.391463;0.00642ms
+4;135;115;0.0163ms;0.4;0.00652ms
+5;215;115;0.0163ms;0.4;0.00652ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02282ms;0.399859;39.9859%;0.009832ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1938ms;0.133333;0.02584ms
+2;0.1617ms;0.0387137;0.00626ms
+3;0.1615ms;0.04;0.00646ms
+4;0.1613ms;0.0412895;0.00666ms
+5;0.1615ms;0.04;0.00646ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.16796ms;0.0586673;5.86673%;0.010336ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;7.0014ms;0.0180707;0.12652ms
+2;8.0278ms;0.112095;0.89988ms
+3;6.8794ms;0.0361252;0.24852ms
+4;6.9029ms;0.0325979;0.22502ms
+5;6.8281ms;0.0439097;0.29982ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+7.12792ms;0.0485598;4.85598%;0.359952ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;6.3804ms;0.105047;0.67024ms
+2;5.5832ms;0.0227396;0.12696ms
+3;5.5345ms;0.0317391;0.17566ms
+4;5.5435ms;0.030064;0.16666ms
+5;5.5092ms;0.0364772;0.20096ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+5.71016ms;0.0452133;4.52133%;0.268096ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;8.3991ms;0.0106249;0.08924ms
+2;8.4425ms;0.00542967;0.04584ms
+3;8.5098ms;0.0025218;0.02146ms
+4;8.5603ms;0.00840625;0.07196ms
+5;8.53ms;0.00488394;0.04166ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+8.48834ms;0.00637332;0.637332%;0.054032ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;39.3318ms;0.0114452;0.45016ms
+2;38.4925ms;0.0101095;0.38914ms
+3;38.4314ms;0.0117154;0.45024ms
+4;39.313ms;0.0109725;0.43136ms
+5;38.8395ms;0.00108498;0.04214ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.8816ms;0.00906551;0.906551%;0.352608ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;220;105;0.0434ms;0.486636;0.02112ms
+2;155;105;0.0176ms;0.265909;0.00468ms
+3;160;105;0.0168ms;0.32619;0.00548ms
+4;230;105;0.0167ms;0.334132;0.00558ms
+5;250;105;0.0169ms;0.318343;0.00538ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02228ms;0.346242;34.6242%;0.008448ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0772ms;0.21399;0.01652ms
+2;0.056ms;0.0835714;0.00468ms
+3;0.0536ms;0.13209;0.00708ms
+4;0.055ms;0.103273;0.00568ms
+5;0.0616ms;0.0149351;0.00092ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.06068ms;0.109572;10.9572%;0.006976ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;15.9981ms;0.339943;5.43844ms
+2;22.1063ms;0.0302972;0.66976ms
+3;16.2764ms;0.317032;5.16014ms
+4;27.1321ms;0.20992;5.69556ms
+5;25.6698ms;0.164912;4.23326ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+21.4365ms;0.212421;21.2421%;4.23943ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;11.7437ms;0.0194521;0.22844ms
+2;11.9915ms;0.0397148;0.47624ms
+3;11.4302ms;0.00744169;0.08506ms
+4;11.1568ms;0.0321293;0.35846ms
+5;11.2541ms;0.0232058;0.26116ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+11.5153ms;0.0243887;2.43887%;0.281872ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;17.8946ms;0.0180367;0.32276ms
+2;17.4246ms;0.00845012;0.14724ms
+3;17.6206ms;0.00276722;0.04876ms
+4;17.3276ms;0.0140954;0.24424ms
+5;17.5918ms;0.00113462;0.01996ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+17.5718ms;0.00889682;0.889682%;0.156592ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;351.581ms;0.0351299;12.351ms
+2;370.178ms;0.0168719;6.2456ms
+3;375.554ms;0.0309476;11.6225ms
+4;367.547ms;0.00983656;3.6154ms
+5;354.799ms;0.0257399;9.1325ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+363.932ms;0.0237052;2.37052%;8.5934ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;598;212;0.0561ms;0.294118;0.0165ms
+2;503;212;0.0363ms;0.0909091;0.0033ms
+3;325;212;0.0354ms;0.118644;0.0042ms
+4;455;212;0.0346ms;0.144509;0.005ms
+5;519;212;0.0356ms;0.11236;0.004ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0396ms;0.152108;15.2108%;0.0066ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: nn
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;213;212;1.0257ms;0.244789;0.25108ms
+2;213;212;1.3433ms;0.423345;0.56868ms
+3;213;212;0.5557ms;0.393954;0.21892ms
+4;213;212;0.4689ms;0.651994;0.30572ms
+5;213;212;0.4795ms;0.615474;0.29512ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.77462ms;0.465911;46.5911%;0.327904ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;54.6617ms;0.0577779;3.15824ms
+2;57.4766ms;0.00597356;0.34334ms
+3;57.5355ms;0.00494373;0.28444ms
+4;59.9627ms;0.0357349;2.14276ms
+5;59.4632ms;0.0276349;1.64326ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+57.8199ms;0.026413;2.6413%;1.51441ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;32.153ms;0.00517152;0.16628ms
+2;32.0337ms;0.00146658;0.04698ms
+3;31.5418ms;0.0141057;0.44492ms
+4;32.0842ms;0.00303826;0.09748ms
+5;32.1209ms;0.00417734;0.13418ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+31.9867ms;0.00559189;0.559189%;0.177968ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;49.8259ms;0.0119444;0.59514ms
+2;50.696ms;0.0054237;0.27496ms
+3;49.7149ms;0.0142038;0.70614ms
+4;49.5992ms;0.0165696;0.82184ms
+5;52.2692ms;0.0353585;1.84816ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+50.421ms;0.0167;1.67%;0.849248ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;5547.8ms;0.0101737;56.4415ms
+2;5555.71ms;0.00873644;48.5371ms
+3;5525.33ms;0.0142828;78.917ms
+4;5671.12ms;0.0117927;66.8779ms
+5;5721.26ms;0.0204531;117.018ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+5604.25ms;0.0130877;1.30877%;73.5582ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0306ms;0.224837;0.00688ms
+2;0.0237ms;0.000843882;2e-05ms
+3;0.0223ms;0.0636771;0.00142ms
+4;0.021ms;0.129524;0.00272ms
+5;0.021ms;0.129524;0.00272ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02372ms;0.109681;10.9681%;0.002752ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;32;26;1.0614ms;0.787451;0.8358ms
+2;28;26;0.0221ms;9.20814;0.2035ms
+3;29;26;0.0149ms;14.1409;0.2107ms
+4;34;26;0.0147ms;14.3469;0.2109ms
+5;28;26;0.0149ms;14.1409;0.2107ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.2256ms;10.5249;1052.49%;0.33432ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0684ms;0.460819;0.03152ms
+2;0.0342ms;0.0783626;0.00268ms
+3;0.0282ms;0.307801;0.00868ms
+4;0.0259ms;0.423938;0.01098ms
+5;0.0277ms;0.331408;0.00918ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.03688ms;0.320466;32.0466%;0.012608ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1292ms;0.0589783;0.00762ms
+2;0.1206ms;0.00812604;0.00098ms
+3;0.1198ms;0.0148581;0.00178ms
+4;0.1135ms;0.0711894;0.00808ms
+5;0.1248ms;0.0258013;0.00322ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.12158ms;0.0357906;3.57906%;0.004336ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.2498ms;0.27486;0.06866ms
+2;0.1656ms;0.0938406;0.01554ms
+3;0.1623ms;0.116081;0.01884ms
+4;0.1641ms;0.103839;0.01704ms
+5;0.1639ms;0.105186;0.01724ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.18114ms;0.138761;13.8761%;0.027464ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_5.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1253ms;0.0857143;0.01074ms
+2;0.1124ms;0.0192171;0.00216ms
+3;0.1106ms;0.0358047;0.00396ms
+4;0.1121ms;0.0219447;0.00246ms
+5;0.1124ms;0.0192171;0.00216ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.11456ms;0.0363796;3.63796%;0.004296ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1148ms;0.0658537;0.00756ms
+2;0.1363ms;0.213206;0.02906ms
+3;0.0943ms;0.137222;0.01294ms
+4;0.0939ms;0.142066;0.01334ms
+5;0.0969ms;0.106708;0.01034ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.10724ms;0.133011;13.3011%;0.014648ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;136;118;0.0343ms;0.442566;0.01518ms
+2;137;118;0.0157ms;0.217834;0.00342ms
+3;133;118;0.0153ms;0.249673;0.00382ms
+4;139;118;0.015ms;0.274667;0.00412ms
+5;141;118;0.0153ms;0.249673;0.00382ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.01912ms;0.286883;28.6883%;0.006072ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0955ms;0.164398;0.0157ms
+2;0.0753ms;0.059761;0.0045ms
+3;0.0714ms;0.117647;0.0084ms
+4;0.0812ms;0.0172414;0.0014ms
+5;0.0756ms;0.0555556;0.0042ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0798ms;0.0829206;8.29206%;0.00684ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.8407ms;0.00535268;0.0045ms
+2;0.8377ms;0.00895309;0.0075ms
+3;0.846ms;0.000945626;0.0008ms
+4;0.8596ms;0.016752;0.0144ms
+5;0.842ms;0.00380048;0.0032ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.8452ms;0.00716077;0.716077%;0.00608ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.4675ms;0.325176;0.15202ms
+2;0.4138ms;0.497148;0.20572ms
+3;0.8362ms;0.259125;0.21668ms
+4;0.8958ms;0.308417;0.27628ms
+5;0.4843ms;0.279207;0.13522ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.61952ms;0.333815;33.3815%;0.197184ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_6.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.9813ms;0.270213;0.26516ms
+2;0.6545ms;0.0941788;0.06164ms
+3;0.652ms;0.0983742;0.06414ms
+4;0.6456ms;0.109263;0.07054ms
+5;0.6473ms;0.106349;0.06884ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.71614ms;0.135676;13.5676%;0.106064ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.784ms;0.196709;0.15422ms
+2;0.5806ms;0.0847055;0.04918ms
+3;0.5768ms;0.0918516;0.05298ms
+4;0.5833ms;0.0796846;0.04648ms
+5;0.6242ms;0.00893944;0.00558ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.62978ms;0.0923781;9.23781%;0.061688ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;130;90;0.0302ms;0.377483;0.0114ms
+2;165;90;0.0163ms;0.153374;0.0025ms
+3;180;90;0.0158ms;0.189873;0.003ms
+4;180;90;0.0158ms;0.189873;0.003ms
+5;170;90;0.0159ms;0.18239;0.0029ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.0188ms;0.218599;21.8599%;0.00456ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0766ms;0.209661;0.01606ms
+2;0.0598ms;0.0123746;0.00074ms
+3;0.0551ms;0.0987296;0.00544ms
+4;0.0548ms;0.104745;0.00574ms
+5;0.0564ms;0.0734043;0.00414ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.06054ms;0.0997827;9.97827%;0.006424ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.3402ms;0.00589464;0.0079ms
+2;1.3444ms;0.00275216;0.0037ms
+3;1.38ms;0.0231159;0.0319ms
+4;1.4119ms;0.0451873;0.0638ms
+5;1.264ms;0.0665348;0.0841ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.3481ms;0.028697;2.8697%;0.03828ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.8197ms;0.339518;0.61782ms
+2;1.039ms;0.156766;0.16288ms
+3;1.0448ms;0.150345;0.15708ms
+4;1.0537ms;0.140628;0.14818ms
+5;1.0522ms;0.142254;0.14968ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.20188ms;0.185902;18.5902%;0.247128ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_7.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;1.7695ms;0.0484205;0.08568ms
+2;1.612ms;0.0445533;0.07182ms
+3;1.6904ms;0.00389257;0.00658ms
+4;1.7383ms;0.031341;0.05448ms
+5;1.6089ms;0.046566;0.07492ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.68382ms;0.0349547;3.49547%;0.058696ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;5.3853ms;0.000323102;0.00174ms
+2;5.1063ms;0.0542976;0.27726ms
+3;5.504ms;0.0218823;0.12044ms
+4;5.0404ms;0.0680819;0.34316ms
+5;5.8818ms;0.0847088;0.49824ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+5.38356ms;0.0458587;4.58587%;0.248168ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;190;115;0.0312ms;0.370513;0.01156ms
+2;165;115;0.0168ms;0.169048;0.00284ms
+3;245;115;0.0165ms;0.190303;0.00314ms
+4;195;115;0.0168ms;0.169048;0.00284ms
+5;180;115;0.0169ms;0.16213;0.00274ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.01964ms;0.212208;21.2208%;0.004624ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.1817ms;0.0893781;0.01624ms
+2;0.1615ms;0.0245201;0.00396ms
+3;0.1615ms;0.0245201;0.00396ms
+4;0.1614ms;0.0251549;0.00406ms
+5;0.1612ms;0.0264268;0.00426ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.16546ms;0.038;3.8%;0.006496ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;7.6561ms;0.0524523;0.40158ms
+2;7.7929ms;0.069086;0.53838ms
+3;6.9679ms;0.0411343;0.28662ms
+4;6.8039ms;0.0662297;0.45062ms
+5;7.0518ms;0.0287473;0.20272ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+7.25452ms;0.0515299;5.15299%;0.375984ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;6.4377ms;0.0811687;0.52254ms
+2;6.4806ms;0.0872512;0.56544ms
+3;5.5751ms;0.0609962;0.34006ms
+4;5.6467ms;0.0475428;0.26846ms
+5;5.4357ms;0.0882058;0.47946ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+5.91516ms;0.0730329;7.30329%;0.435192ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_8.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;8.9207ms;0.0209558;0.18694ms
+2;8.6481ms;0.00990507;0.08566ms
+3;8.7411ms;0.000839711;0.00734ms
+4;8.6959ms;0.00435378;0.03786ms
+5;8.663ms;0.00816807;0.07076ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+8.73376ms;0.00884448;0.884448%;0.077712ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;39.0286ms;0.00199905;0.07802ms
+2;38.1604ms;0.0207068;0.79018ms
+3;38.5774ms;0.00967354;0.37318ms
+4;39.9722ms;0.0255583;1.02162ms
+5;39.0143ms;0.00163325;0.06372ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+38.9506ms;0.0119142;1.19142%;0.465344ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;235;105;0.0577ms;0.267244;0.01542ms
+2;180;105;0.0393ms;0.075827;0.00298ms
+3;205;105;0.0382ms;0.106806;0.00408ms
+4;190;105;0.0381ms;0.109711;0.00418ms
+5;170;105;0.0381ms;0.109711;0.00418ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.04228ms;0.13386;13.386%;0.006168ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: nn
+LP;czas;blad bezwzgledny;blad wzgledny
+1;0.0843ms;0.282088;0.02378ms
+2;0.0557ms;0.086535;0.00482ms
+3;0.0532ms;0.137594;0.00732ms
+4;0.0547ms;0.106399;0.00582ms
+5;0.0547ms;0.106399;0.00582ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.06052ms;0.143803;14.3803%;0.009512ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;16.1454ms;0.301989;4.87574ms
+2;20.9273ms;0.00448409;0.09384ms
+3;15.791ms;0.33121;5.23014ms
+4;25.9623ms;0.190321;4.94116ms
+5;26.2797ms;0.2001;5.25856ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+21.0211ms;0.205621;20.5621%;4.07989ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;11.5038ms;0.0308889;0.35534ms
+2;11.5696ms;0.0250259;0.28954ms
+3;11.7508ms;0.0092198;0.10834ms
+4;11.539ms;0.0277442;0.32014ms
+5;12.9325ms;0.0829971;1.07336ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+11.8591ms;0.0351752;3.51752%;0.429344ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_9.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;18.5471ms;0.0334467;0.62034ms
+2;17.8149ms;0.00627901;0.11186ms
+3;17.4313ms;0.0284236;0.49546ms
+4;17.9236ms;0.000176304;0.00316ms
+5;17.9169ms;0.000550318;0.00986ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+17.9268ms;0.0137752;1.37752%;0.248136ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;356.896ms;0.000221409;0.07902ms
+2;353.369ms;0.00975716;3.44788ms
+3;357.926ms;0.00309818;1.10892ms
+4;357.25ms;0.00121209;0.43302ms
+5;358.644ms;0.00509397;1.82692ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+356.817ms;0.00387656;0.387656%;1.37915ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;588;212;0.0329ms;0.375684;0.01236ms
+2;473;212;0.0175ms;0.173714;0.00304ms
+3;526;212;0.0176ms;0.167045;0.00294ms
+4;591;212;0.0173ms;0.187283;0.00324ms
+5;506;212;0.0174ms;0.18046;0.00314ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02054ms;0.216837;21.6837%;0.004944ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: nn
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;213;212;0.4968ms;0.0489936;0.02434ms
+2;213;212;0.4716ms;0.00182358;0.00086ms
+3;213;212;0.4656ms;0.0147337;0.00686ms
+4;213;212;0.4628ms;0.0208729;0.00966ms
+5;213;212;0.4655ms;0.0149517;0.00696ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.47246ms;0.0202751;2.02751%;0.009736ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;54.6467ms;0.00648456;0.35436ms
+2;54.7984ms;0.00369828;0.20266ms
+3;54.7473ms;0.00463511;0.25376ms
+4;55.0165ms;0.000280643;0.01544ms
+5;55.7964ms;0.0142543;0.79534ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+55.0011ms;0.00587059;0.587059%;0.324312ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: BFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;33.0122ms;0.0342588;1.13096ms
+2;31.2945ms;0.018749;0.58674ms
+3;31.6359ms;0.00775511;0.24534ms
+4;31.6742ms;0.00653655;0.20704ms
+5;31.7894ms;0.00288901;0.09184ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+31.8812ms;0.0140377;1.40377%;0.452384ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_10.txt
+Metoda: Lowest-cost
+LP;czas;blad bezwzgledny;blad wzgledny
+1;48.6602ms;0.00621987;0.30266ms
+2;48.4033ms;0.0115604;0.55956ms
+3;48.546ms;0.00858691;0.41686ms
+4;51.0888ms;0.0416126;2.12594ms
+5;48.116ms;0.0176004;0.84686ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+48.9629ms;0.017116;1.7116%;0.850376ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: brute - force
+LP;czas;blad bezwzgledny;blad wzgledny
+1;3596.34ms;0.00337592;12.141ms
+2;3612.64ms;0.00115124;4.15902ms
+3;3647.19ms;0.0106126;38.7062ms
+4;3603.37ms;0.00141805;5.10978ms
+5;3582.87ms;0.00714915;25.6145ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+3608.48ms;0.0047414;0.47414%;17.1461ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: random
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;283;186;0.0337ms;0.361424;0.01218ms
+2;265;186;0.0183ms;0.175956;0.00322ms
+3;255;186;0.018ms;0.195556;0.00352ms
+4;274;186;0.0198ms;0.0868687;0.00172ms
+5;279;186;0.0178ms;0.208989;0.00372ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+0.02152ms;0.205759;20.5759%;0.004872ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: nn
+LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny
+1;187;186;1.2578ms;0.153935;0.19362ms
+2;187;186;1.0131ms;0.0504195;0.05108ms
+3;187;186;1.0191ms;0.0442351;0.04508ms
+4;187;186;1.0181ms;0.0452608;0.04608ms
+5;187;186;1.0128ms;0.0507306;0.05138ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+1.06418ms;0.0689163;6.89163%;0.077448ms
+===========================================================
+Nazwa pliku wejsciowego: ../TxtFiles/file_11.txt
+Metoda: DFS
+LP;czas;blad bezwzgledny;blad wzgledny
+1;11024.5ms;0.0028242;31.1353ms
+2;11103.6ms;0.0043191;47.9574ms
+3;11098.7ms;0.00388794;43.1513ms
+4;11038.2ms;0.00157953;17.4351ms
+5;11013.1ms;0.00386253;42.5382ms
+Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny
+11055.6ms;0.00329466;0.329466%;36.4435ms

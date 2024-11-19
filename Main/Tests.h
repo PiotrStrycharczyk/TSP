@@ -9,10 +9,11 @@
 
 class Tests {
 public:
-    Tests(std::string nazwa_pliku_we, std::string nazwa_pliku_wy, bool, int time_limit, int iteration_limit, bool show_progress_bar, bool show_all_algorithms,
+    Tests(bool testy_dla_pojedynczego_pliku ,std::string nazwa_pliku_we, std::string nazwa_pliku_wy, bool, int time_limit, int iteration_limit, bool show_progress_bar, bool show_all_algorithms,
         bool show_BF, bool show_NN, bool show_random, bool show_DFS, bool show_BFS, bool show_lowest_cost);
 
     void Testy();
+    bool if_one_instance_mode;
     std::string nazwa_pliku_we;
     std::string nazwa_pliku_wy;
     bool wannaPrintInConsole;

@@ -22,6 +22,7 @@ public:
     std::vector<int> getSolvedPath();
     int getShortestPath();
     bool IfEndedWithIterations();
+    std::vector<int> allPathWeights;//przechowuje wielkosci sciezek tylko do nn i random
 
 private:
     Timer& timer_;

@@ -80,6 +80,7 @@ int Navigator::mainProgram() {
 
     std::unordered_map<std::string, std::string> config = File::getConfig("../TxtFiles/conf_File.txt");//config zwracana mapa z wszystkimi klczami i wartosciami
 
+    std::string testy_dla_pojedynczego_pliku_string = config["czy chcesz testy dla pojedynczego pliku"];//jesli true to tylko bierze dla pliku podanego w pliku konfiguracyjnym jesli false to robi dla wsyzstkich instancji
     std::string nazwa_pliku_we = config["nazwa pliku wejsciowego"];
     std::string nazwa_pliku_wy = config["nazwa pliku wyjsciowego"];
     std::string iterations_string = config["liczba powtorzen algorytmow"];
@@ -98,6 +99,7 @@ int Navigator::mainProgram() {
     int iterations = stoi(iterations_string);
     int max_time = stoi(max_time_string);
 
+    bool testy_dla_pojedynczego_pliku = stringToBool(testy_dla_pojedynczego_pliku_string);
     bool showProgressBar = stringToBool(showProgressBar_string);
     bool showResults = stringToBool(show_results_in_console);
     bool show_all_algorithms = stringToBool(show_all_algorithms_string);
@@ -118,7 +120,7 @@ int Navigator::mainProgram() {
     //ladowanie zawartosci pliku we
     //File::loadInputFile(nazwa_pliku_we, graph, V);//przekazujemy oryginal i na nim dzialamy w metodach
 
-    Tests testBF(nazwa_pliku_we, nazwa_pliku_wy, showResults, max_time, iterations, showProgressBar, show_all_algorithms,
+    Tests testBF(testy_dla_pojedynczego_pliku, nazwa_pliku_we, nazwa_pliku_wy, showResults, max_time, iterations, showProgressBar, show_all_algorithms,
         showBF, showNN, show_random, showDFS, showBFS, show_lowest_cost);
     testBF.Testy();
 

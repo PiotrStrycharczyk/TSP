@@ -13,9 +13,10 @@
 #include "../Counting/Counter.h"
 
 
-Tests::Tests(std::string nazwa_pliku_we, std::string nazwa_pliku_wy, bool wannaPrintInConsole, int time_limit, int iteration_limit, bool show_progress_bar, bool show_all_algorithms,
+Tests::Tests(bool testy_dla_pojedynczego_pliku, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, bool wannaPrintInConsole, int time_limit, int iteration_limit, bool show_progress_bar, bool show_all_algorithms,
              bool show_BF, bool show_NN, bool show_random, bool show_DFS, bool show_BFS, bool show_lowest_cost)
-    : nazwa_pliku_we(std::move(nazwa_pliku_we)),
+    : if_one_instance_mode(testy_dla_pojedynczego_pliku),
+      nazwa_pliku_we(std::move(nazwa_pliku_we)),
       nazwa_pliku_wy(std::move(nazwa_pliku_wy)),
       wannaPrintInConsole(wannaPrintInConsole),//czy chcemy printowac wyniki w konsoli
       time_limit(time_limit),
@@ -32,23 +33,35 @@ Tests::Tests(std::string nazwa_pliku_we, std::string nazwa_pliku_wy, bool wannaP
     // Tutaj można dodać dodatkową logikę w ciele konstruktora, jeśli to konieczne.
 }
 void Tests::Testy() { //testy dla brute forca
-    std::vector<int>Vertices = {9,10,11,12,13,14};//wielkosci instacji do badan
-    for (int v = 0; v < Vertices.size() ; v++) {
+    int how_many_instances;
+    std::vector<int>Vertices = {5,6,7,8,9,10,11,12,13};//wielkosci instacji do badan
+    if(if_one_instance_mode) {
+        how_many_instances = 1;
+    } else {
+        how_many_instances = Vertices.size();
+    }
 
-        std::vector<Node> graph;//obiekt grafu
-        int V = Vertices[v];
+    int V;
+    for (int v = 0; v < how_many_instances ; v++) {
+
+        std::vector<Node> graph;//obiekt grafu z kazdym wiekszym V nowy obiekt
+
+        if(!if_one_instance_mode) {
+            V = Vertices[v];
+            nazwa_pliku_we = "../TxtFiles/file_" + std::to_string(V) + ".txt";
+        }
 
         // GenerateGraph generate_sym;
         // generate_sym.generateSymetric(graph, V);
         // Counter obj1;
         // obj1.printGraph(graph, V);
 
-        GenerateGraph generate_asymetric;//generowanie grafu asymetrycznego
-        generate_asymetric.generateAsymetric(graph, V);
+        // GenerateGraph generate_asymetric;//generowanie grafu asymetrycznego
+        // generate_asymetric.generateAsymetric(graph, V);
 
         // Counter obj2;
         // obj2.printGraph(graph, V);
-        //File::loadInputFile(nazwa_pliku_we, graph, V, shortest_path_from_file);
+        File::loadInputFile(nazwa_pliku_we, graph, V, shortest_path_from_file);
         double avg_time = 0;
         std::vector<double>times;//wektor na poszczegolne czasy
 
@@ -74,7 +87,7 @@ void Tests::Testy() { //testy dla brute forca
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force", wannaPrintInConsole, V, brute_force.allPathWeights, shortest_path_from_file);
 
         }
         //czyszczenie
@@ -102,7 +115,7 @@ void Tests::Testy() { //testy dla brute forca
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random", wannaPrintInConsole, V, random.allPathWeights,shortest_path_from_file);
         }
 
         //czyszczenie
@@ -129,17 +142,19 @@ void Tests::Testy() { //testy dla brute forca
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nn", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nn", wannaPrintInConsole, V, nn.allPathWeights,shortest_path_from_file);
         }
 
         //dane potrzebne do dfs
         TSP nearestN(timer, shortest_path_from_file);
         int nn_result = nearestN.repetetiveNearestNeighbour(graph, V); // wynik NN
-        BranchNBound::nn_result = nn_result;
+        BranchNBound::nn_result = nn_result;//testy metod BnB sa z upperboundemNN-a
 
         //czyszczenie
         avg_time = 0;
         times.clear();
+        //pomocniczy wektor
+        std::vector<int> pom;
 
         // ---------------- DFS ----------------
         if (show_all_algorithms || show_DFS) {
@@ -160,7 +175,7 @@ void Tests::Testy() { //testy dla brute forca
                 }
             }
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "DFS", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "DFS", wannaPrintInConsole, V, pom,shortest_path_from_file);
         }
 
         //czyszczenie
@@ -187,7 +202,7 @@ void Tests::Testy() { //testy dla brute forca
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "BFS", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "BFS", wannaPrintInConsole, V,pom,shortest_path_from_file);
         }
 
         //czyszczenie
@@ -214,7 +229,7 @@ void Tests::Testy() { //testy dla brute forca
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "Lowest-cost", wannaPrintInConsole, V);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "Lowest-cost", wannaPrintInConsole, V,pom,shortest_path_from_file);
         }
     }
 }

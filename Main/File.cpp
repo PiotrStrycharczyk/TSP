@@ -98,7 +98,8 @@ public:
     }
 
 
-    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method, bool printResults, int V) {
+    void writeTimesToOutput(std::vector<double> times, double avg_time, std::string nazwa_pliku_we, std::string nazwa_pliku_wy, std::string method, bool printResults, int V,
+        std::vector<int> calculated_path, int optimal_cost) {
         int n = times.size();
         double sum_relative = 0;
         double sum_absolute = 0;
@@ -116,29 +117,59 @@ public:
         plik << "Nazwa pliku wejsciowego: " << nazwa_pliku_we << std::endl;
         plik << "Metoda: " << method << std::endl;
 
-        plik << "LP;czas;blad bezwzgledny;blad wzgledny" << std::endl;
-        for (int i = 0; i < n; i++) {
-            double relative_error = fabs(times[i] - avg_time) / times[i];
-            sum_relative += relative_error;
-            double absolute_error = fabs(times[i] - avg_time);
-            sum_absolute += absolute_error;
-            plik << i + 1 << ";" << times[i] << "ms;" << relative_error << ";" << absolute_error << "ms" << std::endl;
-        }
+        if(calculated_path.size() == n) {//jesli wszystkie sciezkie(tylko dla alg nn random)
+            plik << "LP;waga_sciezki;optymalna_sciezka;czas;blad bezwzgledny;blad wzgledny" << std::endl;
+            for (int i = 0; i < n; i++) {
+                double relative_error = fabs(times[i] - avg_time) / times[i];
+                sum_relative += relative_error;
+                double absolute_error = fabs(times[i] - avg_time);
+                sum_absolute += absolute_error;
+                plik << i + 1 <<";"<<calculated_path[i]<< ";"<<optimal_cost<<";" << times[i] << "ms;" << relative_error << ";" << absolute_error << "ms" << std::endl;
+            }
 
-        double avg_rel_error = sum_relative / n;
-        double avg_abs_error = sum_absolute / n;
+            double avg_rel_error = sum_relative / n;
+            double avg_abs_error = sum_absolute / n;
 
-        plik << "Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny" << std::endl;
-        plik << avg_time << "ms;" << avg_rel_error << ";" << avg_rel_error * 100 << "%;" << avg_abs_error << "ms" << std::endl;
+            plik << "Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny" << std::endl;
+            plik << avg_time << "ms;" << avg_rel_error << ";" << avg_rel_error * 100 << "%;" << avg_abs_error << "ms" << std::endl;
 
-        plik.close();
+            plik.close();
 
-        if(printResults) {
-            std::cout<<"=================dla "<<V<<" wierzcholkow "<<method<<" ================="<<std::endl;
-            std::cout << "czas sredni: " << avg_time << "ms"<<std::endl;
-            std::cout << "sredni blad wzgledny: " << avg_rel_error << std::endl;
-            std::cout << "sredni blad wzgledny: " << avg_rel_error * 100 << "%"<<std::endl;
-            std::cout << "sredni blad bezwzgledny: " << avg_abs_error << "ms" <<std::endl;
+            if(printResults) {
+                std::cout<<"=================dla "<<V<<" wierzcholkow "<<method<<" ================="<<std::endl;
+                std::cout<<"sciezka optymalna: "<<optimal_cost<<std::endl;
+                std::cout << "czas sredni: " << avg_time << "ms"<<std::endl;
+                std::cout << "sredni blad wzgledny: " << avg_rel_error << std::endl;
+                std::cout << "sredni blad wzgledny: " << avg_rel_error * 100 << "%"<<std::endl;
+                std::cout << "sredni blad bezwzgledny: " << avg_abs_error << "ms" <<std::endl;
+            }
+
+        } else {
+            plik << "LP;czas;blad bezwzgledny;blad wzgledny" << std::endl;
+            for (int i = 0; i < n; i++) {
+                double relative_error = fabs(times[i] - avg_time) / times[i];
+                sum_relative += relative_error;
+                double absolute_error = fabs(times[i] - avg_time);
+                sum_absolute += absolute_error;
+                plik << i + 1 << ";" << times[i] << "ms;" << relative_error << ";" << absolute_error << "ms" << std::endl;
+            }
+
+            double avg_rel_error = sum_relative / n;
+            double avg_abs_error = sum_absolute / n;
+
+            plik << "Czas sredni;bl wzgledny;bl wzgledny[%];bl bezwzgledny" << std::endl;
+            plik << avg_time << "ms;" << avg_rel_error << ";" << avg_rel_error * 100 << "%;" << avg_abs_error << "ms" << std::endl;
+
+            plik.close();
+
+            if(printResults) {
+                std::cout<<"=================dla "<<V<<" wierzcholkow "<<method<<" ================="<<std::endl;
+                std::cout<<"sciezka optymalna: "<<optimal_cost<<std::endl;
+                std::cout << "czas sredni: " << avg_time << "ms"<<std::endl;
+                std::cout << "sredni blad wzgledny: " << avg_rel_error << std::endl;
+                std::cout << "sredni blad wzgledny: " << avg_rel_error * 100 << "%"<<std::endl;
+                std::cout << "sredni blad bezwzgledny: " << avg_abs_error << "ms" <<std::endl;
+            }
         }
 
     }
