@@ -6,7 +6,7 @@
 #include <iostream>
 #include <algorithm>
 #include <random>
-#include <bits/random.h>
+//#include <bits/random.h>
 
 TSP::TSP(Timer& timer, int shortest_path_from_file) : timer_(timer), shortest_path_from_file(shortest_path_from_file) {
     // Inicjalizujemy timer, który jest przekazywany do klasy
@@ -25,7 +25,6 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     int startvertex = 0; // Punkt startowy algorytmu
     std::vector<int> vertex; // Wektor wierzchołków do permutacji (bez 0)
     solvedpath.clear(); // Czyszczenie ścieżki rozwiązania
-    solvedpath.push_back(startvertex); // Dodanie wierzchołka startowego do rozwiązania
 
     // Dodajemy wszystkie wierzchołki poza wierzchołkiem startowym do listy do permutacji
     for (int i = 1; i < V; i++) {
@@ -33,7 +32,6 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     }
 
     shortestpath = INT_MAX; // Inicjalizacja najkrótszej ścieżki na maksymalną wartość
-
     do {
 
         double elapsed_time = timer_.getCounter();
@@ -88,6 +86,7 @@ int TSP::bruteForce(std::vector<Node> graph, int V) {
     if (shortestpath == INT_MAX) {
         return -1; // Brak rozwiązania
     }
+
 
     return shortestpath;
 }
@@ -213,75 +212,79 @@ int TSP::repetetiveNearestNeighbour(std::vector<Node> graph, int V) {//jedynie t
 }
 
 
-int TSP::randomMetod(std::vector<Node> graph, int V) {//jesli algorytm znajdzie ze miedzy dwoma V nie ma krawedzi, to zmienne klasowe sa nie zmieniane
-    std::random_device rd;// rd jest wykorzystywane do generowania losowej wartosci (ziarno)
-    std::mt19937 g(rd());//tworze generator liczb pseudolosowych, jest on inicjalizowany wartoscia uzyskana z urzadzenia losowego
+int TSP::randomMetod(std::vector<Node> graph, int V) {
+    std::random_device rd;  // rd jest wykorzystywane do generowania losowej wartości (ziarno)
+    std::mt19937 g(rd());   // tworze generator liczb pseudolosowych, inicjalizowany wartością z urządzenia losowego
 
     shortestpath = INT_MAX;
     std::vector<int> tab_nieodwiedzonych(V);
 
-    for(int i = 0 ; i < V ; i++) {//indexow tyle, ile wierzcholkow
+    for (int i = 0; i < V; i++) {  // indeksów tyle, ile wierzchołków
         tab_nieodwiedzonych[i] = i;
     }
 
-    int score = 0;
-
-    // Wektor do przechowywania losowo wybranych wierzchołków
-    std::vector<int> selectedPath;
-
-    for(int j = 0 ; j < V ; j++) {
-        double elapsed_time = timer_.getCounter();//sprawdzamy czy nie nalezy przerwac z powodu przekroczenia czasu
+    while (true) {  // Pętla działa do czasu znalezienia rozwiązania równego rozwiązaniu z pliku lub przekroczenia limitu czasu
+        double elapsed_time = timer_.getCounter();  // sprawdzamy, czy nie należy przerwać z powodu przekroczenia czasu
         if (elapsed_time > timer_.time_limit) {
-            //przekroczono dopuszczalny czas
+            // przekroczono dopuszczalny czas
             if_ended_by_iterations = false;
-            return shortestpath;//zwrot shortestpath
+            return shortestpath;  // zwrot shortestpath
         }
-        std::uniform_int_distribution<> dist(0, tab_nieodwiedzonych.size() - 1);//losowanie indexu z przedzialu [ ; ] (kazdy element ma takie samo prawdopodobieństwo na trafienie
-        int randIndex = dist(g);//generowanie liczby z distribution liczb z zadanego wyzej przedzialu
 
-        int currentNode = tab_nieodwiedzonych[randIndex];
-        selectedPath.push_back(currentNode);//dodanie pocz wierzcholka do odwiedzonych
+        std::vector<int> currentPath;  // Ścieżka dla bieżącej iteracji
+        std::vector<int> temp_tab_nieodwiedzonych = tab_nieodwiedzonych;  // Tymczasowa lista wierzchołków do odwiedzenia
+        int score = 0;
 
-        if (j > 0) {
-            // Obliczamy wagę krawędzi między bieżącym a poprzednim wierzchołkiem
-            int prevNode = selectedPath[j - 1];
-            int weight = graph[prevNode].returnEdgeWeight(currentNode);
+        for (int j = 0; j < V; j++) {
+            std::uniform_int_distribution<> dist(0, temp_tab_nieodwiedzonych.size() - 1);  // losowanie indeksu
+            int randIndex = dist(g);  // generowanie liczby z distribution liczb z zadanego wyżej przedziału
 
-            // Sprawdzamy, czy istnieje połączenie
-            if (weight == -1) {
-                return -1;  // Brak połączenia - odrzucamy
+            int currentNode = temp_tab_nieodwiedzonych[randIndex];
+            currentPath.push_back(currentNode);  // dodanie wierzchołka do ścieżki
+
+            if (j > 0) {
+                // Obliczamy wagę krawędzi między bieżącym a poprzednim wierzchołkiem
+                int prevNode = currentPath[j - 1];
+                int weight = graph[prevNode].returnEdgeWeight(currentNode);
+
+                // Sprawdzamy, czy istnieje połączenie
+                if (weight == -1) {
+                    // Brak połączenia - przechodzimy do następnej iteracji
+                    score = INT_MAX;
+                    break;
+                }
+                score += weight;
             }
-            score += weight;
+
+            // Usuwamy odwiedzony wierzchołek z listy
+            temp_tab_nieodwiedzonych.erase(temp_tab_nieodwiedzonych.begin() + randIndex);
         }
-        tab_nieodwiedzonych.erase(tab_nieodwiedzonych.begin() + randIndex);  // Usuwamy wierzchołek z listy (po usunieciu jest o jeden mniej elementow) w vectorze
 
+        if (score != INT_MAX) {
+            // Łączymy ostatni wierzchołek z pierwszym, aby zamknąć cykl
+            int lastNode = currentPath.back();
+            int firstNode = currentPath.front();
+            int lastEdgeWeight = graph[lastNode].returnEdgeWeight(firstNode);
+
+            if (lastEdgeWeight != -1) {  // Jeśli połączenie istnieje
+                score += lastEdgeWeight;
+                currentPath.push_back(firstNode);  // Zamyka cykl
+
+                if (score < shortestpath) {
+                    shortestpath = score;
+                    solvedpath = currentPath;
+
+                    // Jeśli znaleziono rozwiązanie równe temu z pliku, kończymy algorytm
+                    if (shortestpath == shortest_path_from_file) {
+                        //if_ended_by_iterations = false;
+                        return shortestpath;
+                    }
+                }
+            }
+        }
     }
-
-    // Łączymy ostatni wierzchołek z pierwszym, aby zamknąć cykl
-    int lastNode = selectedPath.back();
-    int firstNode = selectedPath.front();
-    int lastEdgeWeight = graph[lastNode].returnEdgeWeight(firstNode);
-
-    // Sprawdzamy, czy istnieje połączenie
-    if (lastEdgeWeight == -1) {
-        return -1;  // Brak połączenia - odrzucamy tę permutację
-    }
-
-    score += lastEdgeWeight;
-    selectedPath.push_back(firstNode);  // Zamyka cykl
-
-    // Zapisujemy najlepsze rozwiązanie
-    allPathWeights.push_back(score);//dodajemy do wektora jedna z wielu odpowiedzi
-
-    if (score < shortestpath) {
-        shortestpath = score;
-        solvedpath = selectedPath;
-    }
-    // if (shortestpath == shortest_path_from_file)
-    //     if_ended_by_iterations = false;
-
-    return shortestpath;
 }
+
 
 bool TSP::IfEndedWithIterations() {
     return if_ended_by_iterations;

@@ -1,13 +1,13 @@
-czy chcesz testy dla pojedynczego pliku:false
-nazwa pliku wejsciowego:../TxtFiles/file_11.txt
-nazwa pliku wyjsciowego:../TxtFiles/output.csv
+czy chcesz testy dla pojedynczego pliku:true
+nazwa pliku wejsciowego:../TxtFiles/file_10a.txt
+nazwa pliku wyjsciowego:../TxtFiles/output.txt
 liczba powtorzen algorytmow:100
 max czas wykonywania algorytmu[ms]:1800000
 wyswietlanie w konsoli wskaznika postepu:true
 wyswietlic wyniki algorytmow w konsoli:true
-pokazac wszystkie algorytmy:true
+pokazac wszystkie algorytmy:false
 pokazac brute force:false
-pokazac nn:false
+pokazac nn:true
 pokazac random:false
 pokazac DFS:false
 pokazac BFS:false

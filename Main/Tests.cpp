@@ -75,19 +75,26 @@ void Tests::Testy() { //testy dla brute forca
                 if(brute_force.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     brute_force.bruteForce(graph, V); // uruchomienie algorytmu
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
+                    if(brute_force.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
+
                     if(i == iteration_limit)
                         avg_time = avg_time/i;
                 } else {
-                    avg_time = avg_time/(i-1);
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
                     break;
                 }
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force", wannaPrintInConsole, V, brute_force.allPathWeights, shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "brute - force", wannaPrintInConsole, V,
+                brute_force.allPathWeights, shortest_path_from_file, brute_force.getShortestPath(), brute_force.getSolvedPath());
 
         }
         //czyszczenie
@@ -102,20 +109,26 @@ void Tests::Testy() { //testy dla brute forca
                 if(random.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     random.randomMetod(graph, V);
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
+                    if(random.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
                     if(i == iteration_limit)
                         avg_time = avg_time/i;
                 }else {
-                avg_time = avg_time/(i-1);
-                break;
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
+                    break;
             }
 
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random", wannaPrintInConsole, V, random.allPathWeights,shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "random", wannaPrintInConsole, V,
+                random.allPathWeights,shortest_path_from_file, random.getShortestPath(), random.getSolvedPath());
         }
 
         //czyszczenie
@@ -130,24 +143,33 @@ void Tests::Testy() { //testy dla brute forca
                 if(nn.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     nn.repetetiveNearestNeighbour(graph, V); // wynik NN
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
-                    if(i == iteration_limit)
+                    if(nn.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
+                    if(i == iteration_limit )
                         avg_time = avg_time/i;
                 }else {
-                    avg_time = avg_time/(i-1);
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
                     break;
                 }
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nn", wannaPrintInConsole, V, nn.allPathWeights,shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "nn", wannaPrintInConsole, V,
+                nn.allPathWeights,shortest_path_from_file,nn.getShortestPath(), nn.getSolvedPath());
         }
 
         //dane potrzebne do dfs
-        TSP nearestN(timer, shortest_path_from_file);
+        Timer tpomm(time_limit);
+        TSP nearestN(tpomm, shortest_path_from_file);
+        tpomm.startCounter();
         int nn_result = nearestN.repetetiveNearestNeighbour(graph, V); // wynik NN
+        //std::cout<<nn_result <<"ysys"<<std::endl;
         BranchNBound::nn_result = nn_result;//testy metod BnB sa z upperboundemNN-a
 
         //czyszczenie
@@ -164,18 +186,24 @@ void Tests::Testy() { //testy dla brute forca
                 if(DFS.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     DFS.TSPDFS(graph, V);
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
+                    if(DFS.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
                     if(i == iteration_limit)
                         avg_time = avg_time/i;
                 }else {
-                    avg_time = avg_time/(i-1);
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
                     break;
                 }
             }
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "DFS", wannaPrintInConsole, V, pom,shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "DFS", wannaPrintInConsole, V,
+                pom,shortest_path_from_file, DFS.getShortestPath(), DFS.getSolvedPath());
         }
 
         //czyszczenie
@@ -190,19 +218,25 @@ void Tests::Testy() { //testy dla brute forca
                 if(BFS.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     BFS.TSPBFS(graph, V);
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
+                    if(BFS.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
                     if(i == iteration_limit)
                         avg_time = avg_time/i;
                 }else {
-                    avg_time = avg_time/(i-1);
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
                     break;
                 }
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "BFS", wannaPrintInConsole, V,pom,shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "BFS", wannaPrintInConsole, V,
+                pom,shortest_path_from_file, BFS.getShortestPath(), BFS.getSolvedPath());
         }
 
         //czyszczenie
@@ -217,19 +251,25 @@ void Tests::Testy() { //testy dla brute forca
                 if(LC.IfEndedWithIterations()) {
                     timerPom.startCounter();
                     LC.LowestCost(graph, V);
-                    double t1 = timerPom.getCounter();
-                    avg_time += t1;
-                    times.push_back(t1);
+                    if(LC.IfEndedWithIterations()) {
+                        double t1 = timerPom.getCounter();
+                        avg_time += t1;
+                        times.push_back(t1);
+                    }
                     if(i == iteration_limit)
                         avg_time = avg_time/i;
                 }else {
-                    avg_time = avg_time/(i-1);
+                    if (times.size() == 0)
+                        avg_time = 0;
+                    else
+                        avg_time = avg_time/(i-2);
                     break;
                 }
             }
 
             File f1;
-            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "Lowest-cost", wannaPrintInConsole, V,pom,shortest_path_from_file);
+            f1.writeTimesToOutput(times, avg_time, nazwa_pliku_we, nazwa_pliku_wy, "Lowest-cost", wannaPrintInConsole,
+                V,pom,shortest_path_from_file, LC.getShortestPath(), LC.getSolvedPath());
         }
     }
 }
